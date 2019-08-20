@@ -1,0 +1,124 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #fff;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+body {
+	background-color: #111B24;
+	overflow-x: hidden;
+	font-family: Lato;
+}
+
+/* Шрифты */
+
+@font-face {
+ font-family: BebasNeue;
+ src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+ font-family: Lato;
+ src: url(fonts/Lato-Regular.ttf);
+}
+
+section {
+	padding: 100px 0;
+}
+
+
+/* Typography */
+
+h1 {
+	font-size: 96px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 72px;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 36px;
+	font-family: BebasNeue;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.subtitle {
+	font-size: 22px;
+	font-family: Lato;
+	color: #6C91B1;
+	margin-bottom: 60px;
+}
+
+p {
+	font-size: 16px;
+	font-family: Lato;
+	color: #fff;
+	line-height: 150%;
+}
+
+
+/* Buttons */
+
+a.button {
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+text-decoration: none;
+background: #4169E1;
+border-radius: 7px;
+padding: 16px 42px;
+display: inline-block;
+}
+
+/* Section */
+
+.section {
+	margin-bottom: 200px;
+	padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+
+ h1 {
+ 	font-size: 64px;
+ }
+
+ h2 {
+ 	font-size: 48px;
+ }
+
+ .title {
+ 	font-size: 24px;
+ }
+
+ .subtitle {
+ 	font-size: 18px;
+ }
+
+ p {
+ 	font-size: 14px;
+ }
+
+ a.button {
+ 	font-size: 14px;
+ }
+ a.button-send {
+	padding: 6px 40px;
+}
+
+}
