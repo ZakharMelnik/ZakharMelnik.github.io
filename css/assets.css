@@ -104,10 +104,12 @@ display: inline-block;
 
  .title {
  	font-size: 24px;
+ 	margin-bottom: 10px;
  }
 
  .subtitle {
  	font-size: 18px;
+ 	margin-bottom: 30px;
  }
 
  p {
