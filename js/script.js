@@ -60,14 +60,16 @@ $(document).ready(function() {
 	/*Header menu*/
 
 	$(".header__menu img").click(function(e){
-				e.preventDefault();
-				$("#menu").toggleClass("show");
-			});
-			$("#menu a").click(function(event){
-				if($(this).next('ul').length){
-					$(this).next().toggle('fast');
-					$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
-				}
+		e.preventDefault();
+		$("#menu").toggleClass("show");
+	});
+
+	$("#menu a").click(function(){
+
+		setTimeout(function() {
+			$(".header__menu img").click();
+		}, 200);
+		
 	});
 
 	$(document).on('click','.milk-shadow',function(){
@@ -156,6 +158,3 @@ function move() {
     }
     return;
 };
-
-
-

@@ -38,6 +38,15 @@ section {
 .header__menu {
 	display: flex;
 }
+
+#popup-contact-me input:last-child {
+	margin-bottom: 20px;
+}
+
+#popup-contact-me textarea {
+	height: 100px;
+}
+
 #hello {
 	background: linear-gradient(
           rgba(17, 27, 36, 0.8), 

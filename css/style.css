@@ -197,6 +197,7 @@
     margin-top: 60px;
     display: none;
     cursor: pointer;
+    animation: moves 1s infinite linear;
 }
 
 
@@ -276,14 +277,15 @@
 	padding-right: 20px;
 }
 
-.about__contacts p .span-title + a,
-.about__contacts p .span-icon a {
+.about__contacts p .span-icon img {
+	height: 19px;
+}
+
+.about__contacts p .span-title + a {
 	color: #768EA8;
 }
 
-.about__contacts p .span-title + a:hover,
-.about__contacts p .span-icon a:hover {
-	color: #fff;
+.about__contacts p .span-title + a:hover {
 	transition: .2s;
 }
 
@@ -523,6 +525,7 @@ button[type=submit]:hover {
 	margin: 0 auto;
 	padding: 40px;
 	border-radius: 7px;
+	position: relative;
 }
 .popup-form {
 	margin-bottom: 30px;
@@ -559,6 +562,11 @@ textarea:hover,
 input:focus,
 textarea:focus {
 	box-shadow: 0px 0px 0px 3px #6C91B1;
+}
+
+.mfp-close-btn-in .mfp-close {
+	color: #fff!important;
+	position: absolute;
 }
 
 
@@ -621,4 +629,11 @@ textarea:focus {
 	text-decoration: none;
 	margin-left: 2px;
 	transition: .2s;
+	transform: scale(1);
+}
+
+@keyframes moves {
+from {transform: scale(1);}
+50% {transform: scale(0.9);}
+to {transform: scale(1);}
 }
