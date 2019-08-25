@@ -11,11 +11,15 @@ ul {
 	list-style: none;
 	margin-bottom: 0;
 }
-
+html {
+	overflow-x: hidden;
+}
 body {
 	background-color: #111B24;
-	overflow-x: hidden;
 	font-family: Lato;
+	height: 5000px;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 /* Шрифты */
@@ -38,14 +42,11 @@ section {
 /* Typography */
 
 h1 {
-	font-size: 96px;
-	font-weight: bold;
+	font-family: BebasNeue;
+	font-size: 50px;
+	color: #FFFFFF;
 }
 
-h2 {
-	font-size: 72px;
-	font-weight: bold;
-}
 
 .title {
 	font-size: 36px;
@@ -57,8 +58,8 @@ h2 {
 .subtitle {
 	font-size: 22px;
 	font-family: Lato;
-	color: #6C91B1;
-	margin-bottom: 60px;
+	color: #768EA8;
+	margin-bottom: 30px;
 }
 
 p {
@@ -95,11 +96,7 @@ display: inline-block;
 @media (max-width: 768px) {
 
  h1 {
- 	font-size: 64px;
- }
-
- h2 {
- 	font-size: 48px;
+ 	font-size: 36px;
  }
 
  .title {
@@ -108,7 +105,7 @@ display: inline-block;
  }
 
  .subtitle {
- 	font-size: 18px;
+ 	font-size: 16px;
  	margin-bottom: 30px;
  }
 

@@ -32,14 +32,38 @@
         </a>
       </div>
 
-      <div class="offset-lg-3 col-lg-5 offset-md-3 col-md-8 col-10">
-        <ul class="header__links">
-          <li><a href="#hello" class="active">Hello</a></li>
-          <li><a href="#projects">Last projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact me</a></li>
-        </ul>
+      <div class="offset-lg-2 col-lg-5 col-md-10 col-10">
+        <div class="header-right">
+
+          <ul class="header__links">
+            <li><a href="#hello" class="active">Hello</a></li>
+            <li><a href="#projects">Last projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact me</a></li>
+          </ul>
+
+          <div class="header__lang">
+            <span>En</span>
+            <img src="img/arrow-down.svg" alt="arrow-down">
+
+            <div class="header__lang-box">
+              <a href="#">Ru</a>
+            </div>
+            
+          </div>
+
+          <div class="header__theme">
+            <div class="checkbox" data-toggle="tooltip" title="switch theme">
+              <div class="checkbox_circle"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="header__menu">
+            <img src="img/menu.svg" alt="menu">
+          </div>
       </div>
 
     </div>
@@ -49,33 +73,64 @@
 
 <!-- Hello  -->
 <section id="hello">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 col-12">
+
+        <div class="subtitle">
+          Hello!
+        </div>
+
+        <h1 class="dynamic-text">
+          I am <span></span>
+        </h1>
+
+        <p>
+          I'm a Front-end Developer with experience for over 2 years. My expertise is to create Websites, business card and many more...
+        </p>
+
+        <div class="down-arrow">
+          <a href="#about"><img src="img/arrow-down.svg" alt="arrow-down"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- About me  -->
+<section id="about">
   <div class="container-fluid">
     <div class="row align-items-center">
 
-      <div class="offset-lg-2 col-lg-4 hello__slider-text">
-        <div class="hello__slider">
-            <a href="#popup-gallery"><img src="img/1.jpg" alt="workplace"></a>
+      <div class="offset-lg-2 col-lg-3 about__slider-text">
+        <div class="about__slider">
+            <a href="#popup-gallery"><img src="img/about-face.jpg" alt="workplace"></a>
         </div>
       </div>
 
-      <div class="col-lg-5">
+      <div class="offset-lg-1 col-lg-4">
 
         <div class="title">
-          Hello
+          About me
         </div>
 
         <div class="subtitle">
           I am Zahar Melnik
         </div>
 
-        <p class="hello__text">
-          I'm a front-end developer. Was born in Ukraine, in a small town Lebedyn in Sumy region. <br>
+        <p class="about__text">
+          Was born in Ukraine, in a small town Lebedyn in Sumy region. <br>
           At 17 years old created more than 15 sites of various difficulty levels. <br>
           <a href="#skills">Landing pages</a>, <a href="#skills">corporate websites</a>, <a href="#skills">online stores</a>. <br>
           I am looking to take on more work and to increase my skills as a Front-end Developer.
         </p>
 
-        <div class="hello__contacts">
+        <div class="about__contacts">
           <p><span class="span-title">Phone </span><a href="tel:+380954850960">+38 095 4850 960</a></p>
           <p><span class="span-title">Email</span><a href="mailto:undef.zahar@gmail.com?subject=Заявка с portfolio">undef.zahar@gmail.com</a></p>
           <p>
@@ -87,9 +142,9 @@
           </p>
         </div>
 
-        <div class="hello__btns">
+        <div class="about__btns">
           <a class="popup-with-form" href="#popup-contact-me">Contact me</a>
-          <a href="#" class="btn-grey">Download cv</a>
+          <a href="#" class="btn-grey">Download resume</a>
         </div>
 
       </div>
@@ -128,7 +183,7 @@
       <div class="col-lg-6 col-6 projects-container-img">
 
         <div class="projects__img">
-          <a href="#"><img src="img/projects/RealBoost.png" alt="RealBoost"></a>
+          <a href="https://zakharmelnik.github.io/RealBoost/" target="_blank"><img src="img/projects/RealBoost.png" alt="RealBoost"></a>
         </div>
 
       </div>
@@ -140,7 +195,7 @@
 
 <!-- Skills  -->
 <section id="skills">
-  <div class="container-fluid">
+  <div class="container">
 
     <div class="title">Skills</div>
 
@@ -148,141 +203,226 @@
 
     <div class="row">
 
-      <div class="offset-lg-2 col-lg-2 col-6">
-        <div class="skill-box html">
-          <div class="skill-title">HTML 5</div>
-          <div class="skill-scale">
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
+      <div class="col-lg-3 col-6">
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-title">HTML 5</div>
+            <div class="skill-percent" data-num="96">0</div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box css">
-          <div class="skill-title">CSS 3</div>
-          <div class="skill-scale">
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box js">
-          <div class="skill-title">JS + JQ</div>
-          <div class="skill-scale">
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box bt">
-          <div class="skill-title">Bootstrap</div>
-          <div class="skill-scale">
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-            <div class="skill-scale_item"></div>
-          </div>
-        </div>
-      </div>
 
-      <div class="offset-lg-1 col-lg-2">
-        <div class="skill-box small" data-toggle="tooltip"  data-html="true" title="heavy picture optimization.<br> setting cache time. <br>delayed download of additional files.">
-          <div class="skill-title">Some optimization skills</div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box small" data-toggle="tooltip" title="flexible alignment of elements">
-          <div class="skill-title">FlexBox</div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box small" data-toggle="tooltip" title="Feedback form">
-          <div class="skill-title">PHP mailer</div>
-        </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="skill-box small" data-toggle="tooltip"  data-html="true" title="media requests for <br> different permissions">
-          <div class="skill-title">Adaptive site</div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box small">
-          <div class="skill-title">A little WordPress</div>
-        </div>
-      </div>
+          <div class="skill-scale">
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+          </div>
 
-      <div class="offset-lg-1 col-lg-2 col-6">
-        <div class="skill-box small" data-toggle="tooltip"  data-html="true" title="magnific-popup">
-          <div class="skill-title">Popup windows</div>
+
+
         </div>
       </div>
-      <div class="col-lg-2">
-        <div class="skill-box small" data-toggle="tooltip"  data-html="true" title="Ion.RangeSlider <br> Slick slider">
-          <div class="skill-title">Sliders</div>
+      <div class="col-lg-3 col-6">
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-title">CSS 3</div>
+            <div class="skill-percent" data-num="96">0</div>
+          </div>
+          
+          <div class="skill-scale">
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box small" data-toggle="tooltip"  data-html="true" title="animate.css <br> wow.js">
-          <div class="skill-title">Animations</div>
+      <div class="col-lg-3 col-6">
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-title">JS + JQ</div>
+            <div class="skill-percent" data-num="96">0</div>
+          </div>
+
+          <div class="skill-scale">
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-2 col-6">
-        <div class="skill-box small" data-toggle="tooltip" title="rellax.js">
-          <div class="skill-title">floating elements</div>
+      <div class="col-lg-3 col-6">
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-title">Bootstrap</div>
+            <div class="skill-percent" data-num="96">0</div>
+          </div>
+
+          <div class="skill-scale">
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+            <div class="skill-scale_item"></div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-2">
-        <div class="skill-box small" data-toggle="tooltip"  title="parallax.js">
-          <div class="skill-title">Parallax</div>
-        </div>
-      </div>
-<!-- v>
-<div class="col-lg-2">
-  <div class="skill-box small" data-toggle="tooltip"  title="Undefined 🙂">
-    <div class="skill-title">Other</div>
-  </div>
-</ -->
 
     </div>
+
+    <div class="subtitle">Other skills</div>
+
+    <div class="skill-other">
+      <div class="skill-box" data-toggle="tooltip"  data-html="true" title="heavy picture optimization.<br> setting cache time. <br>delayed download of additional files.">
+        <div class="skill-title">Some optimization skills</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip" title="flexible alignment of elements">
+        <div class="skill-title">FlexBox</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip" title="Feedback form">
+        <div class="skill-title">PHP mailer</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip"  data-html="true" title="media requests for <br> different permissions">
+        <div class="skill-title">Adaptive site</div>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-title">A little WordPress</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip" title="magnific-popup">
+        <div class="skill-title">Popup windows</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip"  data-html="true" title="Ion.RangeSlider <br> Slick slider">
+        <div class="skill-title">Sliders</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip"  data-html="true" title="animate.css <br> wow.js">
+        <div class="skill-title">Animations</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip" title="rellax.js">
+        <div class="skill-title">floating elements</div>
+      </div>
+
+      <div class="skill-box" data-toggle="tooltip"  title="parallax.js">
+        <div class="skill-title">Parallax</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
 <!-- Contact-me popup -->
 <form id="popup-contact-me" class="mfp-hide white-popup-block" action="mail.php" method="POST">
-
   <div class="title">Let’s work together</div>
   <div class="subtitle">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</div>
 
@@ -298,13 +438,33 @@
   </div>
 
   <button type="submit" class="button-send">Send message</button>
-
 </form>
+
+
+<!-- Header menu -->
+<div class="menu" id="menu">
+  <div class="menu-container">
+
+    <div class="menu-container__links">
+
+      <a href="#hello">Hello</a>
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact me</a>
+
+    </div>
+
+  </div>
+</div>
+<div class="milk-shadow"></div>
 
 
   <script src="https://kit.fontawesome.com/df264bc2b2.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/typed.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.magnific-popup.js"></script>

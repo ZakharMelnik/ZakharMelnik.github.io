@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 768px) {
+#hello {
+	padding: 100px 0;
+	height: auto;
+}
 
 .header {
     padding: 10px 0 10px;
@@ -19,14 +23,11 @@
     margin: 8px 0 10px 15px;
 }
 
-#hello {
-    margin-top: 63px;
-}
-.hello__slider {
+.about__slider {
 	max-height: 260px;
 }
 section {
-	padding: 30px 0;
+	padding: 60px 0;
 }
 
 
@@ -34,21 +35,47 @@ section {
 }
 
 @media (max-width: 480px) {
-.hello__contacts p .span-title {
+.header__menu {
+	display: flex;
+}
+#hello {
+	background: linear-gradient(
+          rgba(17, 27, 36, 0.8), 
+          rgba(17, 27, 36, 1)
+        ),  url(../img/banner-mobile.jpg) no-repeat center bottom;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	padding: 150px 0 31px;
+}
+#hello .down-arrow img {
+	display: block;
+}
+
+#hello .subtitle {
+	margin-bottom: 20px;
+}
+
+.about__contacts p .span-title {
 	min-width: 70px;
 }
-.header__links {
+.header-right {
 	display: none;
 }
-.hello__btns a, button[type=submit] {
+.about__btns a, button[type=submit] {
 	width: 100%;
 	margin-bottom: 15px;
 	text-align: center;
 }
-.hello__slider {
+.about__slider {
 	max-height: 260px;
 	margin-bottom: 30px;
+	align-items: flex-start;
 }
+
+.about__slider img {
+	margin-top: -65px;
+}
+
 .projects__img {
 	max-height: 350px;
 	height: inherit;
@@ -67,6 +94,15 @@ section {
 	margin-bottom: 15px;
 	padding: 15px;
 }
+
+#about .title {
+	margin-bottom: 20px;
+}
+
+#about .subtitle {
+	margin-bottom: 10px;
+}
+
 }
 
 @media (max-width: 375px) {
