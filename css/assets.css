@@ -16,6 +16,7 @@ body {
 	background-color: #111B24;
 	overflow-x: hidden;
 	font-family: Lato;
+	height: 5000px;
 }
 
 /* Шрифты */
@@ -38,14 +39,11 @@ section {
 /* Typography */
 
 h1 {
-	font-size: 96px;
-	font-weight: bold;
+	font-family: BebasNeue;
+	font-size: 50px;
+	color: #FFFFFF;
 }
 
-h2 {
-	font-size: 72px;
-	font-weight: bold;
-}
 
 .title {
 	font-size: 36px;
@@ -57,8 +55,8 @@ h2 {
 .subtitle {
 	font-size: 22px;
 	font-family: Lato;
-	color: #6C91B1;
-	margin-bottom: 60px;
+	color: #768EA8;
+	margin-bottom: 30px;
 }
 
 p {
