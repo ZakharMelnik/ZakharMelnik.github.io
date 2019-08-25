@@ -7,10 +7,6 @@
 }
 
 @media (max-width: 768px) {
-#hello {
-	padding: 100px 0;
-	height: auto;
-}
 
 .header {
     padding: 10px 0 10px;
@@ -23,6 +19,9 @@
     margin: 8px 0 10px 15px;
 }
 
+#hello {
+    margin-top: 63px;
+}
 .hello__slider {
 	max-height: 260px;
 }
@@ -38,7 +37,7 @@ section {
 .hello__contacts p .span-title {
 	min-width: 70px;
 }
-.header-right {
+.header__links {
 	display: none;
 }
 .hello__btns a, button[type=submit] {
