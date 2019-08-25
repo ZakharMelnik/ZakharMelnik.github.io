@@ -67,19 +67,6 @@ var typed = new Typed(".dynamic-text span", {
 
 /*Анимация при скроле к элементу*/
 
-/*$(window).scroll(function (){
-    $('#about').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+100) {
-            $('.header').css({'background':'#111B24', 'box-shadow': '0px 50px 40px -20px #0C1217', 'padding': '8px 0'});
-            $('.header__logo img').css('width', '35px');
-            
-        }
-    });
-
-
-});*/
 
 
 /*Header scrolling styling*/
@@ -98,6 +85,8 @@ $('.header__lang').hover(function(){
 $(this).toggleClass('open');
 })
 
+
+/*Header switch theme*/
 
 $('.header__theme .checkbox').click(function(){
 	$(this).toggleClass('theme-light');

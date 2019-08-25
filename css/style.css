@@ -160,19 +160,7 @@
 .header__theme .checkbox.theme-light .checkbox_circle {
 	margin-left: 14px;
 	background: #fff;
-}
-
-.hide-cat {
-	position: absolute;
-	right: -80px;
-	top: 150px;
-	transform: rotate(-90deg);
-	opacity: 0.5;
-}
-
-.hide-cat:hover {
-	right: -30px;
-	transition: 1s;
+	transition: .2s;
 }
 
 /* 2.Hello */
