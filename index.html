@@ -24,22 +24,22 @@
 <!-- Header -->
 <div class="header">
   <div class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-between">
 
-      <div class="offset-lg-2 col-lg-1 col-md-1 col-2">
+      <div class="col-auto">
         <a href="#" class="header__logo">
           <img src="img/logo.png" alt="MZ">
         </a>
       </div>
 
-      <div class="offset-lg-2 col-lg-5 col-md-10 col-10">
+      <div class="col-auto">
         <div class="header-right">
 
           <ul class="header__links">
-            <li><a href="#hello" class="active">Hello</a></li>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Last projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact me</a></li>
           </ul>
 
@@ -90,12 +90,11 @@
           I'm a Front-end Developer with experience for over 2 years. My expertise is to create Websites, business card and many more...
         </p>
 
-        <div class="down-arrow">
-          <a href="#about"><img src="img/icons/arrow-down.svg" alt="arrow-down"></a>
-        </div>
-
       </div>
+    </div>
 
+    <div class="down-arrow">
+      <a href="#about"><img src="img/icons/arrow-down.svg" alt="arrow-down"></a>
     </div>
 
   </div>
@@ -104,16 +103,16 @@
 
 <!-- About me  -->
 <section id="about">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row align-items-center">
 
-      <div class="offset-lg-2 col-lg-3 about__slider-text">
+      <div class="col-lg-5 col-md-5 about__slider-text">
         <div class="about__slider">
             <a href="#popup-gallery"><img src="img/about-face.jpg" alt="workplace"></a>
         </div>
       </div>
 
-      <div class="offset-lg-1 col-lg-4">
+      <div class="offset-lg-1 col-lg-6 col-md-7">
 
         <div class="title">
           About me
@@ -124,10 +123,17 @@
         </div>
 
         <p class="about__text">
-          Was born in Ukraine, in a small town Lebedyn in Sumy region. 
-          At 17 years old created more than 15 sites of various difficulty levels. 
-          <a href="#skills">Landing pages</a>, <a href="#skills">corporate websites</a>, <a href="#skills">online stores</a>. 
+          I'm a Front-end Developer with experience for over 2 years.
+          At 17 years old created more than 15 sites of various difficulty levels.
+          Landing pages, corporate websites, online stores.
           I am looking to take on more work and to increase my skills as a Front-end Developer.
+
+
+
+          <!-- Was born in Ukraine, in a small town Lebedyn in Sumy region. 
+          At 17 years old created more than 15 sites of various difficulty levels. 
+          Landing pages, corporate websites, online stores. 
+          I am looking to take on more work and to increase my skills as a Front-end Developer. -->
         </p>
 
         <div class="about__contacts">
@@ -143,8 +149,8 @@
         </div>
 
         <div class="about__btns">
-          <a class="popup-with-form" href="#popup-contact-me">Contact me</a>
-          <a href="#" class="btn-grey">Download resume</a>
+          <a class="button popup-with-form" href="#popup-contact-me">Contact me</a>
+          <a href="resume.docx" class="button btn-grey">Download resume</a>
         </div>
 
       </div>
@@ -177,6 +183,8 @@
           <li>SculptorTela</li>
           <li>SlicePiece</li>
         </ul>
+
+        <a class="button" href="portfolio.html">Portfolio</a>
           
       </div>
 
@@ -428,7 +436,7 @@
 
   <div class="row popup-form">
     <div class="col-lg-5">
-      <input id="text" name="user_name" type="text" placeholder="Name" required>
+      <input id="name" name="user_name" type="text" placeholder="Name" required>
       <input id="email" name="user_email" type="email" placeholder="E-mail" required>
     </div>
 
@@ -461,7 +469,6 @@
 <div class="milk-shadow"></div>
 
 
-  <script src="https://kit.fontawesome.com/df264bc2b2.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/typed.min.js"></script>

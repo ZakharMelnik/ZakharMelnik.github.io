@@ -1,0 +1,158 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #fff;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #111B24;
+	font-family: Lato;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+/* Шрифты */
+
+@font-face {
+ font-family: BebasNeue;
+ src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+ font-family: Lato;
+ src: url(fonts/Lato-Regular.ttf);
+}
+
+section {
+	padding: 100px 0;
+}
+
+
+/* Typography */
+
+h1 {
+	font-family: BebasNeue;
+	font-size: 50px;
+	color: #FFFFFF;
+}
+
+
+.title {
+	font-size: 36px;
+	font-family: BebasNeue;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.subtitle {
+	font-size: 22px;
+	font-family: Lato;
+	color: #768EA8;
+	margin-bottom: 30px;
+}
+
+p {
+	font-size: 16px;
+	font-family: Lato;
+	color: #fff;
+	line-height: 150%;
+}
+
+
+/* Buttons */
+
+a.button,
+button.button-send {
+	background: #4169E1;
+	border-radius: 7px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	padding: 16px 42px;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	text-align: center;
+}
+a.button {
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+a.button:last-child {
+	margin-right: 0;
+}
+
+a.button:hover,
+button.button-send:hover {
+	box-shadow: 0px 10px 20px -15px #4169E1;
+	transition: .2s;
+}
+
+
+a.button.btn-grey {
+	background: #768EA8;
+}
+
+a.button.btn-grey:hover {
+	box-shadow: 0px 10px 20px -15px #768EA8;
+}
+
+
+/* Section */
+
+.section {
+	margin-bottom: 200px;
+	padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+
+ h1 {
+ 	font-size: 36px;
+ }
+
+ .title {
+ 	font-size: 24px;
+ 	margin-bottom: 10px;
+ }
+
+ .subtitle {
+ 	font-size: 16px;
+ 	margin-bottom: 30px;
+ }
+
+ p {
+ 	font-size: 14px;
+ }
+
+ a.button {
+ 	font-size: 14px;
+ }
+ a.button-send {
+	padding: 6px 40px;
+}
+
+}
+
+.on .title {
+	color: #4169E1;
+}
+
+.on p {
+	color: #000;
+}

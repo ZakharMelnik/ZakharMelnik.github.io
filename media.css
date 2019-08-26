@@ -1,0 +1,189 @@
+@media (max-width: 1200px) {
+#hello {
+	padding-bottom: 60px;
+	background: linear-gradient( rgba(17, 27, 36, 0.8), rgba(17, 27, 36, 1) ), url(../img/banner-mobile.jpg) no-repeat center center;
+    background-size: 100%;
+}
+#hello .down-arrow img {
+	margin-top: 100px;
+}
+.header .header__logo img {
+	height: 30px;
+}
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+#hello {
+	background: linear-gradient(
+          rgba(17, 27, 36, 0.8), 
+          rgba(17, 27, 36, 1)
+        ),  url(../img/banner-mobile.jpg) no-repeat center center;
+	background-size: 100%;
+}
+
+.header {
+    padding: 10px 0 10px;
+}
+
+.header__logo img {
+    height: 30px;
+}
+.header__links li {
+    margin: 0px 0 2px 15px;
+}
+
+.about__slider {
+	max-height: 360px;
+}
+section {
+	padding: 60px 0;
+}
+
+.header__lang {
+	margin: 0 10px;
+}
+
+.header__lang span {
+	font-size: 14px;
+}
+
+.header__lang img {
+	width: 8px;
+	margin-left: -8px;
+}
+
+
+
+}
+
+@media (max-width: 520px) {
+
+.header-right {
+	display: none;
+}
+
+.header__menu {
+	display: flex;
+}
+
+}
+
+@media (max-width: 480px) {
+
+h1.dynamic-text {
+	font-size: 32px;
+}
+.header__menu {
+	display: flex;
+}
+
+#popup-contact-me input:last-child {
+	margin-bottom: 20px;
+}
+
+#popup-contact-me textarea {
+	height: 100px;
+}
+
+#hello {
+	background: linear-gradient(
+          rgba(17, 27, 36, 0.8), 
+          rgba(17, 27, 36, 1)
+        ),  url(../img/banner-mobile.jpg) no-repeat center top;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	padding: 50px 0 30px;
+	height: 100vh;
+}
+
+#hello .down-arrow img {
+	display: block;
+	margin-top: 100px;
+}
+
+#hello .subtitle {
+	margin-bottom: 20px;
+}
+
+.about__contacts p .span-title {
+	min-width: 70px;
+}
+.header-right {
+	display: none;
+}
+.about__btns a,
+button[type=submit] {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+a.button.btn-grey {
+	margin-left: 0;
+}
+
+.about__slider {
+	max-height: 260px;
+	margin-bottom: 30px;
+	align-items: flex-start;
+}
+
+.about__slider img {
+	margin-top: -65px;
+}
+
+.projects__img {
+	max-height: 350px;
+	height: inherit;
+}
+.skill-box {
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.skill-title {
+	margin-bottom: 15px;
+}
+.skill-scale_item {
+	width: 6px;
+}
+.skill-box.small {
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+#about .title {
+	margin-bottom: 20px;
+}
+
+#about .subtitle {
+	margin-bottom: 0;
+}
+
+}
+
+@media (max-width: 375px) {
+.skill-box.small .skill-title {
+	font-size: 14px;
+}
+}
+
+@media (max-width: 320px) {
+.skill-box.small {
+	padding: 10px;
+}
+.skill-box.small .skill-title {
+	font-size: 13px;
+}
+.skill-title {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.skill-scale_item {
+	width: 4px;
+	height: 22px;
+}
+
+}
