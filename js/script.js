@@ -1,60 +1,4 @@
-
-
-/*activation tooltip*/
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-
-
-/*Last projects: site selection*/
-
-$(".projects__link li").click(function(e) {
-  e.preventDefault();
-  $(".projects__link li").removeClass('active');
-  $(this).addClass('active');
-
-  $(".projects__img a").attr("href","https://zakharmelnik.github.io/"+$(this).text());
-  $(".projects__img a img").attr("src","img/projects/"+$(this).text()+".png");
-  $(".projects__img a img").attr("alt",$(this).text());
-  $(".projects__img").scrollTop(0);
-});
-
 $(document).ready(function() {
-
-
-	/*Header scrolling styling*/
-
-	var scroll_top = $(document).scrollTop();
-	if(scroll_top >= 500){
-	$('.header').addClass('scroll')
-	}else{ $('.header').removeClass('scroll');}
-
-	/*mobile scrolling styling*/
-	if(window.matchMedia('(max-width: 480px)').matches){
-		var scroll_top = $(document).scrollTop();
-		if(scroll_top >= 80){
-		$('.header').addClass('scroll')
-		}else{ $('.header').removeClass('scroll');}
-	};
-
-
-	/*feedback form*/
-
-	$('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});
 
 
 	/*Header menu*/
@@ -77,6 +21,24 @@ $(document).ready(function() {
 	});
 
 
+	/*feedback form*/
+
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+
 });
 
 
@@ -92,28 +54,46 @@ var typed = new Typed(".dynamic-text span", {
 });
 
 
-/*Анимация при скроле к элементу*/
-
-
-
 /*Header scrolling styling*/
 
-$(document).on('scroll', function(){
-var scroll_top = $(document).scrollTop();
-if(scroll_top >= 600){
-$('.header').addClass('scroll')
-}else{ $('.header').removeClass('scroll');}
-});
+if(window.matchMedia('(max-width: 1200px)').matches){
 
-/*mobile scrolling styling*/
-if(window.matchMedia('(max-width: 480px)').matches){
-	$(document).on('scroll', function(){
-	var scroll_top = $(document).scrollTop();
-	if(scroll_top >= 80){
-	$('.header').addClass('scroll')
-	}else{ $('.header').removeClass('scroll');}
+	$(window).scroll(function (){
+	    $('#hello .subtitle').each(function (){
+	        var imagePos = $(this).offset().top;
+	        var topOfWindow = $(window).scrollTop();
+	        if (imagePos < topOfWindow+80) {
+	            $('.header').addClass('scroll');
+	        }else{$('.header').removeClass('scroll');}
+	    });
+	});
+
+}else {
+
+	$(window).scroll(function (){
+	    $('#about').each(function (){
+	        var imagePos = $(this).offset().top;
+	        var topOfWindow = $(window).scrollTop();
+	        if (imagePos < topOfWindow+80) {
+	            $('.header').addClass('scroll');;
+	        }else{$('.header').removeClass('scroll');}
+	    });
 	});
 };
+
+
+/*Last projects: site selection*/
+
+$(".projects__link li").click(function(e) {
+  e.preventDefault();
+  $(".projects__link li").removeClass('active');
+  $(this).addClass('active');
+
+  $(".projects__img a").attr("href","https://zakharmelnik.github.io/"+$(this).text());
+  $(".projects__img a img").attr("src","img/projects/"+$(this).text()+".png");
+  $(".projects__img a img").attr("alt",$(this).text());
+  $(".projects__img").scrollTop(0);
+});
 
 
 /*Header open lang*/
@@ -126,13 +106,13 @@ $(this).toggleClass('open');
 /*Header switch theme*/
 
 $('.header__theme .checkbox').click(function(){
-	$(this).toggleClass('theme-light');
+	$('body').toggleClass('on');
 });
 
 
 /*Счётчик*/
 
-$(window).scroll(function (){
+/*$(window).scroll(function (){
     $('#skills').each(function (){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
@@ -147,14 +127,20 @@ function move() {
     let id = setInterval(frame, 2);
     
     function frame() {
-        if (width >= $('#myBar').data('num')) {
+        if (width >= $('this').data('num')) {
             clearInterval(id);
         } else {
             width++;
-            $('#myBar').css('width', width + '%');
 
             $('.skill-percent').html(width + ' percent');
         }
     }
     return;
 };
+*/
+
+/*activation tooltip*/
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
