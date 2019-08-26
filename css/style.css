@@ -25,12 +25,23 @@
     padding: 8px 0;
 
 }
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .header__logo img {
+	height: 42px;
+}
+
 .header.scroll .header__logo img {
-	width: 35px;
+	height: 25px;
 }
 
 .header__logo img {
-	width: 42px;
+	height: 42px;
 }
 
 .header__links {
@@ -42,6 +53,9 @@
 
 .header__links li {
 	margin: 8px 20px 10px 0;	
+}
+.header__links li:first-child {
+	margin-left: 0;
 }
     
 .header__links li a {
@@ -155,7 +169,7 @@
 	right: 5.5px;
 }
 
-.header__theme .checkbox.theme-light .checkbox_circle {
+body.theme-light .header__theme .checkbox .checkbox_circle {
 	margin-left: 14px;
 	background: #fff;
 	transition: .2s;
@@ -174,15 +188,14 @@
 /* 2.Hello */
 
 #hello {
-	height: 700px;
+	height: 100vh;
 	background: linear-gradient(
           rgba(17, 27, 36, 0.8), 
           rgba(17, 27, 36, 1)
-        ),  url(../img/banner.jpg) no-repeat center center;
+        ),  url(../img/banner.jpg) no-repeat center top;
 	background-size: 100%;
 	display: flex;
 	align-items: flex-end;
-	padding-bottom: 150px;
 }
 
 
@@ -194,8 +207,8 @@
 #hello .down-arrow img {
 	margin: 0 auto;
     width: 30px;
-    margin-top: 60px;
-    display: none;
+    margin-top: 150px;
+    display: flex;
     cursor: pointer;
     animation: moves 1s infinite linear;
 }
@@ -204,7 +217,7 @@
 /* 3.About */
 
 .about__slider {
-	max-height: 600px;
+	max-height: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -289,37 +302,6 @@
 	transition: .2s;
 }
 
-.about__btns a,
-button[type=submit] {
-	margin-right: 30px;
-	background: #4169E1;
-	border-radius: 7px;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 19px;
-	color: #FFFFFF;
-	padding: 16px 42px;
-	text-decoration: none;
-	display: inline-block;
-	border: none;
-}
-
-.about__btns a:hover,
-button[type=submit]:hover {
-	box-shadow: 0px 10px 20px -15px #4169E1;
-	transition: .2s;
-}
-
-.about__btns a.btn-grey {
-	background: #768EA8;
-}
-
-.about__btns a.btn-grey:hover {
-	box-shadow: 0px 10px 20px -15px #768EA8;
-}
-
 #about .subtitle {
 	margin-bottom: 20px;
 }
@@ -332,6 +314,7 @@ button[type=submit]:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .projects__link li {
@@ -363,6 +346,10 @@ button[type=submit]:hover {
     width: 34px;
     margin-left: 34px;
     background: #fff;
+}
+
+#projects a.button {
+	padding: 10px 25px;
 }
 
 /* Projects RightCol img */
@@ -590,7 +577,7 @@ textarea:focus {
  background-color: #111B24;
  height: 100%;
  z-index: 99999;
- width: 280px;
+ width: 50vw;
  color: #bbb;
  top: 0;
  right: 0;
@@ -636,4 +623,30 @@ textarea:focus {
 from {transform: scale(1);}
 50% {transform: scale(0.9);}
 to {transform: scale(1);}
+}
+
+
+/* Light theme */
+
+body.on {
+	background: #fff;
+}
+
+.on .header.scroll {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: none;
+}
+
+.on li a:hover,
+.on .header__links li a.active,
+.on .projects__link li:hover,
+.on .about__slider-text:hover:after,
+.on .about__text > a {
+	color: #000;
+}
+
+.on .about__slider,
+.on .projects__img {
+	box-shadow: 0px 20px 30px 0px #999999;
 }
