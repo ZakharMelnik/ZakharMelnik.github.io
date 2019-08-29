@@ -11,16 +11,11 @@ ul {
 	list-style: none;
 	margin-bottom: 0;
 }
-html {
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-}
+
 body {
 	background-color: #111B24;
-	font-family: Lato;
-	width: 100%;
 	overflow-x: hidden;
-	margin: 0;
+	font-family: Lato;
 }
 
 /* Шрифты */
@@ -43,11 +38,14 @@ section {
 /* Typography */
 
 h1 {
-	font-family: BebasNeue;
-	font-size: 50px;
-	color: #FFFFFF;
+	font-size: 96px;
+	font-weight: bold;
 }
 
+h2 {
+	font-size: 72px;
+	font-weight: bold;
+}
 
 .title {
 	font-size: 36px;
@@ -59,8 +57,8 @@ h1 {
 .subtitle {
 	font-size: 22px;
 	font-family: Lato;
-	color: #768EA8;
-	margin-bottom: 30px;
+	color: #6C91B1;
+	margin-bottom: 60px;
 }
 
 p {
@@ -73,45 +71,19 @@ p {
 
 /* Buttons */
 
-a.button,
-button.button-send {
-	background: #4169E1;
-	border-radius: 7px;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 19px;
-	color: #FFFFFF;
-	padding: 16px 42px;
-	text-decoration: none;
-	display: inline-block;
-	border: none;
-	text-align: center;
-}
 a.button {
-	margin-right: 30px;
-	margin-bottom: 15px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+text-decoration: none;
+background: #4169E1;
+border-radius: 7px;
+padding: 16px 42px;
+display: inline-block;
 }
-a.button:last-child {
-	margin-right: 0;
-}
-
-a.button:hover,
-button.button-send:hover {
-	box-shadow: 0px 10px 20px -15px #4169E1;
-	transition: .2s;
-}
-
-
-a.button.btn-grey {
-	background: #768EA8;
-}
-
-a.button.btn-grey:hover {
-	box-shadow: 0px 10px 20px -15px #768EA8;
-}
-
 
 /* Section */
 
@@ -123,7 +95,11 @@ a.button.btn-grey:hover {
 @media (max-width: 768px) {
 
  h1 {
- 	font-size: 36px;
+ 	font-size: 64px;
+ }
+
+ h2 {
+ 	font-size: 48px;
  }
 
  .title {
@@ -132,7 +108,7 @@ a.button.btn-grey:hover {
  }
 
  .subtitle {
- 	font-size: 16px;
+ 	font-size: 18px;
  	margin-bottom: 30px;
  }
 
@@ -147,12 +123,4 @@ a.button.btn-grey:hover {
 	padding: 6px 40px;
 }
 
-}
-
-.on .title {
-	color: #4169E1;
-}
-
-.on p {
-	color: #000;
 }
