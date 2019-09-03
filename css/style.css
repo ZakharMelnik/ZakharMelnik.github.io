@@ -486,6 +486,7 @@ body.theme-light .header__theme .checkbox .checkbox_circle {
 .skill-other {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .skill-box {

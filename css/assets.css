@@ -156,3 +156,20 @@ a.button.btn-grey:hover {
 .on p {
 	color: #000;
 }
+
+.on #hello {
+	background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1) ), url(../img/banner.jpg) no-repeat center top;
+	background-size: 100%;
+}
+
+.on .subtitle {
+	color: #000;
+}
+
+.on h1 {
+	color: #000;
+}
+
+.on #hello h1 > span {
+  color: #4169E1;
+ }
