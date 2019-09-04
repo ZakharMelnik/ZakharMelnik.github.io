@@ -97,12 +97,12 @@ h1.dynamic-text {
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	padding: 0;
-	height: 100vh;
+	height: calc(100vh - 150px);
 }
 
 #hello .down-arrow img {
 	display: block;
-	margin: 100px auto 40px;
+	margin: 40px auto 40px;
 }
 
 #hello .subtitle {
@@ -146,9 +146,7 @@ a.button.btn-grey {
 .skill-title {
 	margin-bottom: 15px;
 }
-.skill-scale_item {
-	width: 6px;
-}
+
 .skill-box.small {
 	margin-bottom: 15px;
 	padding: 15px;
@@ -180,10 +178,6 @@ a.button.btn-grey {
 .skill-title {
 	margin-bottom: 10px;
 	font-size: 18px;
-}
-.skill-scale_item {
-	width: 4px;
-	height: 22px;
 }
 
 }

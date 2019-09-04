@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	
+	
+/*	// Range init
+	$('.skill-title i').text(start)
+	$('.skill-scale_item').css('width', start+'%')
+	
+	//Range example
+	$('#hueta').change( function() {
+		let fooNuiGavno = $(this).val()
+		$('.skill-title i').text( fooNuiGavno)
+		$('.skill-scale_item').css('width', fooNuiGavno+'%')
+	})
+*/
 
 	/*Header menu*/
 
@@ -39,6 +52,20 @@ $(document).ready(function() {
 	});
 
 
+});
+
+
+$(window).scroll(function (){
+    $('#skills').each(function (){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+300) {
+        	const start = $('.skill-title i').data('percent');
+
+           $('.skill-title i').text(start);
+		   $('.skill-scale_item').css('width', start+'%');
+        }
+    });
 });
 
 
