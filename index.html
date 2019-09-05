@@ -38,9 +38,9 @@
           <ul class="header__links">
             <li><a href="#hello">Hello</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Last projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#projects">Last projects</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
           </ul>
 
           <div class="header__lang">
@@ -153,47 +153,6 @@
 </section>
 
 
-<!-- Projects  -->
-<section id="projects">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-
-      <div class="offset-lg-2 col-lg-2 col-6">
-
-        <div class="title">
-          Last projects
-        </div>
-
-        <div class="subtitle">
-          Here is a selection of my latest open source work
-        </div>
-
-        <ul class="projects__link">
-          <li class="active">RealBoost</li>
-          <li>BuyCrypt</li>
-          <li>Kappi</li>
-          <li>Sartorius</li>
-          <li>SculptorTela</li>
-          <li>SlicePiece</li>
-        </ul>
-
-        <a class="button" href="portfolio.html">Portfolio</a>
-          
-      </div>
-
-      <div class="col-lg-6 col-6 projects-container-img">
-
-        <div class="projects__img">
-          <a href="https://zakharmelnik.github.io/RealBoost/" target="_blank"><img src="img/projects/RealBoost.png" alt="RealBoost"></a>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
 <!-- Skills  -->
 <section id="skills">
   <div class="container">
@@ -204,7 +163,7 @@
 
     <div class="row">
 
-      <div class="col-lg-3 col-md-6  col-12">
+      <div class="col-lg-3 col-md-6  col-6">
         <div class="skill">
           
           <div class="skill-title">
@@ -218,7 +177,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6  col-12">
+      <div class="col-lg-3 col-md-6  col-6">
         <div class="skill">
 
           <div class="skill-title">
@@ -232,7 +191,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6  col-12">
+      <div class="col-lg-3 col-md-6  col-6">
         <div class="skill">
           
           <div class="skill-title">
@@ -246,7 +205,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-12">
+      <div class="col-lg-3 col-md-6 col-6">
         <div class="skill">
 
           <div class="skill-title">
@@ -261,6 +220,9 @@
       </div>
 
     </div>
+  </div>
+
+  <div class="container-fluid">
 
     <div class="subtitle">Other skills</div>
 
@@ -306,8 +268,74 @@
       </div>
     </div>
 
+</div>
+</section>
+
+
+<!-- Projects  -->
+<section id="projects">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-3 col-6">
+
+        <div class="title">
+          Last projects
+        </div>
+
+        <div class="subtitle">
+          Here is a selection of my latest open source work
+        </div>
+
+        <ul class="projects__link">
+          <li class="active">RealBoost</li>
+          <li>BuyCrypt</li>
+          <li>Kappi</li>
+          <li>Sartorius</li>
+          <li>SculptorTela</li>
+          <li>SlicePiece</li>
+        </ul>
+
+        <a class="button" href="portfolio.html">Portfolio</a>
+          
+      </div>
+
+      <div class="col-lg-9 col-9 projects-container-img">
+
+        <div class="projects__img">
+          <a href="https://zakharmelnik.github.io/RealBoost/" target="_blank"><img src="img/projects/RealBoost.png" alt="RealBoost"></a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </section>
+
+
+<!-- Contact me -->
+<div id="contact-me">
+  <div class="container">
+    <div class="title">Contact me</div>
+    <div class="subtitle">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</div>
+
+    <form action="mail.php" method="POST">
+     <div class="row">
+       <div class="col-lg-5 col-md-5">
+         <input id="name" name="user_name" type="text" placeholder="Name" required>
+         <input id="email" name="user_email" type="email" placeholder="E-mail" required>
+       </div>
+
+       <div class="col-lg-7 col-md-7">
+         <textarea placeholder="Message" required></textarea>
+       </div>
+     </div>
+
+     <button type="submit" class="button-send">Send message</button>
+    </form> 
+  </div>
+</div>
+
 
 
 <!-- Contact-me popup -->
@@ -316,12 +344,12 @@
   <div class="subtitle">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.</div>
 
   <div class="row popup-form">
-    <div class="col-lg-5">
+    <div class="col-lg-5 col-md-5">
       <input id="name" name="user_name" type="text" placeholder="Name" required>
       <input id="email" name="user_email" type="email" placeholder="E-mail" required>
     </div>
 
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-md-7">
       <textarea placeholder="Message" required></textarea>
     </div>
   </div>
@@ -338,10 +366,10 @@
 
       <a href="#hello">Hello</a>
       <a href="#about">About me</a>
-      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact me</a>
+      <a href="#contact-me">Contact me</a>
 
     </div>
 

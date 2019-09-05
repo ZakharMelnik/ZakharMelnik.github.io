@@ -10,9 +10,20 @@
 .header .header__logo img {
 	height: 30px;
 }
+
+.skill-box {
+    padding: 5px 10px;
+    border: 1px solid #6C91B1;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 0 5px 10px 5px;
+}
 }
 
 @media (max-width: 992px) {
+#projects {
+	display: none;
+}
 
 }
 
@@ -56,7 +67,17 @@ section {
 	margin-left: -8px;
 }
 
+.skill-box .skill-title {
+	font-size: 14px;
+}
 
+#contact-me input {
+	margin-bottom: 20px;
+}
+
+.popup-form input:last-child {
+	margin-bottom: 20px;
+}
 
 }
 
@@ -118,7 +139,6 @@ h1.dynamic-text {
 .about__btns a,
 button[type=submit] {
 	width: 100%;
-	margin-bottom: 15px;
 }
 
 a.button.btn-grey {
@@ -139,10 +159,7 @@ a.button.btn-grey {
 	max-height: 350px;
 	height: inherit;
 }
-.skill-box {
-	margin-bottom: 15px;
-	padding: 15px;
-}
+
 .skill-title {
 	margin-bottom: 15px;
 }
@@ -158,6 +175,10 @@ a.button.btn-grey {
 
 #about .subtitle {
 	margin-bottom: 0;
+}
+
+#popup-contact-me {
+	padding: 30px 20px;
 }
 
 }
