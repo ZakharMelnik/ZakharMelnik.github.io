@@ -2,10 +2,16 @@ $(document).ready(function () {
 	new WOW().init();
 	var rellax = new Rellax('.rellax');
 
+	if (localStorage.getItem('theme') == 'dark') {
+		$('body').addClass('dark');
+	} else {
+		$('body').removeClass('dark');
+	}
 
 	$(".html").click(function () {
-		$(".popup").css("bottom", "0");
-		$(".about .bg").css("z-index", "0");
+		$(".projects").css("display", "none");
+		$(".page-html").css("display", "block");
+		$(this).toggleClass("active");
 	});
 
 	$(".about .bg").click(function () {
@@ -68,6 +74,20 @@ $(document).ready(function () {
 	$(".filter a").click(function () {
 		$(this).addClass('active').siblings().removeClass('active');
 	});
+
+
+	$('.theme').click(function () {
+		if (localStorage.getItem('theme') == 'dark') {
+			localStorage.setItem('theme', 'light');
+			$('body').removeClass('dark');
+		} else {
+			localStorage.setItem('theme', 'dark');
+			$('body').addClass('dark');
+		}
+	});
+
+
+
 });
 
 /*activation*/

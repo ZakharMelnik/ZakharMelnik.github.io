@@ -15,8 +15,191 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	margin: 0;
+	padding: 0;
 	/* background-color: #000; */
 	background: linear-gradient(104.05deg, #E6E6E6 -2.75%, #D4DAE8 104.59%);
 	font-family: 'Poppins', sans-serif;
 	width: 100%;
+	-background: url(https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/giphy.gif) no-repeat 50% top;
+	-background: url(https://media.giphy.com/media/3o7528vs6FFzBSL8ys/giphy.gif) no-repeat 50% top;
+	-background: url(https://media.giphy.com/media/dtRtziZF2px2skZV4J/giphy.gif) no-repeat center bottom;
+	-background: url(https://media.giphy.com/media/SwV0emFiUEv8Cphd7u/giphy.gif) no-repeat 50% bottom;
+	-background: url(https://media.giphy.com/media/xT9IgC2RzpbE7vBZ6M/giphy.gif) no-repeat 50% bottom;
+	
+	background: #dcdbeb;
+	background: linear-gradient(90deg, rgba(220,219,235,1) 0%, rgba(141,179,172,1) 100%);
+	background: linear-gradient(90deg, rgba(220,219,235,1) 30%, rgba(148,151,177,1) 100%);
+	background-size: cover;
+	backdrop-filter: blur(25px);
+}
+
+body.dark {
+	background: #1F1F47;
+	-background: url(https://media.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy.gif) no-repeat 50% bottom;
+	background-size: cover;
+	backdrop-filter: blur(25px);
+}
+
+.hide {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.7;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+
+
+
+
+/* Styles for dialog window */
+.zoom-anim-dialog {
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 600px;
+	margin: -100px auto 0;
+	position: relative;
+	border-radius: 15px;
+}
+
+.zoom-anim-dialog:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	backdrop-filter: blur(10px);
+	background: rgba(255,255,255,.6);
+	z-index: -1;
+	border-radius: 15px;
 }
