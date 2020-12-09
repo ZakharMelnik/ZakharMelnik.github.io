@@ -11,9 +11,6 @@
 }
 
 @media (max-width: 520px) {
-	body {
-		background: #000;
-	}
 	.about {
 		max-width: 100%;
 		margin: 0;
@@ -70,6 +67,18 @@
 
 	.popup {
 		height: 100%;
+	}
+
+	.about-me {
+		max-width: inherit;
+		position: static;
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+	body.dark {
+		backdrop-filter: blur(0px);
 	}
 
 }
