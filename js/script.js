@@ -8,6 +8,16 @@ $(document).ready(function () {
 		$('body').removeClass('dark');
 	}
 
+	tippy('#tooltip-vue', {
+		content: 'Vue.js framework ',
+	});
+	tippy('#tooltip-webpack', {
+		content: 'Webpack',
+	});
+	tippy('#tooltip-gulp', {
+		content: 'Gulp',
+	});
+
 	// $(".html").click(function () {
 	// 	$(".projects").css("display", "none");
 	// 	$(".page-html").css("display", "block");

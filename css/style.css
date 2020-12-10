@@ -4,7 +4,6 @@
 	flex-direction: column;
 	overflow: hidden;
 	position: fixed;
-	height: 100vh;
 	margin-left: 30px;
 }
 
@@ -77,7 +76,7 @@
 
 .about-me__body {
 	background: #fff;
-	padding: 15px;
+	padding: 20px;
 	border-radius: 20px;
 	position: relative;
 	margin-bottom: 30px;
@@ -161,6 +160,7 @@
 .about-me__links {
 	 display: flex;
 	 justify-content: center;
+	 margin-bottom: 30px;
 }
 
 .about-me__links .link {
@@ -217,7 +217,7 @@
 }
 
 .projects::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 .projects::-webkit-scrollbar-track {
@@ -237,10 +237,11 @@
 	margin-bottom: 30px;
 	display: flex;
 	background: rgb(255 255 255 / 70%);
-	padding: 15px;
+	padding: 10px;
 	border-radius: 20px;
 	background: rgba(255 255 255 / 50%);
-   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+	overflow-x: auto;
 }
 
 .dark .filter {
@@ -255,6 +256,7 @@
 	font-size: 18px;
 	border-radius: 10px;
 	padding: 2px 10px;
+	white-space: nowrap;
 }
 
 .filter a span {
@@ -313,13 +315,14 @@
 }
 
 .project {
-	padding: 15px;
-	border-radius: 20px;
+	border-radius: 10px;
 	transition: .2s ease-out;
 	display: block;
 	text-decoration: none;
 	margin-bottom: 30px;
 	background: rgba(255 255 255 / 50%);
+	overflow: hidden;
+	position: relative;
 }
 
 .dark .project {
@@ -332,20 +335,17 @@
 	box-shadow: 0 10px 30px rgb(0 11 36/ 20%);
 }
 
-.project:hover .project__container-img {
-}
-
 .dark .project:hover {
 	background: rgba(0, 0, 0);	
 }
 
 .project__container-img {
+	display: block;
 	width: 100%;
 	border-radius: 10px;
-	margin-bottom: 15px;
 	overflow: hidden;
 	background-color: #fff;
-	box-shadow: 0 8px 24px rgb(0 11 36/ 20%);
+	box-shadow: 0 0 24px rgb(0 11 36/ 20%);
 }
 
 .dark .project__container-img {
@@ -357,11 +357,11 @@
 	display: block;
 }
 
-.project__head {
+.project__info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 10px;
+	padding: 15px 10px 10px;
 }
 
 .project__title {
@@ -369,6 +369,7 @@
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
+	text-decoration: none;
 }	
 
 .dark .project__title {
@@ -381,10 +382,36 @@
 	font-weight: 400;
 	line-height: 16px;
 	min-height: 48px;
+	display: none;
 }
 
 .dark .project__descr {
 	color: rgba(255, 255, 255, 0.7);
+}
+
+.project__info .right {
+	display: flex;
+	align-items: center;
+}
+
+.project__info .tags {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.project__info .tags i {
+	margin-right: 5px;
+}
+
+.project__info img {
+	height: 18px;
+	max-height: 18px;
+	display: flex;
+}
+
+.project__info img:not(:last-of-type) {
+	margin-right: 5px;
 }
 
 .project__category {
@@ -392,11 +419,12 @@
 	font-weight: 400;
 	line-height: 16px;
 	display: inline-flex;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 3px 10px;
+	transition: .2s ease-out;
 
 	color: #000;
-	background: rgb(33 150 243 / 20%);
+	background: rgba(222, 227, 230,1);
 }
 
 .dark .project__category {
