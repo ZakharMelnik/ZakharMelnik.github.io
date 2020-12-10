@@ -24,6 +24,7 @@ $(document).ready(function () {
 	// 	$(this).toggleClass("active");
 	// });
 
+
 	$(".slider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -77,21 +78,26 @@ $(document).ready(function () {
 
 	$(".filter a").click(function () {
 		$(this).addClass('active').siblings().removeClass('active');
+		
 	});
 
+	$('.filter a span#all').html($('.projects div').filter('[data-cat]').length)
+	$('.filter a span#promotion').html($('.projects div').filter('[data-cat="promotion"]').length)
+	$('.filter a span#landing').html($('.projects div').filter('[data-cat="landing"]').length)
+	$('.filter a span#commerce').html($('.projects div').filter('[data-cat="commerce"]').length)
+	$('.filter a span#social').html($('.projects div').filter('[data-cat="social"]').length)
+	
 
 	$('.theme').click(function () {
 		if (localStorage.getItem('theme') == 'dark') {
 			localStorage.setItem('theme', 'light');
 			$('body').removeClass('dark');
+			
 		} else {
 			localStorage.setItem('theme', 'dark');
 			$('body').addClass('dark');
 		}
 	});
-
-
-
 });
 
 /*activation*/
@@ -99,6 +105,7 @@ $(document).ready(function () {
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 });
+
 
 
 

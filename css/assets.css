@@ -18,6 +18,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
 	width: 100%;
 	-background: url(https://media.giphy.com/media/SwV0emFiUEv8Cphd7u/giphy.gif) no-repeat 50% bottom;
 	-background-size: cover;
@@ -29,7 +30,7 @@ body {
 }
 
 body.dark {
-	background: #1F1F1F;
+	background: #0D1117;
 }
 
 
@@ -37,6 +38,116 @@ body.dark {
 .hide {
 	display: none;
 }
+
+
+/* @font-face {
+	font-family: Segoe UI;
+	src: url("fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff");
+	font-weight: 400;
+}
+@font-face {
+	font-family: Segoe UI;
+	src: url("fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff");
+	font-weight: 700;
+} */
+
+.dark .about-me .about-me__head .name {
+	color: #c9d1d9;
+}
+
+.dark .about-me .about-me__head .specialty {
+	color: #8b949e;
+}
+
+.dark .about-me__body {
+	background: #0D1117;
+	box-shadow: #21262D 0px 0px 0px 1px inset;
+}
+
+.dark .about-me__links .link {
+	background: #0D1117;
+	box-shadow: #21262D 0px 0px 0px 1px inset;
+}
+
+.dark .about-me__links .link:hover {
+	background: #000;
+}
+
+.dark .filter {
+	background: #0D1117;
+	box-shadow: #21262D 0px 0px 0px 1px inset;
+}
+
+.dark .filter a {
+	color: #8b949e;
+}
+
+.dark .filter a span {
+	color: rgb(139 148 158 / 50%);
+}
+
+.dark .filter a:hover {
+	color: #c9d1d9;
+	background: #161B22;
+}
+
+.dark .filter a.active {
+	color: #000;
+	background: #fff;
+}
+.dark .filter a.active span {
+	color: #8b949e;
+}
+
+.dark .project {
+	background: transparent;	
+   box-shadow: #30363d 0px 0px 0px 1px;
+}
+
+.dark .project:hover {
+	background: transparent;
+	box-shadow: #30363d 0px 0px 0px 1px;
+}
+
+.dark .project__container-img {
+	box-shadow:none;
+	background-color: #000;
+ }
+
+.dark .project__container-img img {
+	 opacity: 0.9;
+}
+
+.dark .project__title {
+	color: #58a6ff;
+}
+
+.dark .project__category {
+	color: #c9d1d9;
+}
+
+.dark .project__category:hover {
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,7 +291,7 @@ body.dark {
 	position: relative;
 	border-radius: 20px;
 	color: #ffffff;
-	background: #000000;
+	background: #0D1117;
 }
 
 .mfp-close-btn-in .mfp-close {

@@ -57,17 +57,19 @@
         <img src="img/links/instagram.svg" alt="">
       </a>
     </div>
+
+
   </div>
 
   <div class="container">
     <div class="projects">
 
       <div class="filter">
-        <a href="#" class="active" data-filter="all">All <span>6</span></a>
-        <a href="#" data-filter="promotion">Promotion <span>4</span></a>
-        <a href="#" data-filter="landing">Landing <span>2</span></a>
-        <a href="#" data-filter="e-commerce">E-commerce <span>0</span></a>
-        <a href="#" data-filter="social-media">Social media <span>0</span></a>
+        <a href="#" class="active" data-filter="all">All <span id="all">0</span></a>
+        <a href="#" data-filter="promotion">Promotion <span id="promotion">0</span></a>
+        <a href="#" data-filter="landing">Landing <span id="landing">0</span></a>
+        <a href="#" data-filter="e-commerce">E-commerce <span id="commerce">0</span></a>
+        <a href="#" data-filter="social-media">Social media <span id="social">0</span></a>
       </div>
 
       <div class="row">
@@ -78,8 +80,17 @@
               <img src="img/projects/project1.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">SocPult </a>
+              <div class="left">
+                <a href="#" class="project__title">SocPult </a>
+
+              </div>
+
               <div class="right">
                 <div class="tags">
                   <!-- <img src="img/tags/github.svg" alt=""> -->
@@ -103,8 +114,15 @@
               <img src="img/projects/project2.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">Delta</a>
+              <div class="left">
+                <a href="#" class="project__title">Delta</a>
+              </div>
+
               <div class="right">
                 <div class="tags">
                   <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
@@ -126,9 +144,23 @@
               <img src="img/projects/project1.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">SocPult</a>
-              <div class="project__category">promotion</div>
+              <div class="left">
+                <a href="#" class="project__title">SocPult </a>
+
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                </div>
+                <div class="project__category">promotion</div>
+              </div>
             </div>
 
             <div class="project__descr">
@@ -144,9 +176,21 @@
               <img src="img/projects/project2.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">Delta</a>
-              <div class="project__category">landing</div>
+              <div class="left">
+                <a href="#" class="project__title">Delta</a>
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                </div>
+                <div class="project__category">landing</div>
+              </div>
             </div>
 
             <div class="project__descr">
@@ -162,13 +206,57 @@
               <img src="img/projects/project1.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">SocPult</a>
-              <div class="project__category">promotion</div>
+              <div class="left">
+                <a href="#" class="project__title">SocPult </a>
+
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                </div>
+                <div class="project__category">promotion</div>
+              </div>
             </div>
 
             <div class="project__descr">
               Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae, ex.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
+          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
+            <a href="#" class="project__container-img">
+              <img src="img/projects/project2.png" alt="">
+            </a>
+
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="project__title">Delta</a>
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                </div>
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="project__descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Repudiandae, ex.
             </div>
           </div>
@@ -180,9 +268,85 @@
               <img src="img/projects/project1.png" alt="">
             </a>
 
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
             <div class="project__info">
-              <a href="#" class="project__title">SocPult</a>
-              <div class="project__category">promotion</div>
+              <div class="left">
+                <a href="#" class="project__title">SocPult </a>
+
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                </div>
+                <div class="project__category">promotion</div>
+              </div>
+            </div>
+
+            <div class="project__descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae, ex.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
+          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
+            <a href="#" class="project__container-img">
+              <img src="img/projects/project2.png" alt="">
+            </a>
+
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="project__title">Delta</a>
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                </div>
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="project__descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae, ex.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
+          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
+            <a href="#" class="project__container-img">
+              <img src="img/projects/project1.png" alt="">
+            </a>
+
+            <div class="tags">
+              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+            </div>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="project__title">SocPult </a>
+
+              </div>
+
+              <div class="right">
+                <div class="tags">
+                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                </div>
+                <div class="project__category">promotion</div>
+              </div>
             </div>
 
             <div class="project__descr">

@@ -23,12 +23,9 @@
 		flex: 1;
 	}
 
-	.filter {
-		padding: 15px;
-	}
-
 	.projects {
-		padding: 30px;
+		padding: 30px 15px;
+		overflow-y: inherit;
 	}
 
 	.btn-portfolio {
@@ -74,15 +71,29 @@
 	}
 
 	.about-me {
-		max-width: inherit;
 		position: static;
 		margin: 0 auto;
-		width: 100%;
-		padding: 0 30px;
 	}
 
 	body.dark {
 		backdrop-filter: blur(0px);
+	}
+
+	.project:hover {
+		box-shadow: none;
+	}
+
+	.filter,
+	.dark .filter  {
+		padding: 0;
+		box-shadow: none;
+		border-radius: 0;
+		background: none;
+	}
+
+	.filter a.active,
+	.filter a:hover {
+		box-shadow: none;
 	}
 
 }
