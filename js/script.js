@@ -8,17 +8,11 @@ $(document).ready(function () {
 		$('body').removeClass('dark');
 	}
 
-	$(".html").click(function () {
-		$(".projects").css("display", "none");
-		$(".page-html").css("display", "block");
-		$(this).toggleClass("active");
-	});
-
-	$(".about .bg").click(function () {
-		$(".popup").css("bottom", "-100%");
-		$(".about .bg").css("z-index", "-1");
-	});
-
+	// $(".html").click(function () {
+	// 	$(".projects").css("display", "none");
+	// 	$(".page-html").css("display", "block");
+	// 	$(this).toggleClass("active");
+	// });
 
 	$(".slider").slick({
 		slidesToShow: 1,
@@ -30,7 +24,7 @@ $(document).ready(function () {
 		nextArrow: '<div id="next"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.53 5.47a.75.75 0 0 0-1.06 1.06l1.06-1.06zm4.763 5.823l-.53.53.53-.53zm0 1.414l-.53-.53.53.53zM8.47 17.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zm0-10.94l5.293 5.293 1.06-1.06L9.53 5.47 8.47 6.53zm5.293 5.647L8.47 17.47l1.06 1.06 5.293-5.293-1.06-1.06zm0-.354a.25.25 0 0 1 0 .354l1.06 1.06a1.75 1.75 0 0 0 0-2.474l-1.06 1.06z" fill="#000"/></svg></div>'
 	});
 
-	$('.popup-projects').magnificPopup({
+	$('.open-popup').magnificPopup({
 		type: 'inline',
 
 		fixedContentPos: false,

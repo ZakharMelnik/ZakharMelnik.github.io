@@ -30,13 +30,13 @@
 
     <div class="about-me__body">
       <div class="cards">
-        <div class="card html"><img src="img/cards/html.svg" alt="">HTML5</div>
-        <div class="card css"><img src="img/cards/css.svg" alt=""> CSS3</div>
-        <div class="card js"><img src="img/cards/js.svg" alt=""> JS</div>
+        <a class="card html open-popup" href="#popup-skills"><img src="img/cards/html.svg" alt="">HTML5</a>
+        <a class="card css open-popup" href="#popup-skills"><img src="img/cards/css.svg" alt=""> CSS3</a>
+        <a class="card js open-popup" href="#popup-skills"><img src="img/cards/js.svg" alt=""> JS</a>
 
-        <div class="card webpack"><img src="img/cards/webpack.svg" alt="">Webpack</div>
+        <!-- <div class="card webpack"><img src="img/cards/webpack.svg" alt="">Webpack</div>
         <div class="card programs"><img src="img/cards/programs.svg" alt="">Programs</div>
-        <div class="card devices"><img src="img/cards/devices.svg" alt="">Devices</div>
+        <div class="card devices"><img src="img/cards/devices.svg" alt="">Devices</div> -->
       </div>
     </div>
 
@@ -64,16 +64,18 @@
 
       <div class="banner">
         <div class="filter">
-          <a href="#" class="active" id="all" data-filter="all">All</a>
-          <a href="#" id="" data-filter="promotion">Promotion</a>
-          <a href="#" id="" data-filter="landing">Landing</a>
+          <a href="#" class="active" data-filter="all">All <span>6</span></a>
+          <a href="#" data-filter="promotion">Promotion <span>4</span></a>
+          <a href="#" data-filter="landing">Landing <span>2</span></a>
+          <a href="#" data-filter="e-commerce">E-commerce <span>0</span></a>
+          <a href="#" data-filter="social-media">Social media <span>0</span></a>
         </div>
       </div>
 
       <div class="row">
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project1.png" alt="">
             </div>
@@ -91,7 +93,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project2.png" alt="">
             </div>
@@ -109,7 +111,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project1.png" alt="">
             </div>
@@ -127,7 +129,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project2.png" alt="">
             </div>
@@ -145,7 +147,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project1.png" alt="">
             </div>
@@ -163,7 +165,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <a href="#" class="project" data-tilt data-tilt-max="4" data-tilt-speed="2000" data-tilt-scale="1.05">
+          <a href="#" class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
             <div class="project__container-img">
               <img src="img/projects/project1.png" alt="">
             </div>
@@ -194,16 +196,98 @@
   </div>
 
   <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-  <div id="project-1" class="zoom-anim-dialog mfp-hide">
-    <div class="title">SocPult</div>
-    <p>
-      This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of
-      finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed. <br><br>
+  <div id="popup-skills" class="zoom-anim-dialog mfp-hide">
+    <div class="skills__container">
 
-      This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of
-      finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.
+      <div class="item html">
+        <div class="title"><img src="img/cards/html.svg" alt=""> HTML5</div>
+        <div class="descr">
+          framework Vue.js, <br>
+          BEM methodology, <br>
+          Bootstrap(only grid or full set of tools), <br>
+          accordions, <br>
+          dropdowns, <br>
+          pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
+          sliders(slick, swiper), <br>
+          lightboxes(fancybox3), <br>
+          Parallax(rellax.js), <br>
+          Tooltips(popper.js), <br>
+          charts(chart.js), <br>
+          animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending a
+          letter to the mail), <br>
+          browser support(last 5 versions).
+        </div>
+      </div>
 
-    </p>
+      <div class="item css">
+        <div class="title"><img src="img/cards/css.svg" alt=""> CSS3</div>
+        <div class="descr">
+          preprocessor SASS/SCSS, <br>
+          specification FlexBox and CSS Grid, <br>
+          Adaptive layout(media queries 1200, 992, 768, 576), <br>
+          css animation(@keyframes), <br>
+          optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
+        </div>
+      </div>
+
+      <div class="item js">
+        <div class="title"><img src="img/cards/js.svg" alt=""> JS</div>
+        <div class="descr">
+          JQuery, <br>
+          Waypoints(trigger a function when you scroll to an element), <br>
+          Configuring all listed libraries(slick, swiper, magnific-popup,
+          fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
+        </div>
+      </div>
+
+      <div class="item webpack">
+        <div class="title"><img src="img/cards/webpack.svg" alt=""> Webpack or Gulp</div>
+        <div class="descr">
+          The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
+          automatic conversion of fonts to WOFF format with compression equal to the original and optimal
+          level of image compression.
+        </div>
+      </div>
+
+      <div class="item programs">
+        <div class="title"><img src="img/cards/programs.svg" alt=""> Programs</div>
+        <div class="descr">
+          VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
+        </div>
+      </div>
+      <div class="item other">
+        <div class="title">Other</div>
+        <div class="descr">
+          optimization based on Google Analytics recommendations, config file .htaccess (for caching files and remove
+          .html in the site address), Git
+        </div>
+      </div>
+
+      <div class="item environment">
+        <div class="title"><img src="img/cards/devices.svg" alt=""> Working environment</div>
+        <div class="descr">
+          PC
+          Operating system: Windows 10 Pro <br>
+          Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
+          Processor: Intel Core i5-7500 3.40GHz <br>
+          RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
+          Video card: NVIDIA GeForce GTX 760, 2 GB <br>
+          Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
+          Body: MSI MAG VAMPIRIC 010M Black <br>
+          Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
+          Mouse: Xiaomi Mi Gaming Mouse <br>
+          Keyboard: pending Logitech k380 <br> <br>
+
+          MacBook Air (Early 2015, model A1465) <br>
+          Operating system: MacOS Catalina <br>
+          Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
+          RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
+          Video card: Intel HD Graphics 6000 1536 MB <br>
+          Memory: Apple SSD 128 GB, PCIe <br>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
