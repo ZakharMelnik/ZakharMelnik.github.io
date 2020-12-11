@@ -34,12 +34,6 @@ body.dark {
 }
 
 
-
-.hide {
-	display: none;
-}
-
-
 /* @font-face {
 	font-family: Segoe UI;
 	src: url("fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff");
@@ -65,17 +59,21 @@ body.dark {
 }
 
 .dark .about-me__links .link {
-	background: #0D1117;
-	box-shadow: #21262D 0px 0px 0px 1px inset;
+	background: #21262d;
+	box-shadow: #30363d 0px 0px 0px 1px inset;
 }
 
 .dark .about-me__links .link:hover {
-	background: #000;
+	background: #30363d;
+	box-shadow: #8b949e 0 0 0 1px inset;
+}
+.dark .about-me__links .link:active {
+	background: #161b22;
 }
 
 .dark .filter {
 	background: #0D1117;
-	box-shadow: #21262D 0px 0px 0px 1px inset;
+	box-shadow: #21262D 0px 0px 0px 1px;
 }
 
 .dark .filter a {
@@ -87,26 +85,30 @@ body.dark {
 }
 
 .dark .filter a:hover {
-	color: #c9d1d9;
-	background: #161B22;
+	color: #C9D1D9;
+}
+
+.dark .filter a:hover span {
+	color: rgb(201 209 217 / 50%);
 }
 
 .dark .filter a.active {
-	color: #000;
-	background: #fff;
+	color: #C9D1D9;
+	background: #21262D;
+	box-shadow: 0px 0px 0px 1px #292e35;
 }
 .dark .filter a.active span {
-	color: #8b949e;
+	color: rgb(201 209 217 / 50%);
 }
 
 .dark .project {
 	background: transparent;	
-   box-shadow: #30363d 0px 0px 0px 1px;
+   box-shadow: #30363d 0px 0px 0px 1px inset;
 }
 
 .dark .project:hover {
 	background: transparent;
-	box-shadow: #30363d 0px 0px 0px 1px;
+	box-shadow: #30363d 0px 0px 0px 1px inset;
 }
 
 .dark .project__container-img {
@@ -115,7 +117,7 @@ body.dark {
  }
 
 .dark .project__container-img img {
-	 opacity: 0.9;
+	 opacity: 0.85;
 }
 
 .dark .project__title {
@@ -123,7 +125,8 @@ body.dark {
 }
 
 .dark .project__category {
-	color: #c9d1d9;
+	color: #C9D1D9;
+	background: #21262D;
 }
 
 .dark .project__category:hover {
@@ -131,10 +134,15 @@ body.dark {
 }
 
 
+.dark .fadeout {
+	background: linear-gradient(0deg, #0f0f0f 0,rgba(15,15,15,0) 100%);
+}
 
 
 
-
+.hide {
+	display: none!important;
+}
 
 
 

@@ -24,12 +24,26 @@
 	}
 
 	.projects {
-		padding: 30px 15px;
-		overflow-y: inherit;
+		padding-top: 0;
+		height: inherit;
 	}
 
-	.btn-portfolio {
-		display: block;
+	.projects__container {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+		-webkit-mask-image: none;
+		padding: 0 15px 30px;
+	}
+
+	.about-me__links .link {
+		width: 50px;
+		height: 50px;
+		border-radius: 17px;
+	}
+
+	.about-me__links .link img {
+		max-width: 22px;
+		max-height: 22px;
 	}
 
 	.languages > div {
@@ -109,24 +123,4 @@
 
 @media (max-width: 320px) {
 
-	.about .about-container {
-		border-radius: 15px 15px 0 0;
-		padding: 15px;
-	}
-
-	.languages > div {
-		padding: 15px;
-	}
-
-	.languages > div img {
-		margin-bottom: 10px;
-	}
-
-	.projects {
-		padding: 30px 15px;
-	}
-
-	.projects .item {
-		margin-bottom: 15px;
-	}
 }

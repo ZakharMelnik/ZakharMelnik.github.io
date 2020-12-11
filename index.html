@@ -20,354 +20,342 @@
 </head>
 
 <body>
-  <div class="about-me">
-    <div class="about-me__head">
-      <div class="container-img theme"><img src="img/1.jpg" alt=""></div>
-      <div class="text">
-        <div class="name">Zahar Melnik</div>
-        <div class="specialty">Frontend developer</div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3">
+        <div class="about-me">
+          <div class="about-me__head">
+            <div class="container-img theme"><img src="img/1.jpg" alt=""></div>
+            <div class="text">
+              <div class="name">Zahar Melnik</div>
+              <div class="specialty">Frontend developer</div>
+            </div>
+          </div>
+
+          <div class="about-me__body">
+            <div class="cards">
+              <a class="card html open-popup" href="#popup-skills"><img src="img/cards/html.svg" alt="">HTML5</a>
+              <a class="card css open-popup" href="#popup-skills"><img src="img/cards/css.svg" alt=""> CSS3</a>
+              <a class="card js open-popup" href="#popup-skills"><img src="img/cards/js.svg" alt=""> JS</a>
+
+              <!-- <div class="card webpack"><img src="img/cards/webpack.svg" alt="">Webpack</div>
+              <div class="card programs"><img src="img/cards/programs.svg" alt="">Programs</div>
+              <div class="card devices"><img src="img/cards/devices.svg" alt="">Devices</div> -->
+            </div>
+          </div>
+
+          <div class="about-me__links">
+            <a href="tel:+380954850960" target="_blank" class="link">
+              <img src="img/links/phone.svg" alt="">
+            </a>
+            <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
+              <img src="img/links/mail.svg" alt="">
+            </a>
+            <a href="https://t.me/undefZahar" target="_blank" class="link">
+              <img src="img/links/telegram.svg" alt="">
+            </a>
+            <a href="https://github.com/undefzahar" target="_blank" class="link">
+              <img src="img/links/github.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
+              <img src="img/links/instagram.svg" alt="">
+            </a>
+          </div>
+
+
+        </div>
       </div>
-    </div>
 
-    <div class="about-me__body">
-      <div class="cards">
-        <a class="card html open-popup" href="#popup-skills"><img src="img/cards/html.svg" alt="">HTML5</a>
-        <a class="card css open-popup" href="#popup-skills"><img src="img/cards/css.svg" alt=""> CSS3</a>
-        <a class="card js open-popup" href="#popup-skills"><img src="img/cards/js.svg" alt=""> JS</a>
+      <div class="col-xl-9">
+        <div class="projects">
 
-        <!-- <div class="card webpack"><img src="img/cards/webpack.svg" alt="">Webpack</div>
-        <div class="card programs"><img src="img/cards/programs.svg" alt="">Programs</div>
-        <div class="card devices"><img src="img/cards/devices.svg" alt="">Devices</div> -->
+          <div class="filter">
+            <a href="#" class="active" data-filter="all">All <span id="all">0</span></a>
+            <a href="#" data-filter="promotion">Promotion <span id="promotion">0</span></a>
+            <a href="#" data-filter="landing">Landing <span id="landing">0</span></a>
+            <a href="#" data-filter="e-commerce">E-commerce <span id="commerce">0</span></a>
+            <a href="#" data-filter="social-media">Social media <span id="social">0</span></a>
+          </div>
+
+          <div class="projects__container">
+
+            <div class="project" data-cat="promotion">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project1.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">SocPult </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <!-- <img src="img/tags/github.svg" alt=""> -->
+                    <img src="img/tags/vue.svg" alt="vue" id="tooltip-vue">
+                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                  </div>
+                  <div class="project__category">promotion</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project2.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">Delta</a>
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                  </div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="promotion">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project1.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">SocPult </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                  </div>
+                  <div class="project__category">promotion</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project2.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">Delta</a>
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                  </div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="promotion">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project1.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">SocPult </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                  </div>
+                  <div class="project__category">promotion</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project2.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">Delta</a>
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                  </div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="promotion">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project1.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">SocPult </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                  </div>
+                  <div class="project__category">promotion</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project2.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">Delta</a>
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
+                  </div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="promotion">
+              <a href="#" class="project__container-img">
+                <img src="img/projects/project1.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="#" class="project__title">SocPult </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="tags">
+                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
+                  </div>
+                  <div class="project__category">promotion</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
-
-    <div class="about-me__links">
-      <a href="tel:+380954850960" target="_blank" class="link">
-        <img src="img/links/phone.svg" alt="">
-      </a>
-      <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
-        <img src="img/links/mail.svg" alt="">
-      </a>
-      <a href="https://t.me/undefZahar" target="_blank" class="link">
-        <img src="img/links/telegram.svg" alt="">
-      </a>
-      <a href="https://github.com/undefzahar" target="_blank" class="link">
-        <img src="img/links/github.svg" alt="">
-      </a>
-      <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
-        <img src="img/links/instagram.svg" alt="">
-      </a>
-    </div>
-
-
   </div>
 
-  <div class="container">
-    <div class="projects">
+  <div class="page-html">
+    <div class="title">HTML5</div>
+    <div class="subtitle"></div>
 
-      <div class="filter">
-        <a href="#" class="active" data-filter="all">All <span id="all">0</span></a>
-        <a href="#" data-filter="promotion">Promotion <span id="promotion">0</span></a>
-        <a href="#" data-filter="landing">Landing <span id="landing">0</span></a>
-        <a href="#" data-filter="e-commerce">E-commerce <span id="commerce">0</span></a>
-        <a href="#" data-filter="social-media">Social media <span id="social">0</span></a>
-      </div>
-
-      <div class="row">
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project1.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">SocPult </a>
-
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <!-- <img src="img/tags/github.svg" alt=""> -->
-                  <img src="img/tags/vue.svg" alt="vue" id="tooltip-vue">
-                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                </div>
-                <div class="project__category">promotion</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project2.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">Delta</a>
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                </div>
-                <div class="project__category">landing</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project1.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">SocPult </a>
-
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                </div>
-                <div class="project__category">promotion</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project2.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">Delta</a>
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                </div>
-                <div class="project__category">landing</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project1.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">SocPult </a>
-
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                </div>
-                <div class="project__category">promotion</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project2.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">Delta</a>
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                </div>
-                <div class="project__category">landing</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project1.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">SocPult </a>
-
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                </div>
-                <div class="project__category">promotion</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="landing">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project2.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">Delta</a>
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                </div>
-                <div class="project__category">landing</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-lg-6 col-md-12" data-cat="promotion">
-          <div class="project" data-tilt data-tilt-max="5" data-tilt-speed="2000" data-tilt-scale="1.05">
-            <a href="#" class="project__container-img">
-              <img src="img/projects/project1.png" alt="">
-            </a>
-
-            <div class="tags">
-              <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-              <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
-            </div>
-
-            <div class="project__info">
-              <div class="left">
-                <a href="#" class="project__title">SocPult </a>
-
-              </div>
-
-              <div class="right">
-                <div class="tags">
-                  <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                </div>
-                <div class="project__category">promotion</div>
-              </div>
-            </div>
-
-            <div class="project__descr">
-              Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae, ex.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="page-html">
-      <div class="title">HTML5</div>
-      <div class="subtitle"></div>
-
-      <div class="descr"></div>
-    </div>
-
-
+    <div class="descr"></div>
   </div>
 
   <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
