@@ -39,7 +39,7 @@
 
 .about-me .about-me__head .name {
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 22px;
 	line-height: 28px;
 	color: #000;
@@ -186,7 +186,7 @@
 
 .projects .title {
 	font-size: 28px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 30px;
 	color: #ffffff;
 }
