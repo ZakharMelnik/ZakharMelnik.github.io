@@ -103,6 +103,7 @@
 		box-shadow: none;
 		border-radius: 0;
 		background: none;
+		overflow-x: auto;
 	}
 
 	.filter a.active,

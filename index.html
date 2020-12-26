@@ -24,13 +24,41 @@
     <div class="row">
 
       <div class="col-xl-3">
+        <div class="about-me__head">
+          <div class="container-img theme"><img src="img/1.jpg" alt=""></div>
+          <div class="text">
+            <div class="name">Zahar Melnik</div>
+            <div class="specialty">Frontend developer</div>
+          </div>
+        </div>
+
         <div class="about-me">
-          <div class="about-me__head">
-            <div class="container-img theme"><img src="img/1.jpg" alt=""></div>
-            <div class="text">
-              <div class="name">Zahar Melnik</div>
-              <div class="specialty">Frontend developer</div>
+          <div class="work-experience">
+            <div class="left">
+              <div class="title">work experience:</div>
+              <div class="date"></div>
             </div>
+
+            <div class="container-img"><img src="img/icons/person.png" alt=""></div>
+          </div>
+
+          <div class="about-me__links">
+            <a href="tel:+380954850960" target="_blank" class="link wow fadeInUp" data-wow-delay=".4s">
+              <img src="img/links/phone.svg" alt="">
+            </a>
+            <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link wow fadeInUp" data-wow-delay=".5s">
+              <img src="img/links/mail.svg" alt="">
+            </a>
+            <a href="https://t.me/undefZahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".6s">
+              <img src="img/links/telegram.svg" alt="">
+            </a>
+            <a href="https://github.com/undefzahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".7s">
+              <img src="img/links/github.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link wow fadeInUp"
+              data-wow-delay=".8s">
+              <img src="img/links/instagram.svg" alt="">
+            </a>
           </div>
 
           <div class="about-me__body">
@@ -38,33 +66,69 @@
               <a class="card html open-popup" href="#popup-skills"><img src="img/cards/html.svg" alt="">HTML5</a>
               <a class="card css open-popup" href="#popup-skills"><img src="img/cards/css.svg" alt=""> CSS3</a>
               <a class="card js open-popup" href="#popup-skills"><img src="img/cards/js.svg" alt=""> JS</a>
-
-              <!-- <div class="card webpack"><img src="img/cards/webpack.svg" alt="">Webpack</div>
-              <div class="card programs"><img src="img/cards/programs.svg" alt="">Programs</div>
-              <div class="card devices"><img src="img/cards/devices.svg" alt="">Devices</div> -->
             </div>
           </div>
 
-          <div class="about-me__links">
-            <a href="tel:+380954850960" target="_blank" class="link">
-              <img src="img/links/phone.svg" alt="">
-            </a>
-            <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
-              <img src="img/links/mail.svg" alt="">
-            </a>
-            <a href="https://t.me/undefZahar" target="_blank" class="link">
-              <img src="img/links/telegram.svg" alt="">
-            </a>
-            <a href="https://github.com/undefzahar" target="_blank" class="link">
-              <img src="img/links/github.svg" alt="">
-            </a>
-            <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
-              <img src="img/links/instagram.svg" alt="">
-            </a>
+          <div class="menu">
+            <div class="title">MENU</div>
+
+            <div class="link link-portfolio active">
+              <div class="left">
+                <div class="icon"><img src="img/icons/portfolio.svg" alt=""></div>
+                <div class="title">Portfolio</div>
+              </div>
+
+              <div class="right">
+                <span></span>
+                <img src="img/icons/arrow-right.svg" alt="">
+              </div>
+            </div>
+
+            <div class="link link-about">
+              <div class="left">
+                <div class="icon"><img src="img/icons/user.svg" alt=""></div>
+                <div class="title">About me</div>
+              </div>
+              <div class="right"><img src="img/icons/arrow-right.svg" alt=""></div>
+            </div>
+
+            <div class="link link-skills">
+              <div class="left">
+                <div class="icon"><img src="img/icons/skills.svg" alt=""></div>
+                <div class="title">Skills</div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="link">
+              <div class="left">
+                <div class="icon"><img src="img/icons/webpack.svg" alt=""></div>
+                <div class="title">Webpack</div>
+              </div>
+
+              <div class="right"><img src="img/icons/arrow-right.svg" alt=""></div>
+            </div>
+
+            <div class="link">
+              <div class="left">
+                <div class="icon"><img src="img/icons/settings.svg" alt=""></div>
+                <div class="title">Settings</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="about-me__resume">
+          <div class="text">
+            <div class="title" id="pageTimer">Check out my resume</div>
+            <a href="resume.docx">Download <img src="img/icons/arrow-down.svg" alt=""></a>
           </div>
 
-
+          <div class="doc"><img src="img/resume.png" alt=""></div>
         </div>
+
       </div>
 
       <div class="col-xl-9">
@@ -140,27 +204,52 @@
               </div>
             </div>
 
-            <div class="project" data-cat="promotion">
-              <a href="#" class="project__container-img">
-                <img src="img/projects/project1.png" alt="">
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/FaresFund" class="project__container-img">
+                <img src="img/projects/FaresFund.png" alt="">
               </a>
 
               <div class="tags">
-                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/FaresFund" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
               </div>
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">SocPult </a>
+                  <a href="https://undefzahar.github.io/FaresFund" class="project__title">FaresFund</a>
 
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                  </div>
-                  <div class="project__category">promotion</div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/SunWayUa/" class="project__container-img">
+                <img src="img/projects/SunWay.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://s-w.com.ua/" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/SunWayUa/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/SunWayUa/" class="project__title">SunWay </a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
                 </div>
               </div>
 
@@ -172,7 +261,7 @@
 
             <div class="project" data-cat="landing">
               <a href="#" class="project__container-img">
-                <img src="img/projects/project2.png" alt="">
+                <img src="img/projects/SocPult-landing.png" alt="">
               </a>
 
               <div class="tags">
@@ -181,13 +270,10 @@
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">Delta</a>
+                  <a href="#" class="project__title">SocPult - landing</a>
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                  </div>
                   <div class="project__category">landing</div>
                 </div>
               </div>
@@ -198,27 +284,24 @@
               </div>
             </div>
 
-            <div class="project" data-cat="promotion">
-              <a href="#" class="project__container-img">
-                <img src="img/projects/project1.png" alt="">
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/test/" class="project__container-img">
+                <img src="img/projects/CryptoBot.png" alt="">
               </a>
 
               <div class="tags">
-                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/test/" class="tag" target="_blank"><img src="img/tags/github.svg"
+                    alt=""></a>
               </div>
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">SocPult </a>
+                  <a href="https://undefzahar.github.io/test/" class="project__title">CryptoBot</a>
 
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                  </div>
-                  <div class="project__category">promotion</div>
+                  <div class="project__category">landing</div>
                 </div>
               </div>
 
@@ -230,7 +313,7 @@
 
             <div class="project" data-cat="landing">
               <a href="#" class="project__container-img">
-                <img src="img/projects/project2.png" alt="">
+                <img src="img/projects/Atlanta.png" alt="">
               </a>
 
               <div class="tags">
@@ -239,13 +322,10 @@
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">Delta</a>
+                  <a href="#" class="project__title">Atlanta</a>
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                  </div>
                   <div class="project__category">landing</div>
                 </div>
               </div>
@@ -256,27 +336,24 @@
               </div>
             </div>
 
-            <div class="project" data-cat="promotion">
-              <a href="#" class="project__container-img">
-                <img src="img/projects/project1.png" alt="">
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/SquareSelection/" class="project__container-img">
+                <img src="img/projects/SquareSelection.png" alt="">
               </a>
 
               <div class="tags">
-                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/SquareSelection/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
               </div>
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">SocPult </a>
+                  <a href="https://undefzahar.github.io/SquareSelection/" class="project__title">SquareSelection</a>
 
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                  </div>
-                  <div class="project__category">promotion</div>
+                  <div class="project__category">landing</div>
                 </div>
               </div>
 
@@ -287,23 +364,21 @@
             </div>
 
             <div class="project" data-cat="landing">
-              <a href="#" class="project__container-img">
-                <img src="img/projects/project2.png" alt="">
+              <a href="https://undefzahar.github.io/futures/" class="project__container-img">
+                <img src="img/projects/Futures.png" alt="">
               </a>
 
               <div class="tags">
-                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/futures/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
               </div>
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">Delta</a>
+                  <a href="https://undefzahar.github.io/futures/" class="project__title">Futures</a>
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/gulp.svg" alt="" id="tooltip-gulp">
-                  </div>
                   <div class="project__category">landing</div>
                 </div>
               </div>
@@ -314,27 +389,319 @@
               </div>
             </div>
 
-            <div class="project" data-cat="promotion">
-              <a href="#" class="project__container-img">
-                <img src="img/projects/project1.png" alt="">
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/BoxedTrips/" class="project__container-img">
+                <img src="img/projects/BoxedTrips.png" alt="">
               </a>
 
               <div class="tags">
-                <a href="#" class="tag" target="_blank"><img src="img/tags/link.svg" alt=""></a>
-                <a href="#" class="tag" target="_blank"><img src="img/tags/github.svg" alt=""></a>
+                <a href="https://undefzahar.github.io/BoxedTrips/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
               </div>
 
               <div class="project__info">
                 <div class="left">
-                  <a href="#" class="project__title">SocPult </a>
+                  <a href="https://undefzahar.github.io/BoxedTrips/" class="project__title">BoxedTrips</a>
 
                 </div>
 
                 <div class="right">
-                  <div class="tags">
-                    <img src="img/tags/webpack.svg" alt="webpack" id="tooltip-webpack">
-                  </div>
-                  <div class="project__category">promotion</div>
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/100bitcoins/" class="project__container-img">
+                <img src="img/projects/100Bitcoins.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/100bitcoins/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/100bitcoins/" class="project__title">100Bitcoins</a>
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/aqua-land/" class="project__container-img">
+                <img src="img/projects/AquaLand.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/aqua-land/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/aqua-land/" class="project__title">AquaLand</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/B2B" class="project__container-img">
+                <img src="img/projects/B2B.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/B2B" class="tag" target="_blank"><img src="img/tags/github.svg"
+                    alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/B2B" class="project__title">B2B</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/Quantcloud/" class="project__container-img">
+                <img src="img/projects/Quantcloud.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/Quantcloud/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/Quantcloud/" class="project__title">Quantcloud</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/Toast/" class="project__container-img">
+                <img src="img/projects/Toast.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/Toast/" class="tag" target="_blank"><img src="img/tags/github.svg"
+                    alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/Toast/" class="project__title">Toast</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/ProjectKripto/" class="project__container-img">
+                <img src="img/projects/ProjectKripto.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/ProjectKripto/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/ProjectKripto/" class="project__title">ProjectCrypto</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/BuyCrypt/" class="project__container-img">
+                <img src="img/projects/BuyCrypt.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/BuyCrypt/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/BuyCrypt/" class="project__title">BuyCrypt</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/Kappi/" class="project__container-img">
+                <img src="img/projects/Kappi.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/Kappi/" class="tag" target="_blank"><img src="img/tags/github.svg"
+                    alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/Kappi/" class="project__title">Kappi</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/RealBoost/" class="project__container-img">
+                <img src="img/projects/RealBoost.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/RealBoost/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/RealBoost/" class="project__title">RealBoost</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/SculptorTela/" class="project__container-img">
+                <img src="img/projects/SculptorTela.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/SculptorTela/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/SculptorTela/" class="project__title">SculptorTela</a>
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
+                </div>
+              </div>
+
+              <div class="project__descr">
+                Social media promotion Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae, ex.
+              </div>
+            </div>
+
+            <div class="project" data-cat="landing">
+              <a href="https://undefzahar.github.io/Sartorius/" class="project__container-img">
+                <img src="img/projects/Sartorius.png" alt="">
+              </a>
+
+              <div class="tags">
+                <a href="https://undefzahar.github.io/Sartorius/" class="tag" target="_blank"><img
+                    src="img/tags/github.svg" alt=""></a>
+              </div>
+
+              <div class="project__info">
+                <div class="left">
+                  <a href="https://undefzahar.github.io/Sartorius/" class="project__title">Sartorius</a>
+
+                </div>
+
+                <div class="right">
+                  <div class="project__category">landing</div>
                 </div>
               </div>
 
@@ -349,6 +716,11 @@
       </div>
 
     </div>
+
+    <div class="support">
+      <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+    </div>
   </div>
 
   <div class="page-html">
@@ -359,102 +731,104 @@
   </div>
 
   <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-  <div id="popup-skills" class="zoom-anim-dialog mfp-hide">
-    <div class="skills__container">
 
-      <div class="item html">
-        <div class="title"><img src="img/cards/html.svg" alt=""> HTML5</div>
-        <div class="descr">
-          framework Vue.js, <br>
-          BEM methodology, <br>
-          Bootstrap(only grid or full set of tools), <br>
-          accordions, <br>
-          dropdowns, <br>
-          pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
-          sliders(slick, swiper), <br>
-          lightboxes(fancybox3), <br>
-          Parallax(rellax.js), <br>
-          Tooltips(Tippy.js, Popper.js), <br>
-          charts(chart.js), <br>
-          animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending a
-          letter to the mail), <br>
-          browser support(last 5 versions).
+  <div class="bg-popup">
+    <div class="popup-skills">
+      <div class="skills__container">
+
+        <div class="item html">
+          <div class="title"><img src="img/cards/html.svg" alt=""> HTML5</div>
+          <div class="descr">
+            framework Vue.js, <br>
+            BEM methodology, <br>
+            Bootstrap(only grid or full set of tools), <br>
+            accordions, <br>
+            dropdowns, <br>
+            pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
+            sliders(slick, swiper), <br>
+            lightboxes(fancybox3), <br>
+            Parallax(rellax.js), <br>
+            Tooltips(Tippy.js, Popper.js), <br>
+            charts(chart.js), <br>
+            animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending a
+            letter to the mail), <br>
+            browser support(last 5 versions).
+          </div>
         </div>
-      </div>
 
-      <div class="item css">
-        <div class="title"><img src="img/cards/css.svg" alt=""> CSS3</div>
-        <div class="descr">
-          preprocessor SASS/SCSS, <br>
-          specification FlexBox and CSS Grid, <br>
-          Adaptive layout(media queries 1200, 992, 768, 576), <br>
-          css animation(@keyframes), <br>
-          optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
+        <div class="item css">
+          <div class="title"><img src="img/cards/css.svg" alt=""> CSS3</div>
+          <div class="descr">
+            preprocessor SASS/SCSS, <br>
+            specification FlexBox and CSS Grid, <br>
+            Adaptive layout(media queries 1200, 992, 768, 576), <br>
+            css animation(@keyframes), <br>
+            optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
+          </div>
         </div>
-      </div>
 
-      <div class="item js">
-        <div class="title"><img src="img/cards/js.svg" alt=""> JS</div>
-        <div class="descr">
-          JQuery, <br>
-          Waypoints(trigger a function when you scroll to an element), <br>
-          Configuring all listed libraries(slick, swiper, magnific-popup,
-          fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
+        <div class="item js">
+          <div class="title"><img src="img/cards/js.svg" alt=""> JS</div>
+          <div class="descr">
+            JQuery, <br>
+            Waypoints(trigger a function when you scroll to an element), <br>
+            Configuring all listed libraries(slick, swiper, magnific-popup,
+            fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
+          </div>
         </div>
-      </div>
 
-      <div class="item webpack">
-        <div class="title"><img src="img/cards/webpack.svg" alt=""> Webpack or Gulp</div>
-        <div class="descr">
-          The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
-          automatic conversion of fonts to WOFF format with compression equal to the original and optimal
-          level of image compression.
+        <div class="item webpack">
+          <div class="title"><img src="img/cards/webpack.svg" alt=""> Webpack or Gulp</div>
+          <div class="descr">
+            The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
+            automatic conversion of fonts to WOFF format with compression equal to the original and optimal
+            level of image compression.
+          </div>
         </div>
-      </div>
 
-      <div class="item programs">
-        <div class="title"><img src="img/cards/programs.svg" alt=""> Programs</div>
-        <div class="descr">
-          VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
+        <div class="item programs">
+          <div class="title"><img src="img/cards/programs.svg" alt=""> Programs</div>
+          <div class="descr">
+            VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
+          </div>
         </div>
-      </div>
-      <div class="item other">
-        <div class="title">Other</div>
-        <div class="descr">
-          optimization based on Google Analytics recommendations, config file .htaccess (for caching files and remove
-          .html in the site address), Git
+        <div class="item other">
+          <div class="title">Other</div>
+          <div class="descr">
+            optimization based on Google Analytics recommendations, config file .htaccess (for caching files and remove
+            .html in the site address), Git
+          </div>
         </div>
-      </div>
 
-      <div class="item environment">
-        <div class="title"><img src="img/cards/devices.svg" alt=""> Working environment</div>
-        <div class="descr">
-          PC
-          Operating system: Windows 10 Pro <br>
-          Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
-          Processor: Intel Core i5-7500 3.40GHz <br>
-          RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
-          Video card: NVIDIA GeForce GTX 760, 2 GB <br>
-          Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
-          Body: MSI MAG VAMPIRIC 010M Black <br>
-          Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
-          Mouse: Xiaomi Mi Gaming Mouse <br>
-          Keyboard: pending Logitech k380 <br> <br>
+        <div class="item environment">
+          <div class="title"><img src="img/cards/devices.svg" alt=""> Working environment</div>
+          <div class="descr">
+            PC
+            Operating system: Windows 10 Pro <br>
+            Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
+            Processor: Intel Core i5-7500 3.40GHz <br>
+            RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
+            Video card: NVIDIA GeForce GTX 760, 2 GB <br>
+            Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
+            Body: MSI MAG VAMPIRIC 010M Black <br>
+            Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
+            Mouse: Xiaomi Mi Gaming Mouse <br>
+            Keyboard: pending Logitech k380 <br> <br>
 
-          MacBook Air (Early 2015, model A1465) <br>
-          Operating system: MacOS Catalina <br>
-          Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
-          RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
-          Video card: Intel HD Graphics 6000 1536 MB <br>
-          Memory: Apple SSD 128 GB, PCIe <br>
+            MacBook Air (Early 2015, model A1465) <br>
+            Operating system: MacOS Catalina <br>
+            Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
+            RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
+            Video card: Intel HD Graphics 6000 1536 MB <br>
+            Memory: Apple SSD 128 GB, PCIe <br>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
-
-
+  <script src="js/moment.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/typed.min.js"></script>
@@ -466,6 +840,7 @@
   <script src="js/rellax.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+
 </body>
 
 </html>
