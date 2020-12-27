@@ -63,11 +63,10 @@ $(document).ready(function () {
 	$('.filter a span#social').html($('.project').filter('[data-cat="social"]').length)
 	
 
-	$('.theme').click(function () {
+	$('.link-theme').click(function () {
 		if (localStorage.getItem('theme') == 'dark') {
 			localStorage.setItem('theme', 'light');
 			$('body').removeClass('dark');
-			
 		} else {
 			localStorage.setItem('theme', 'dark');
 			$('body').addClass('dark');

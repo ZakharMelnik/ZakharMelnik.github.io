@@ -46,11 +46,11 @@ body.dark {
 	font-weight: 700;
 } */
 
-.dark .about-me__head .name {
-	color: #c9d1d9;
+.dark .head .name {
+	color: #fff;
 }
 
-.dark .about-me__head .specialty {
+.dark .head .specialty {
 	color: #8b949e;
 }
 
@@ -60,7 +60,7 @@ body.dark {
 }
 
 .dark .about-me__links .link {
-	background: #21262d;
+	background: #171e29;
 	box-shadow: #30363d 0px 0px 0px 1px inset;
 }
 
@@ -138,6 +138,13 @@ body.dark {
 	background: linear-gradient(0deg, #0f0f0f 0,rgba(15,15,15,0) 100%);
 }
 
+.dark .theme-dark {
+	display: block;
+}
+.dark .theme-light {
+	display: none;
+}
+
 
 
 .hide {
@@ -145,7 +152,8 @@ body.dark {
 }
 
 hr {
-	border-color: #21262d;
+	border-color: #20232A;
+	margin: 10px 0;
 }
 
 

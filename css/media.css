@@ -84,9 +84,19 @@
 		height: 100%;
 	}
 
+	.menu {
+		padding: 0 15px;
+  	}
+
 	.about-me {
 		position: static;
-		margin: 0 auto;
+		padding: 0;
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+	.menu .link {
+		padding: 12px 15px;
 	}
 
 	body.dark {
@@ -97,18 +107,20 @@
 		box-shadow: none;
 	}
 
-	.filter,
-	.dark .filter  {
-		padding: 0;
-		box-shadow: none;
-		border-radius: 0;
-		background: none;
-		overflow-x: auto;
+	.filter {
+		display: none;
 	}
 
-	.filter a.active,
-	.filter a:hover {
-		box-shadow: none;
+	.projects {
+		display: none;
+	}
+
+	.head-container {
+		margin: 30px 15px 20px;
+	}
+
+	.head {
+		padding: 15px;
 	}
 
 }
