@@ -663,8 +663,7 @@
 }
 
 .content {
-	display: none;
-	height: 100vh;
+
 }
 
 .content.show {
@@ -707,7 +706,7 @@
 	border-radius: 17px;
 	z-index: 10;
 }
-
+.content .content-menu:hover,
 .content .content-menu:active {
 	background: #171e29;
 }
@@ -759,7 +758,9 @@
 	font-size: 14px;
 }
 
-.mobile-menu .link:active {
+.mobile-menu .link:hover,
+.mobile-menu .link:active,
+.mobile-menu .link.active {
 	background: #171e29;
 }
 
