@@ -111,8 +111,6 @@ $('.content .content-menu').click(function () {
 	$('.mobile-menu').toggleClass('show');
 });
 
-$('.content-head').click(function () {
-	if ($('.mobile-menu').hasClass('show')) {
-		$('.mobile-menu').removeClass('show');
-	}
+$('.bg-menu').click(function () {
+	$('.mobile-menu').removeClass('show');
 });
