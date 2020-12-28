@@ -708,6 +708,10 @@
 	z-index: 10;
 }
 
+.content .content-menu:active {
+	background: #171e29;
+}
+
 .content .back img {
 	-margin-right: 15px;
 }
@@ -755,6 +759,10 @@
 	font-size: 14px;
 }
 
+.mobile-menu .link:active {
+	background: #171e29;
+}
+
 .mobile-menu .link:not(:last-of-type) {
 	margin-bottom: 5px;
 }
@@ -782,6 +790,7 @@
 	left: 0;
 	right: 0;
 	background: rgba(13, 17, 23, .5);
+	-webkit-backdrop-filter: blur(15px);
 	backdrop-filter: blur(15px);
 	display: none;
 }
