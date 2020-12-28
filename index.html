@@ -24,30 +24,29 @@
     <div class="row">
 
       <div class="col-xl-3">
+        <div class="left-col">
 
-        <div class="head-container">
-          <div class="head">
-            <div class="container-img"><img src="img/1.jpg" alt=""></div>
-            <div class="text">
-              <div class="name">Zahar Melnik</div>
-              <div class="specialty">Frontend developer</div>
+          <!-- head -->
+          <div class="head-container">
+            <div class="head">
+              <div class="container-img"><img src="img/1.jpg" alt=""></div>
+              <div class="text">
+                <div class="name">Zahar Melnik</div>
+                <div class="specialty">Frontend developer</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="work-experience">
-          <div class="left">
-            <div class="title">work experience:</div>
-            <div class="date"></div>
+          <!-- work-experience -->
+          <div class="work-experience">
+            <div class="left">
+              <div class="title">work experience:</div>
+              <div class="date"></div>
+            </div>
+            <div class="container-img"><img src="img/icons/person.png" alt=""></div>
           </div>
-          <div class="container-img"><img src="img/icons/person.png" alt=""></div>
-        </div>
 
-        <div class="about-me">
-
-
-
-
+          <!-- 3 card -->
           <div class="about-me__body">
             <div class="cards">
               <a class="card html open-popup" href="#popup-skills"><img src="img/cards/html.svg" alt="">HTML5</a>
@@ -56,10 +55,11 @@
             </div>
           </div>
 
+          <!-- Menu -->
           <div class="menu">
             <div class="title">Menu</div>
 
-            <div class="link link-portfolio active">
+            <div class="link link-projects active">
               <div class="left">
                 <div class="icon"><img src="img/icons/portfolio.svg" alt=""></div>
                 <div class="title">Projects</div>
@@ -86,14 +86,14 @@
 
             <div class="title">Useful</div>
 
-            <div class="link">
+            <div class="link link-webpack">
               <div class="left">
                 <div class="icon"><img src="img/icons/webpack.svg" alt=""></div>
                 <div class="title">Webpack</div>
               </div>
             </div>
 
-            <div class="link">
+            <div class="link link-gulp">
               <div class="left">
                 <div class="icon"><img src="img/icons/webpack.svg" alt=""></div>
                 <div class="title">Gulp</div>
@@ -114,7 +114,7 @@
               </div>
             </div>
 
-            <div class="link">
+            <div class="link link-lang">
               <div class="left">
                 <div class="icon"><img src="img/icons/languages.svg" alt=""></div>
                 <div class="title">Languages</div>
@@ -124,40 +124,42 @@
             </div>
 
           </div>
-        </div>
 
-        <div class="about-me__links">
-          <a href="tel:+380954850960" target="_blank" class="link wow fadeInUp" data-wow-delay=".4s">
-            <img src="img/links/phone.svg" alt="">
-          </a>
-          <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link wow fadeInUp" data-wow-delay=".5s">
-            <img src="img/links/mail.svg" alt="">
-          </a>
-          <a href="https://t.me/undefZahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".6s">
-            <img src="img/links/telegram.svg" alt="">
-          </a>
-          <a href="https://github.com/undefzahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".7s">
-            <img src="img/links/github.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link wow fadeInUp"
-            data-wow-delay=".8s">
-            <img src="img/links/instagram.svg" alt="">
-          </a>
-        </div>
-
-        <div class="about-me__resume">
-          <div class="text">
-            <div class="title" id="pageTimer">Check out my resume</div>
-            <a href="resume.docx">Download <img src="img/icons/arrow-down.svg" alt=""></a>
+          <!-- Links -->
+          <div class="about-me__links">
+            <a href="tel:+380954850960" target="_blank" class="link wow fadeInUp" data-wow-delay=".4s">
+              <img src="img/links/phone.svg" alt="">
+            </a>
+            <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link wow fadeInUp" data-wow-delay=".5s">
+              <img src="img/links/mail.svg" alt="">
+            </a>
+            <a href="https://t.me/undefZahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".6s">
+              <img src="img/links/telegram.svg" alt="">
+            </a>
+            <a href="https://github.com/undefzahar" target="_blank" class="link wow fadeInUp" data-wow-delay=".7s">
+              <img src="img/links/github.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link wow fadeInUp"
+              data-wow-delay=".8s">
+              <img src="img/links/instagram.svg" alt="">
+            </a>
           </div>
 
-          <div class="doc"><img src="img/resume.png" alt=""></div>
-        </div>
+          <!-- Resume -->
+          <div class="about-me__resume">
+            <div class="text">
+              <div class="title" id="pageTimer">Check out my resume</div>
+              <a href="resume.docx">Download <img src="img/icons/arrow-down.svg" alt=""></a>
+            </div>
 
+            <div class="doc"><img src="img/resume.png" alt=""></div>
+          </div>
+
+        </div>
       </div>
 
       <div class="col-xl-9">
-        <div class="projects">
+        <section class="content content-projects show">
 
           <div class="filter">
             <a href="#" class="active" data-filter="all">All <span id="all">0</span></a>
@@ -737,7 +739,59 @@
             </div>
           </div>
 
-        </div>
+        </section>
+
+        <section class="content content-about">
+          <div class="content-head">
+            <div class="back"><img src="img/icons/back.svg" alt=""></div>
+            <div class="title">About</div>
+          </div>
+
+          <div class="content-body">
+            <div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit, doloribus
+              voluptas quis nostrum eveniet inventore nam laborum! Doloribus ducimus sunt sequi accusantium, tempore
+              quasi porro consequuntur nisi sint rem.</div>
+          </div>
+        </section>
+
+        <section class="content content-skills">
+          <div class="content-head">
+            <div class="back"><img src="img/icons/back.svg" alt=""></div>
+            <div class="title">Skills</div>
+          </div>
+
+          <div class="content-body">
+            <div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit, doloribus
+              voluptas quis nostrum eveniet inventore nam laborum! Doloribus ducimus sunt sequi accusantium, tempore
+              quasi porro consequuntur nisi sint rem.</div>
+          </div>
+        </section>
+
+        <section class="content content-webpack">
+          <div class="content-head">
+            <div class="back"><img src="img/icons/back.svg" alt=""></div>
+            <div class="title">webpack</div>
+          </div>
+
+          <div class="content-body">
+            <div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit, doloribus
+              voluptas quis nostrum eveniet inventore nam laborum! Doloribus ducimus sunt sequi accusantium, tempore
+              quasi porro consequuntur nisi sint rem.</div>
+          </div>
+        </section>
+
+        <section class="content content-gulp">
+          <div class="content-head">
+            <div class="back"><img src="img/icons/back.svg" alt=""></div>
+            <div class="title">gulp</div>
+          </div>
+
+          <div class="content-body">
+            <div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint suscipit, doloribus
+              voluptas quis nostrum eveniet inventore nam laborum! Doloribus ducimus sunt sequi accusantium, tempore
+              quasi porro consequuntur nisi sint rem.</div>
+          </div>
+        </section>
       </div>
 
     </div>

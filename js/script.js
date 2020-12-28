@@ -56,7 +56,7 @@ $(document).ready(function () {
 	});
 
 	$('.filter a span#all').html($('.project').filter('[data-cat]').length)
-	$('.link-portfolio span').html($('.project').filter('[data-cat]').length)
+	$('.link-projects span').html($('.project').filter('[data-cat]').length)
 	$('.filter a span#promotion').html($('.project').filter('[data-cat="promotion"]').length)
 	$('.filter a span#landing').html($('.project').filter('[data-cat="landing"]').length)
 	$('.filter a span#commerce').html($('.project').filter('[data-cat="commerce"]').length)
@@ -99,10 +99,62 @@ $('.work-experience .date').html(years + ' years ' + months + ' months ');
 
 
 
-$('.link.link-skills').click(function() {
-	$('.bg-popup').toggleClass('show');
+// $('.link.link-skills').click(function() {
+// 	$('.bg-popup').toggleClass('show');
+// });
+
+// $('.bg-popup').click(function() {
+// 	$(this).removeClass('show');
+// });
+
+$('.link-projects').click(function() {
+	$('.link').removeClass('active');
+	$('.content').removeClass('show');
+	$('.left-col').toggleClass('hide');
+	
+	$('.content-projects').toggleClass('show');
+	$(this).toggleClass('active');
 });
 
-$('.bg-popup').click(function() {
-	$(this).removeClass('show');
+$('.link-about').click(function() {
+	$('.link').removeClass('active');
+	$('.content').removeClass('show');
+	$('.left-col').toggleClass('hide');
+
+	$('.content-about').toggleClass('show');
+	$(this).toggleClass('active');
 });
+
+$('.link-skills').click(function() {
+	$('.link').removeClass('active');
+	$('.content').removeClass('show');
+	$('.left-col').toggleClass('hide');
+
+	$('.content-skills').toggleClass('show');
+	$(this).toggleClass('active');
+});
+
+$('.link-webpack').click(function() {
+	$('.link').removeClass('active');
+	$('.content').removeClass('show');
+	$('.left-col').toggleClass('hide');
+
+	$('.content-webpack').toggleClass('show');
+	$(this).toggleClass('active');
+});
+
+$('.link-gulp').click(function() {
+	$('.link').removeClass('active');
+	$('.content').removeClass('show');
+	$('.left-col').toggleClass('hide');
+
+	$('.content-gulp').toggleClass('show');
+	$(this).toggleClass('active');
+});
+
+$('.content-head .back').click(function() {
+	$('.link').removeClass('active');
+	$('.left-col.hide').removeClass('hide');
+	$('.content').removeClass('show');
+});
+

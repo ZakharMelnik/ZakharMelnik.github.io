@@ -23,7 +23,7 @@
 		flex: 1;
 	}
 
-	.projects {
+	.content-projects {
 		padding-top: 0;
 		height: inherit;
 	}
@@ -54,7 +54,7 @@
 		margin-bottom: 15px;
 	}
 
-	.projects .item .info {
+	.content-projects .item .info {
 		padding: 10px;
 	}
 
@@ -88,8 +88,7 @@
 		padding: 0 15px;
   	}
 
-	.about-me {
-		position: static;
+	.menu {
 		padding: 0;
 		box-shadow: none;
 		border-radius: 0;
@@ -108,20 +107,38 @@
 	}
 
 	.filter {
+		position: static;
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	.content-projects {
 		display: none;
 	}
 
-	.projects {
-		display: none;
-	}
-
-	.head-container {
-		margin: 30px 15px 20px;
+	.left-col {
+		padding: 0 15px;
 	}
 
 	.head {
 		padding: 15px;
 	}
+
+	.left-col.hide {
+		display: none;
+	}
+	.content-head .back {
+		display: flex;
+	}
+
+	.menu .link:hover, .menu .link.active {
+		background: #0f131b;
+	}
+
+	.content-projects {
+		display: none!important;
+	}
+
 
 }
 
