@@ -127,7 +127,7 @@
 	.left-col.hide {
 		display: none;
 	}
-	.content-head .back {
+	.content .back {
 		display: flex;
 	}
 

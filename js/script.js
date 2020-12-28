@@ -152,7 +152,7 @@ $('.link-gulp').click(function() {
 	$(this).toggleClass('active');
 });
 
-$('.content-head .back').click(function() {
+$('.content .back').click(function() {
 	$('.link').removeClass('active');
 	$('.left-col.hide').removeClass('hide');
 	$('.content').removeClass('show');

@@ -656,6 +656,7 @@
 
 .content {
 	display: none;
+	height: 100vh;
 }
 
 .content.show {
@@ -669,16 +670,34 @@
 	justify-content: center;
 	width: 100%;
 	padding: 15px;
-	margin: 20px 0;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #0d1117;
 }
 
-.content-head .back {
+.content-back {
+	display: flex;
+	justify-content: center;
+}
+
+.content .back {
 	cursor: pointer;
-	padding: 5px;
-	position: absolute;
-	left: 0;
+	padding: 8px 15px;
+	position: fixed;
+	bottom: 20px;
+
 	display: none;
+	align-items: center;
+	background: #262A34;
+	border-radius: 10px;
+	color: #ffffff;
+
+}
+
+.content .back img {
+	-margin-right: 15px;
 }
 
 .content-head .title {
@@ -688,6 +707,8 @@
 
 .content-body {
 	padding: 15px;
+	margin-top: 50px;
+	overflow-y: auto;
 }
 
 .content-body .descr {
