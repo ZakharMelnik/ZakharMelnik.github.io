@@ -518,7 +518,8 @@
 }
 
 .menu .link:hover,
-.menu .link.active {
+.menu .link.active,
+.menu .link:active {
 	background: #171e29;
    /* box-shadow: #8b949e 0 0 0 1px inset; */
 }
@@ -734,6 +735,7 @@
 	border-radius: 10px;
 	background: #0d1117;
 	box-shadow: #20232A 0px 0px 0px 1px inset;
+	width: 200px;
 }
 
 .mobile-menu .link {
@@ -759,4 +761,8 @@
 
 .mobile-menu.show {
 	display: flex;
+}
+
+.mobile-menu hr {
+	margin: 5px 0 10px;
 }

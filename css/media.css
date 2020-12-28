@@ -138,10 +138,6 @@
 		display: flex;
 	}
 
-	.menu .link:hover, .menu .link.active {
-		background: #0f131b;
-	}
-
 	.content-projects {
 		display: none!important;
 	}
