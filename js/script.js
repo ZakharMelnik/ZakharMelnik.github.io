@@ -2,10 +2,10 @@ $(document).ready(function () {
 	new WOW().init();
 	var rellax = new Rellax('.rellax');
 
-	if (localStorage.getItem('theme') == 'dark') {
-		$('body').addClass('dark');
+	if (localStorage.getItem('theme') == 'light') {
+		$('body').addClass('light');
 	} else {
-		$('body').removeClass('dark');
+		$('body').removeClass('light');
 	}
 
 	tippy('#tooltip-vue', {
@@ -18,38 +18,12 @@ $(document).ready(function () {
 		content: 'Gulp',
 	});
 
+
 	// $(".html").click(function () {
 	// 	$(".projects").css("display", "none");
 	// 	$(".page-html").css("display", "block");
 	// 	$(this).toggleClass("active");
 	// });
-
-
-	$(".slider").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		speed: 200,
-		fade: true,
-		appendArrows: $('.arrows'),
-		prevArrow: '<div id="prev"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.53 6.53a.75.75 0 1 0-1.06-1.06l1.06 1.06zm-5.823 4.763l.53.53-.53-.53zm0 1.414l.53-.53-.53.53zm4.763 5.823a.75.75 0 0 0 1.06-1.06l-1.06 1.06zm0-13.06l-5.293 5.293 1.06 1.06L14.53 6.53l-1.06-1.06zm-5.293 7.767l5.293 5.293 1.06-1.06-5.293-5.293-1.06 1.06zm0-2.474a1.75 1.75 0 0 0 0 2.474l1.06-1.06a.25.25 0 0 1 0-.354l-1.06-1.06z" fill="#000"/></svg></div>',
-		nextArrow: '<div id="next"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.53 5.47a.75.75 0 0 0-1.06 1.06l1.06-1.06zm4.763 5.823l-.53.53.53-.53zm0 1.414l-.53-.53.53.53zM8.47 17.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zm0-10.94l5.293 5.293 1.06-1.06L9.53 5.47 8.47 6.53zm5.293 5.647L8.47 17.47l1.06 1.06 5.293-5.293-1.06-1.06zm0-.354a.25.25 0 0 1 0 .354l1.06 1.06a1.75 1.75 0 0 0 0-2.474l-1.06 1.06z" fill="#000"/></svg></div>'
-	});
-
-	$('.open-popup').magnificPopup({
-		type: 'inline',
-
-		fixedContentPos: false,
-		fixedBgPos: true,
-
-		overflowY: 'auto',
-
-		closeBtnInside: true,
-		preloader: false,
-
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
-	});
 
 	$(function () {
 
@@ -77,27 +51,27 @@ $(document).ready(function () {
 	});
 
 	$(".filter a").click(function () {
-		$(this).addClass('active').siblings().removeClass('active');
+		$(this).addClass('active').siblings().removeClass('active')
+		$('.projects__container').animate({ scrollTop: 0 });
 	});
 
 	$('.filter a span#all').html($('.project').filter('[data-cat]').length)
+	$('.link-projects span').html($('.project').filter('[data-cat]').length)
 	$('.filter a span#promotion').html($('.project').filter('[data-cat="promotion"]').length)
 	$('.filter a span#landing').html($('.project').filter('[data-cat="landing"]').length)
 	$('.filter a span#commerce').html($('.project').filter('[data-cat="commerce"]').length)
 	$('.filter a span#social').html($('.project').filter('[data-cat="social"]').length)
-	
 
-	$('.theme').click(function () {
-		if (localStorage.getItem('theme') == 'dark') {
-			localStorage.setItem('theme', 'light');
-			$('body').removeClass('dark');
-			
-		} else {
+
+	$('.link-theme').click(function () {
+		if (localStorage.getItem('theme') == 'light') {
 			localStorage.setItem('theme', 'dark');
-			$('body').addClass('dark');
+			$('body').removeClass('light');
+		} else {
+			localStorage.setItem('theme', 'light');
+			$('body').addClass('light');
 		}
 	});
-
 });
 
 /*activation*/
@@ -106,6 +80,39 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
 });
 
+// $('#pageTimer').html(countdown( new Date(2018, 05, 12), new Date(), null, 2 ).toString());
+
+var start = moment([2018, 09, 12]); // Beginning of work
+var now = moment();
+
+var years = now.diff(start, 'year');
+start.add(years, 'years');
+
+var months = now.diff(start, 'months');
+start.add(months, 'months');
+
+var days = now.diff(start, 'days');
+
+// $('#pageTimer').html(years + ' years ' + months + ' months ' + days + ' days');
+$('.work-experience .date').html(years + ' years ' + months + ' months ');
 
 
 
+// $('.link.link-skills').click(function() {
+// 	$('.bg-popup').toggleClass('show');
+// });
+
+// $('.bg-popup').click(function() {
+// 	$(this).removeClass('show');
+// });
+
+
+$('.content .content-menu').click(function () {
+	$('.mobile-menu').toggleClass('show');
+});
+
+$('.content-head').click(function () {
+	if ($('.mobile-menu').hasClass('show')) {
+		$('.mobile-menu').removeClass('show');
+	}
+});
