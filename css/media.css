@@ -110,7 +110,7 @@
 		position: static;
 		width: 100%;
 		overflow-x: auto;
-		margin: 0 0 15px;
+		margin: 60px 0 15px;
 	}
 
 	.left-col {
@@ -130,6 +130,14 @@
 
 	.content-head {
 		height: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background: rgba(13, 17, 23,.9);
+		z-index: 10;
 	}
 	.content .content-menu {
 		display: flex;
@@ -141,6 +149,18 @@
 
 	body.main .content {
 		display: none;
+	}
+
+	.content-head .back {
+		left: 15px;
+	}
+
+	.content-body {
+		margin-top: 60px;
+	}
+
+	.content-projects .content-body {
+		margin-top: 15px;
 	}
 
 
