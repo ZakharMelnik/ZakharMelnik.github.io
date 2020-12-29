@@ -110,10 +110,7 @@
 		position: static;
 		width: 100%;
 		overflow-x: auto;
-	}
-
-	.content-projects {
-		display: none;
+		margin: 0 0 15px;
 	}
 
 	.left-col {
@@ -138,8 +135,12 @@
 		display: flex;
 	}
 
-	.content-projects {
-		display: none!important;
+	.content-projects .content-head {
+		display: flex;
+	}
+
+	body.main .content {
+		display: none;
 	}
 
 
