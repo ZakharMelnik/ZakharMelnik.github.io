@@ -139,6 +139,7 @@
 		backdrop-filter: blur(10px);
 		background: rgba(13, 17, 23,.9);
 		z-index: 10;
+		padding: 15px 0;
 	}
 	.content .content-menu {
 		display: flex;

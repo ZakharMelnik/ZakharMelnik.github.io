@@ -630,6 +630,13 @@
 	align-items: center;
 	justify-content: space-between;
 	display: none;
+	height: 62px;
+	margin: 20px 0;
+	max-width: 300px;
+}
+
+.content .work-experience {
+	display: flex;
 }
 
 .work-experience .left {
