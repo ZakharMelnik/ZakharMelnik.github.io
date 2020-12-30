@@ -62,14 +62,16 @@ $(document).ready(function () {
 	$('.filter a span#commerce').html($('.project').filter('[data-cat="commerce"]').length)
 	$('.filter a span#social').html($('.project').filter('[data-cat="social"]').length)
 
-
 	$('.link-theme').click(function () {
+
 		if (localStorage.getItem('theme') == 'light') {
 			localStorage.setItem('theme', 'dark');
 			$('body').removeClass('light');
+			window.navigator.vibrate(200);
 		} else {
 			localStorage.setItem('theme', 'light');
 			$('body').addClass('light');
+			window.navigator.vibrate(200);
 		}
 	});
 });
