@@ -94,6 +94,9 @@
 		box-shadow: none;
 		border-radius: 0;
 	}
+	.light .menu {
+		box-shadow: none;
+  }
 
 	.menu .link {
 		padding: 15px 15px;
@@ -185,7 +188,6 @@
 @media (prefers-color-scheme: light) {
 	body {
 		background: #DEE3E6;
-		-background: linear-gradient(90deg, rgba(229, 235, 240,1) 0%, rgba(222, 227, 230,1) 100%);
 	}
 
 	.head {
