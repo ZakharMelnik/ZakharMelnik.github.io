@@ -180,3 +180,10 @@
 @media (max-width: 320px) {
 
 }
+
+
+@media (prefers-color-scheme: light) {
+	body {
+		background: red;
+	}
+ }
