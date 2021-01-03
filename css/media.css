@@ -29,10 +29,9 @@
 	}
 
 	.projects__container {
-		grid-template-columns: repeat(1, 1fr);
-		gap: 30px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
 		-webkit-mask-image: none;
-		margin-bottom: 30px;
 		padding: 0;
 	}
 
@@ -104,6 +103,26 @@
 
 	body.dark {
 		backdrop-filter: blur(0px);
+	}
+
+	.project {
+		border-radius: 5px;
+	}
+
+	.project__container-img {
+		border-radius: 5px;
+	}
+
+	.project__info {
+		padding: 8px 10px;
+	}
+
+	.project__category {
+		display: none;
+	}
+
+	.project__info .tags {
+		margin-right: 0;
 	}
 
 	.project:hover {
@@ -293,7 +312,10 @@
 	}
 	
 	.project__title {
+		font-size: 12px;
+		line-height: 1;
 		color: #000;
+
 	}
 	
 	.project__category {
