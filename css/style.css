@@ -730,6 +730,7 @@
 	text-align: center;
 	font-weight: 700;
 	font-size: 24px;
+	line-height: 1;
 }
 
 .content-body {
@@ -739,6 +740,7 @@
 
 .content-body .descr {
 	color: #ddd;
+	font-size: 14px;
 }
 
 .mobile-menu {
