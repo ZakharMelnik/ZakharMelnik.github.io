@@ -517,7 +517,7 @@
 .menu .link:hover,
 .menu .link.active,
 .menu .link:active {
-	background: #4169E1;
+	background: #7b8296;
    /* box-shadow: #8b949e 0 0 0 1px inset; */
 }
 
@@ -678,18 +678,24 @@
 .content-head {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 100%;
 	background: #0d1117;
 	padding: 20px 0;
-	height: 62px;
+	height: 64px;
 	position: relative;
+	box-sizing: content-box;
 }
 
 .content-head .back {
 	position: absolute;
 	left: 0;
-	display: flex;
+	display: none;
+	font-size: 14px;
+	line-height: 1;
+	color: #ffffff;
+	align-items: center;
+	text-decoration: none;
 }
 
 .content .content-menu {
@@ -722,6 +728,8 @@
 .content-head .title {
 	color: #ffffff;
 	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
 }
 
 .content-body {
@@ -740,7 +748,7 @@
 	flex-direction: column;
 	display: flex;
 	padding: 15px;
-	border-radius: 15px;
+	border-radius: 20px;
 	background: #0d1117;
 	box-shadow: #20232A 0px 0px 0px 1px inset;
 	width: 250px;
