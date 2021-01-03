@@ -113,6 +113,11 @@
 		border-radius: 5px;
 	}
 
+	.project__title {
+		font-size: 12px;
+		line-height: 1;
+	}
+
 	.project__info {
 		padding: 8px 10px;
 	}
@@ -312,10 +317,7 @@
 	}
 	
 	.project__title {
-		font-size: 12px;
-		line-height: 1;
 		color: #000;
-
 	}
 	
 	.project__category {
