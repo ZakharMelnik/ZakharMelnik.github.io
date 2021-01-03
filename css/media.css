@@ -138,9 +138,9 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		-webkit-backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(20px);
 		backdrop-filter: blur(10px);
-		background: rgba(13, 17, 23,.9);
+		background: rgba(13, 17, 23,.7);
 		z-index: 10;
 		padding: 15px 0;
 	}
