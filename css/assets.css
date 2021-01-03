@@ -29,7 +29,7 @@ body.light {
 }
 
 .light .head {
-	background: #dee3e6;
+	background: #fff;
 }
 
 .light .head .container-img {
@@ -42,10 +42,6 @@ body.light {
 
 .light .head .specialty {
 	color: rgb(0 0 0 / 70%);
-}
-
-.light .menu {
-	box-shadow: #ffffff 0px 0px 0px 1px inset;
 }
 
 .light .menu .link {
