@@ -7042,7 +7042,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #58a6ff;
+  background: #246BFE;
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
           box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
   -webkit-transition: 0.2s ease-out;
@@ -7050,13 +7050,18 @@ hr {
   display: none;
   width: 50px;
   height: 50px;
-  border-radius: 17px;
+  -border-radius: 17px;
+  border-radius: 50%;
   z-index: 10;
+}
+
+.content .content-menu img {
+  width: 32px;
 }
 
 .content .content-menu:hover,
 .content .content-menu:active {
-  background: #3888e4;
+  background: #0151F8;
 }
 
 .content .back img {
