@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-xl-3">
+        <div class="col-xl-auto">
           <div class="left-col">
 
             <!-- head -->
@@ -53,7 +53,12 @@
             <div class="menu">
               <div class="title">Menu</div>
 
-              <router-link to="/projects" class="link">
+              <router-link to="/about-me" class="link">
+                <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
+                <div class="title">About me</div>
+              </router-link>
+
+              <router-link to="/projects" class="link stat">
                 <div class="left">
                   <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
                   <div class="title">Projects</div>
@@ -64,48 +69,31 @@
                 </div>
               </router-link>
 
-              <router-link to="/about-me" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
-                  <div class="title">About me</div>
-                </div>
-              </router-link>
-
               <router-link to="/skills" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/skills.svg" alt=""></div>
-                  <div class="title">Skills</div>
-                </div>
+                <div class="icon"><img src="img/content/icons/skills.svg" alt=""></div>
+                <div class="title">Skills</div>
               </router-link>
 
               <router-link to="/gadgets" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
-                  <div class="title">Gadgets</div>
-                </div>
+                <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
+                <div class="title">Gadgets</div>
               </router-link>
 
               <div class="title">Resources</div>
 
               <router-link to="/webpack" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-                  <div class="title">Webpack</div>
-                </div>
+                <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+                <div class="title">Webpack</div>
               </router-link>
 
               <router-link to="/gulp" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-                  <div class="title">Gulp</div>
-                </div>
+                <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+                <div class="title">Gulp</div>
               </router-link>
 
               <router-link to="/tools" class="link">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
-                  <div class="title">Tools</div>
-                </div>
+                <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
+                <div class="title">Tools</div>
               </router-link>
 
             </div>
@@ -143,171 +131,162 @@
         </div>
 
         <div class="col-xl-9">
-          <div class="page-html">
-            <div class="title">HTML5</div>
-            <div class="subtitle"></div>
+          <div class="content">
+            <router-view></router-view>
 
-            <div class="descr"></div>
-          </div>
-
-          <router-view></router-view>
-          <!-- work-experience -->
-          <div class="work-experience">
-            <div class="left">
-              <div class="title">work experience:</div>
-              <div class="date"></div>
+            <div class="content-menu">
+              <img src="img/content/icons/menu.svg" alt="" />
             </div>
-            <div class="container-img"><img src="img/content/icons/person.png" alt=""></div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-
-  <div class="bg-popup">
-    <div class="popup-skills">
-      <div class="skills__container">
-
-        <div class="item html">
-          <div class="title"><img src="img/content/cards/html.svg" alt=""> HTML5</div>
-          <div class="descr">
-            framework Vue.js, <br>
-            BEM methodology, <br>
-            Bootstrap(only grid or full set of tools), <br>
-            accordions, <br>
-            dropdowns, <br>
-            pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
-            sliders(slick, swiper), <br>
-            lightboxes(fancybox3), <br>
-            Parallax(rellax.js), <br>
-            Tooltips(Tippy.js, Popper.js), <br>
-            charts(chart.js), <br>
-            animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending a
-            letter to the mail), <br>
-            browser support(last 5 versions).
-          </div>
-        </div>
-
-        <div class="item css">
-          <div class="title"><img src="img/content/cards/css.svg" alt=""> CSS3</div>
-          <div class="descr">
-            preprocessor SASS/SCSS, <br>
-            specification FlexBox and CSS Grid, <br>
-            Adaptive layout(media queries 1200, 992, 768, 576), <br>
-            css animation(@keyframes), <br>
-            optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
-          </div>
-        </div>
-
-        <div class="item js">
-          <div class="title"><img src="img/content/cards/js.svg" alt=""> JS</div>
-          <div class="descr">
-            JQuery, <br>
-            Waypoints(trigger a function when you scroll to an element), <br>
-            Configuring all listed libraries(slick, swiper, magnific-popup,
-            fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
-          </div>
-        </div>
-
-        <div class="item webpack">
-          <div class="title"><img src="img/content/cards/webpack.svg" alt=""> Webpack or Gulp</div>
-          <div class="descr">
-            The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
-            automatic conversion of fonts to WOFF format with compression equal to the original and optimal
-            level of image compression.
-          </div>
-        </div>
-
-        <div class="item programs">
-          <div class="title"><img src="img/content/cards/programs.svg" alt=""> Programs</div>
-          <div class="descr">
-            VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
-          </div>
-        </div>
-        <div class="item other">
-          <div class="title">Other</div>
-          <div class="descr">
-            optimization based on Google Analytics recommendations, config file .htaccess (for caching files and remove
-            .html in the site address), Git
-          </div>
-        </div>
-
-        <div class="item environment">
-          <div class="title"><img src="img/content/cards/devices.svg" alt=""> Working environment</div>
-          <div class="descr">
-            PC
-            Operating system: Windows 10 Pro <br>
-            Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
-            Processor: Intel Core i5-7500 3.40GHz <br>
-            RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
-            Video card: NVIDIA GeForce GTX 760, 2 GB <br>
-            Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
-            Body: MSI MAG VAMPIRIC 010M Black <br>
-            Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
-            Mouse: Xiaomi Mi Gaming Mouse <br>
-            Keyboard: pending Logitech k380 <br> <br>
-
-            MacBook Air (Early 2015, model A1465) <br>
-            Operating system: MacOS Catalina <br>
-            Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
-            RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
-            Video card: Intel HD Graphics 6000 1536 MB <br>
-            Memory: Apple SSD 128 GB, PCIe <br>
           </div>
         </div>
 
       </div>
     </div>
+
+
+
+    <!-- Mobile-menu -->
+    <div class="mobile-menu">
+      <router-link to="/about-me" class="link">
+        <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
+        <div class="title">About me</div>
+      </router-link>
+
+      <router-link to="/projects" class="link">
+        <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
+        <div class="title">Projects</div>
+      </router-link>
+
+      <router-link to="/skills" class="link">
+        <div class="icon"><img src="img/content/icons/skills.svg" alt=""></div>
+        <div class="title">Skills</div>
+      </router-link>
+
+      <router-link to="/gadgets" class="link">
+        <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
+        <div class="title">Gadgets</div>
+      </router-link>
+
+      <hr>
+
+      <router-link to="/webpack" class="link">
+        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+        <div class="title">Webpack</div>
+      </router-link>
+
+      <router-link to="/gulp" class="link">
+        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+        <div class="title">Gulp</div>
+      </router-link>
+
+      <router-link to="/tools" class="link">
+        <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
+        <div class="title">Tools</div>
+      </router-link>
+    </div>
+    <div class="bg-menu"></div>
+
+
+
+    <!-- <div class="bg-popup">
+      <div class="popup-skills">
+        <div class="skills__container">
+
+          <div class="item html">
+            <div class="title"><img src="img/content/cards/html.svg" alt=""> HTML5</div>
+            <div class="descr">
+              framework Vue.js, <br>
+              BEM methodology, <br>
+              Bootstrap(only grid or full set of tools), <br>
+              accordions, <br>
+              dropdowns, <br>
+              pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
+              sliders(slick, swiper), <br>
+              lightboxes(fancybox3), <br>
+              Parallax(rellax.js), <br>
+              Tooltips(Tippy.js, Popper.js), <br>
+              charts(chart.js), <br>
+              animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending
+              a
+              letter to the mail), <br>
+              browser support(last 5 versions).
+            </div>
+          </div>
+
+          <div class="item css">
+            <div class="title"><img src="img/content/cards/css.svg" alt=""> CSS3</div>
+            <div class="descr">
+              preprocessor SASS/SCSS, <br>
+              specification FlexBox and CSS Grid, <br>
+              Adaptive layout(media queries 1200, 992, 768, 576), <br>
+              css animation(@keyframes), <br>
+              optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
+            </div>
+          </div>
+
+          <div class="item js">
+            <div class="title"><img src="img/content/cards/js.svg" alt=""> JS</div>
+            <div class="descr">
+              JQuery, <br>
+              Waypoints(trigger a function when you scroll to an element), <br>
+              Configuring all listed libraries(slick, swiper, magnific-popup,
+              fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
+            </div>
+          </div>
+
+          <div class="item webpack">
+            <div class="title"><img src="img/content/cards/webpack.svg" alt=""> Webpack or Gulp</div>
+            <div class="descr">
+              The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
+              automatic conversion of fonts to WOFF format with compression equal to the original and optimal
+              level of image compression.
+            </div>
+          </div>
+
+          <div class="item programs">
+            <div class="title"><img src="img/content/cards/programs.svg" alt=""> Programs</div>
+            <div class="descr">
+              VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
+            </div>
+          </div>
+          <div class="item other">
+            <div class="title">Other</div>
+            <div class="descr">
+              optimization based on Google Analytics recommendations, config file .htaccess (for caching files and
+              remove
+              .html in the site address), Git
+            </div>
+          </div>
+
+          <div class="item environment">
+            <div class="title"><img src="img/content/cards/devices.svg" alt=""> Working environment</div>
+            <div class="descr">
+              PC
+              Operating system: Windows 10 Pro <br>
+              Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
+              Processor: Intel Core i5-7500 3.40GHz <br>
+              RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
+              Video card: NVIDIA GeForce GTX 760, 2 GB <br>
+              Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
+              Body: MSI MAG VAMPIRIC 010M Black <br>
+              Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
+              Mouse: Xiaomi Mi Gaming Mouse <br>
+              Keyboard: pending Logitech k380 <br> <br>
+
+              MacBook Air (Early 2015, model A1465) <br>
+              Operating system: MacOS Catalina <br>
+              Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
+              RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
+              Video card: Intel HD Graphics 6000 1536 MB <br>
+              Memory: Apple SSD 128 GB, PCIe <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
   </div>
-
-  <!-- Mobile-menu -->
-  <div class="mobile-menu">
-    <a href='index.html' class="link">
-      <div class="icon"><img src="img/icons/home.svg" alt=""></div>
-      <div class="title">Home</div>
-    </a>
-
-    <hr>
-
-    <a href='projects.html' class="link">
-      <div class="icon"><img src="img/icons/portfolio.svg" alt=""></div>
-      <div class="title">Projects</div>
-    </a>
-
-    <a href='about-me.html' class="link">
-      <div class="icon"><img src="img/icons/user.svg" alt=""></div>
-      <div class="title">About me</div>
-    </a>
-
-    <a href='skills.html' class="link">
-      <div class="icon"><img src="img/icons/skills.svg" alt=""></div>
-      <div class="title">Skills</div>
-    </a>
-
-    <a href='gadgets.html' class="link">
-      <div class="icon"><img src="img/icons/gadgets.svg" alt=""></div>
-      <div class="title">Gadgets</div>
-    </a>
-
-    <hr>
-
-    <a href='webpack.html' class="link">
-      <div class="icon"><img src="img/icons/webpack.svg" alt=""></div>
-      <div class="title">Webpack</div>
-    </a>
-
-    <a href='gulp.html' class="link">
-      <div class="icon"><img src="img/icons/webpack.svg" alt=""></div>
-      <div class="title">Gulp</div>
-    </a>
-  </div>
-
-  <div class="bg-menu"></div>
 
   <!-- <script src="js/moment.min.js"></script>
   <script src="js/jquery.min.js"></script>
