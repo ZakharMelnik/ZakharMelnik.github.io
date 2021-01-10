@@ -7245,26 +7245,6 @@ hr {
     display: none;
   }
 
-  .mobile-menu {
-    padding: 15px 15px 10px 15px;
-  }
-
-  .about-me__links {
-    margin-bottom: 0;
-  }
-
-  .about-me__links .link {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-
-  .about-me__links .link:not(:last-of-type) {
-    margin-right: 5px;
-  }
-
   .popup {
     height: 100%;
   }
