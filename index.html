@@ -19,126 +19,116 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
 
-<body class="main">
+<body>
   <div id="app">
-    <div class="container">
-      <div class="row">
 
-        <div class="col-xl-auto">
-          <div class="left-col">
+    <div class="main">
+      <div class="sidebar">
 
-            <!-- head -->
-            <div class="head-container">
-              <div class="head">
-                <div class="container-img"><img src="img/content/1.jpg" alt=""></div>
-                <div class="text">
-                  <div class="name">Zahar Melnik</div>
-                  <div class="specialty">Frontend developer</div>
-                </div>
-              </div>
+        <!-- head -->
+        <div class="sidebar__head">
+          <div class="head">
+            <div class="container-img"><img src="img/content/1.jpg" alt=""></div>
+            <div class="text">
+              <div class="name">Zahar Melnik</div>
+              <div class="specialty">Frontend developer</div>
             </div>
-
-            <!-- 3 card -->
-            <div class="about-me__body">
-              <div class="cards">
-                <a class="card html open-popup" href="#popup-skills"><img src="img/content/cards/html.svg"
-                    alt="">HTML5</a>
-                <a class="card css open-popup" href="#popup-skills"><img src="img/content/cards/css.svg" alt="">
-                  CSS3</a>
-                <a class="card js open-popup" href="#popup-skills"><img src="img/content/cards/js.svg" alt=""> JS</a>
-              </div>
-            </div>
-
-            <!-- Menu -->
-            <div class="menu">
-              <div class="title">Navigation</div>
-
-              <router-link to="/" class="link">
-                <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
-                <div class="title">About me</div>
-              </router-link>
-
-              <router-link to="/projects" class="link stat">
-                <div class="left">
-                  <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
-                  <div class="title">Projects</div>
-                </div>
-
-                <div class="right">
-                  <span>21</span>
-                </div>
-              </router-link>
-
-              <router-link to="/gadgets" class="link">
-                <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
-                <div class="title">Gadgets</div>
-              </router-link>
-
-              <div class="title">Resources</div>
-
-              <router-link to="/webpack" class="link">
-                <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-                <div class="title">Webpack</div>
-              </router-link>
-
-              <router-link to="/gulp" class="link">
-                <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-                <div class="title">Gulp</div>
-              </router-link>
-
-              <router-link to="/useful" class="link">
-                <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
-                <div class="title">Useful</div>
-              </router-link>
-
-            </div>
-
-            <!-- Links -->
-            <div class="about-me__links">
-              <a href="tel:+380954850960" target="_blank" class="link">
-                <img src="img/content/links/phone.svg" alt="">
-              </a>
-              <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
-                <img src="img/content/links/mail.svg" alt="">
-              </a>
-              <a href="https://t.me/undefZahar" target="_blank" class="link">
-                <img src="img/content/links/telegram.svg" alt="">
-              </a>
-              <a href="https://github.com/undefzahar" target="_blank" class="link">
-                <img src="img/content/links/github.svg" alt="">
-              </a>
-              <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
-                <img src="img/content/links/instagram.svg" alt="">
-              </a>
-            </div>
-
-            <!-- Resume -->
-            <div class="about-me__resume">
-              <div class="text">
-                <div class="title" id="pageTimer">Check out my resume</div>
-                <a href="resume.docx">Download <img src="img/content/icons/arrow-down.svg" alt=""></a>
-              </div>
-
-              <div class="doc"><img src="img/content/resume.png" alt=""></div>
-            </div>
-
           </div>
         </div>
 
-        <div class="col-xl-9">
-          <div class="content">
-            <router-view></router-view>
-
-            <div class="content-menu">
-              <img src="img/content/icons/menu.svg" alt="" />
-            </div>
+        <!-- 3 card -->
+        <div class="sidebar__cards">
+          <div class="cards">
+            <a class="card html open-popup" href="#popup-skills"><img src="img/content/cards/html.svg" alt="">HTML5</a>
+            <a class="card css open-popup" href="#popup-skills"><img src="img/content/cards/css.svg" alt="">
+              CSS3</a>
+            <a class="card js open-popup" href="#popup-skills"><img src="img/content/cards/js.svg" alt=""> JS</a>
           </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="sidebar__menu">
+          <div class="title">Navigation</div>
+
+          <router-link to="/" class="link">
+            <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
+            <div class="title">About me</div>
+          </router-link>
+
+          <router-link to="/projects" class="link stat">
+            <div class="left">
+              <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
+              <div class="title">Projects</div>
+            </div>
+
+            <div class="right">
+              <span>21</span>
+            </div>
+          </router-link>
+
+          <router-link to="/gadgets" class="link">
+            <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
+            <div class="title">Gadgets</div>
+          </router-link>
+
+          <div class="title">Resources</div>
+
+          <router-link to="/webpack" class="link">
+            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+            <div class="title">Webpack</div>
+          </router-link>
+
+          <router-link to="/gulp" class="link">
+            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+            <div class="title">Gulp</div>
+          </router-link>
+
+          <router-link to="/useful" class="link">
+            <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
+            <div class="title">Useful</div>
+          </router-link>
+
+        </div>
+
+        <!-- Links -->
+        <div class="sidebar__links">
+          <a href="tel:+380954850960" target="_blank" class="link">
+            <img src="img/content/links/phone.svg" alt="">
+          </a>
+          <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
+            <img src="img/content/links/mail.svg" alt="">
+          </a>
+          <a href="https://t.me/undefZahar" target="_blank" class="link">
+            <img src="img/content/links/telegram.svg" alt="">
+          </a>
+          <a href="https://github.com/undefzahar" target="_blank" class="link">
+            <img src="img/content/links/github.svg" alt="">
+          </a>
+          <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
+            <img src="img/content/links/instagram.svg" alt="">
+          </a>
+        </div>
+
+        <!-- Resume -->
+        <div class="sidebar__resume">
+          <div class="text">
+            <div class="title" id="pageTimer">Check out my resume</div>
+            <a href="resume.docx">Download <img src="img/content/icons/arrow-down.svg" alt=""></a>
+          </div>
+
+          <div class="doc"><img src="img/content/resume.png" alt=""></div>
         </div>
 
       </div>
+
+      <div class="content">
+        <router-view></router-view>
+
+        <div class="content-menu">
+          <img src="img/content/icons/menu.svg" alt="" />
+        </div>
+      </div>
     </div>
-
-
 
     <!-- Mobile-menu -->
     <div class="mobile-menu">
@@ -176,8 +166,6 @@
 
     </div>
     <div class="bg-menu"></div>
-
-
 
     <!-- <div class="bg-popup">
       <div class="popup-skills">
