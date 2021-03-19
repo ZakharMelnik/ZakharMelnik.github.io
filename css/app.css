@@ -1587,6 +1587,7 @@ hr {
 }
 .content-body .cards .item .num {
   font-size: 32px;
+  font-weight: bold;
   color: #fff;
 }
 .content-body > .title {
