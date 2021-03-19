@@ -1,1 +1,323 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><title>Portfolio</title><meta name="description" content="description of the site"><meta name="keywords" content="key 1, key 2, key 3…"/><meta name="google" content="notranslate"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://use.typekit.net/blx4det.css"><link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head><body><div id="app"><div class="main"><div class="sidebar"><div class="sidebar__head"><div class="head"><div class="container-img"><img src="img/content/1.jpg" alt=""></div><div class="text"><div class="name">Zahar Melnik</div><div class="specialty">Frontend developer</div></div></div></div><div class="sidebar__cards"><div class="cards"><a class="card html open-popup" href="#popup-skills"><img src="img/content/cards/html.svg" alt="">HTML5</a> <a class="card css open-popup" href="#popup-skills"><img src="img/content/cards/css.svg" alt=""> CSS3</a> <a class="card js open-popup" href="#popup-skills"><img src="img/content/cards/js.svg" alt=""> JS</a></div></div><div class="sidebar__menu"><div class="title">Menu</div><router-link to="/" class="link"><div class="icon"><img src="img/content/icons/user.svg" alt=""></div><div class="title">About me</div></router-link><router-link to="/projects" class="link stat"><div class="left"><div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div><div class="title">Projects</div></div><div class="right"><span>21</span></div></router-link><router-link to="/gadgets" class="link"><div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div><div class="title">Gadgets</div></router-link><div class="title">Resources</div><router-link to="/webpack" class="link"><div class="icon"><img src="img/content/icons/code.svg" alt=""></div><div class="title">Webpack</div></router-link><router-link to="/gulp" class="link"><div class="icon"><img src="img/content/icons/code.svg" alt=""></div><div class="title">Gulp</div></router-link><router-link to="/useful" class="link"><div class="icon"><img src="img/content/icons/tools.svg" alt=""></div><div class="title">Useful</div></router-link><div class="title">Theme</div><div class="sidebar-select"><div class="item light"><div class="container-img"><img src="img/content/icons/light.svg" alt=""></div><div class="title">Light</div></div><div class="item dark active"><div class="container-img"><img src="img/content/icons/dark.svg" alt=""></div><div class="title">Dark</div></div></div><div class="title">Languages</div><div class="sidebar-select"><div class="item light"><div class="container-img"><img src="img/content/icons/ru.svg" alt=""></div><div class="title">Ru</div></div><div class="item dark active"><div class="container-img"><img src="img/content/icons/en.svg" alt=""></div><div class="title">En</div></div></div></div><div class="sidebar__links"><a href="tel:+380954850960" target="_blank" class="link"><img src="img/content/links/phone.svg" alt=""> </a><a href="mailto:undef.zahar@gmail.com" target="_blank" class="link"><img src="img/content/links/mail.svg" alt=""> </a><a href="https://t.me/undefZahar" target="_blank" class="link"><img src="img/content/links/telegram.svg" alt=""> </a><a href="https://github.com/undefzahar" target="_blank" class="link"><img src="img/content/links/github.svg" alt=""> </a><a href="https://www.instagram.com/undef.zahar" target="_blank" class="link"><img src="img/content/links/instagram.svg" alt=""></a></div><div class="sidebar__resume"><div class="text"><div class="title" id="pageTimer">Check out my resume</div><a href="resume.docx">Download <img src="img/content/icons/arrow-down.svg" alt=""></a></div><div class="doc"><img src="img/content/resume.png" alt=""></div></div></div><div class="content"><router-view></router-view><div class="content-menu"><img src="img/content/icons/menu.svg" alt=""/></div></div></div><div class="mobile-menu"><router-link to="/" class="link"><div class="icon"><img src="img/content/icons/user.svg" alt=""></div><div class="title">About me</div></router-link><router-link to="/projects" class="link"><div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div><div class="title">Projects</div></router-link><router-link to="/gadgets" class="link"><div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div><div class="title">Gadgets</div></router-link><hr><router-link to="/webpack" class="link"><div class="icon"><img src="img/content/icons/code.svg" alt=""></div><div class="title">Webpack</div></router-link><router-link to="/gulp" class="link"><div class="icon"><img src="img/content/icons/code.svg" alt=""></div><div class="title">Gulp</div></router-link><router-link to="/useful" class="link"><div class="icon"><img src="img/content/icons/tools.svg" alt=""></div><div class="title">Useful</div></router-link></div><div class="bg-menu"></div></div><script src="js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Portfolio</title>
+  <meta name="description" content="description of the site">
+  <meta name="keywords" content="key 1, key 2, key 3…" />
+
+  <meta name="google" content="notranslate">
+
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/blx4det.css">
+<link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+  <div id="app">
+
+    <div class="main">
+      <div class="sidebar">
+
+        <!-- head -->
+        <div class="sidebar__head">
+          <div class="head">
+            <div class="container-img"><img src="img/content/1.jpg" alt=""></div>
+            <div class="text">
+              <div class="name">Zahar Melnik</div>
+              <div class="specialty">Frontend developer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 card -->
+        <div class="sidebar__cards">
+          <div class="cards">
+            <a class="card html open-popup" href="#popup-skills"><img src="img/content/cards/html.svg" alt="">HTML5</a>
+            <a class="card css open-popup" href="#popup-skills"><img src="img/content/cards/css.svg" alt="">
+              CSS3</a>
+            <a class="card js open-popup" href="#popup-skills"><img src="img/content/cards/js.svg" alt=""> JS</a>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="sidebar__menu">
+          <div class="title">Menu</div>
+
+          <router-link to="/" class="link">
+            <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
+            <div class="title">About me</div>
+          </router-link>
+
+          <router-link to="/projects" class="link stat">
+            <div class="left">
+              <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
+              <div class="title">Projects</div>
+            </div>
+
+            <div class="right">
+              <span>21</span>
+            </div>
+          </router-link>
+
+          <router-link to="/gadgets" class="link">
+            <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
+            <div class="title">Gadgets</div>
+          </router-link>
+
+          <div class="title">Resources</div>
+
+          <router-link to="/webpack" class="link">
+            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+            <div class="title">Webpack</div>
+          </router-link>
+
+          <router-link to="/gulp" class="link">
+            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+            <div class="title">Gulp</div>
+          </router-link>
+
+          <router-link to="/useful" class="link">
+            <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
+            <div class="title">Useful</div>
+          </router-link>
+
+          <div class="title">Theme</div>
+
+          <div class="sidebar-select">
+            <div class="item light">
+              <div class="container-img">
+                <img src="img/content/icons/light.svg" alt="">
+              </div>
+              <div class="title">Light</div>
+            </div>
+
+            <div class="item dark active">
+              <div class="container-img">
+                <img src="img/content/icons/dark.svg" alt="">
+              </div>
+              <div class="title">Dark</div>
+            </div>
+          </div>
+
+          <div class="title">Languages</div>
+
+          <div class="sidebar-select">
+            <div class="item light">
+              <div class="container-img">
+                <img src="img/content/icons/ru.svg" alt="">
+              </div>
+              <div class="title">Ru</div>
+            </div>
+
+            <div class="item dark active">
+              <div class="container-img">
+                <img src="img/content/icons/en.svg" alt="">
+              </div>
+              <div class="title">En</div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Links -->
+        <div class="sidebar__links">
+          <a href="tel:+380954850960" target="_blank" class="link">
+            <img src="img/content/links/phone.svg" alt="">
+          </a>
+          <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
+            <img src="img/content/links/mail.svg" alt="">
+          </a>
+          <a href="https://t.me/undefZahar" target="_blank" class="link">
+            <img src="img/content/links/telegram.svg" alt="">
+          </a>
+          <a href="https://github.com/undefzahar" target="_blank" class="link">
+            <img src="img/content/links/github.svg" alt="">
+          </a>
+          <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
+            <img src="img/content/links/instagram.svg" alt="">
+          </a>
+        </div>
+
+        <!-- Resume -->
+        <div class="sidebar__resume">
+          <div class="text">
+            <div class="title" id="pageTimer">Check out my resume</div>
+            <a href="resume.docx">Download <img src="img/content/icons/arrow-down.svg" alt=""></a>
+          </div>
+
+          <div class="doc"><img src="img/content/resume.png" alt=""></div>
+        </div>
+
+      </div>
+
+      <div class="content">
+        <router-view></router-view>
+
+        <div class="content-menu">
+          <img src="img/content/icons/menu.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile-menu -->
+    <div class="mobile-menu">
+      <router-link to="/" class="link">
+        <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
+        <div class="title">About me</div>
+      </router-link>
+
+      <router-link to="/projects" class="link">
+        <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
+        <div class="title">Projects</div>
+      </router-link>
+
+      <router-link to="/gadgets" class="link">
+        <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
+        <div class="title">Gadgets</div>
+      </router-link>
+
+      <hr>
+
+      <router-link to="/webpack" class="link">
+        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+        <div class="title">Webpack</div>
+      </router-link>
+
+      <router-link to="/gulp" class="link">
+        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+        <div class="title">Gulp</div>
+      </router-link>
+
+      <router-link to="/useful" class="link">
+        <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
+        <div class="title">Useful</div>
+      </router-link>
+
+    </div>
+    <div class="bg-menu"></div>
+
+    <!-- <div class="bg-popup">
+      <div class="popup-skills">
+        <div class="skills__container">
+
+          <div class="item html">
+            <div class="title"><img src="img/content/cards/html.svg" alt=""> HTML5</div>
+            <div class="descr">
+              framework Vue.js, <br>
+              BEM methodology, <br>
+              Bootstrap(only grid or full set of tools), <br>
+              accordions, <br>
+              dropdowns, <br>
+              pop-ups (magnific-popup which includes: modal, form, video, lightbox, gallery, map), <br>
+              sliders(slick, swiper), <br>
+              lightboxes(fancybox3), <br>
+              Parallax(rellax.js), <br>
+              Tooltips(Tippy.js, Popper.js), <br>
+              charts(chart.js), <br>
+              animation(animate.css, animation when scrolling - wow.js, AOS library), email form(php script for sending
+              a
+              letter to the mail), <br>
+              browser support(last 5 versions).
+            </div>
+          </div>
+
+          <div class="item css">
+            <div class="title"><img src="img/content/cards/css.svg" alt=""> CSS3</div>
+            <div class="descr">
+              preprocessor SASS/SCSS, <br>
+              specification FlexBox and CSS Grid, <br>
+              Adaptive layout(media queries 1200, 992, 768, 576), <br>
+              css animation(@keyframes), <br>
+              optimization by minimizing the file(style.min.css) and converting fonts to a modern WOFF format.
+            </div>
+          </div>
+
+          <div class="item js">
+            <div class="title"><img src="img/content/cards/js.svg" alt=""> JS</div>
+            <div class="descr">
+              JQuery, <br>
+              Waypoints(trigger a function when you scroll to an element), <br>
+              Configuring all listed libraries(slick, swiper, magnific-popup,
+              fancybox3, rellax.js, popper.js, chart.js, wow.js, AOS and other) <br>
+            </div>
+          </div>
+
+          <div class="item webpack">
+            <div class="title"><img src="img/content/cards/webpack.svg" alt=""> Webpack or Gulp</div>
+            <div class="descr">
+              The collector provides preprocessor conversion to CSS, adding prefixes, merging and minimizing files,
+              automatic conversion of fonts to WOFF format with compression equal to the original and optimal
+              level of image compression.
+            </div>
+          </div>
+
+          <div class="item programs">
+            <div class="title"><img src="img/content/cards/programs.svg" alt=""> Programs</div>
+            <div class="descr">
+              VS Code, Sublime text, Figma, Adobe Photoshop, FileZilla, GitHub Desktop
+            </div>
+          </div>
+          <div class="item other">
+            <div class="title">Other</div>
+            <div class="descr">
+              optimization based on Google Analytics recommendations, config file .htaccess (for caching files and
+              remove
+              .html in the site address), Git
+            </div>
+          </div>
+
+          <div class="item environment">
+            <div class="title"><img src="img/content/cards/devices.svg" alt=""> Working environment</div>
+            <div class="descr">
+              PC
+              Operating system: Windows 10 Pro <br>
+              Motherboard: MSI B250 GAMING M3 (MS-7A62) <br>
+              Processor: Intel Core i5-7500 3.40GHz <br>
+              RAM: 16GB (2 channels) 2400 MHz DDR4 <br>
+              Video card: NVIDIA GeForce GTX 760, 2 GB <br>
+              Memory: SSD Kingston 120gb, HDD Hitachi 400GB 7200RPM <br>
+              Body: MSI MAG VAMPIRIC 010M Black <br>
+              Monitor: Samsung 27" FullHD IPS 60hz S27E390 <br>
+              Mouse: Xiaomi Mi Gaming Mouse <br>
+              Keyboard: pending Logitech k380 <br> <br>
+
+              MacBook Air (Early 2015, model A1465) <br>
+              Operating system: MacOS Catalina <br>
+              Processor: Intel Core i5-5250U 2 x 1.6 - 2.7 GHz <br>
+              RAM: 8GB (2 channels) 1600 MHz DDR3 <br>
+              Video card: Intel HD Graphics 6000 1536 MB <br>
+              Memory: Apple SSD 128 GB, PCIe <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+
+  <!-- <script src="js/moment.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script> -->
+
+<script src="js/app.js"></script></body>
+
+</html>
