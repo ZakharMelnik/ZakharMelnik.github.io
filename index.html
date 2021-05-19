@@ -15,194 +15,107 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script src="https://kit.fontawesome.com/df264bc2b2.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/blx4det.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
   <div id="app">
 
-    <div class="main">
-      <div class="sidebar">
+    <div class="container-main">
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <router-link to="/" class="pl-0">Главная</router-link>
+          </li>
+          <li class="nav-item dropdown-animate" data-toggle="hover">
+            <router-link to="/projects" class="dropdown-toggle">Работы <img src="img/content/icons/arrow-down.svg"
+                alt=""></router-link>
 
-        <!-- head -->
-        <div class="sidebar__head">
-          <div class="head">
-            <div class="container-img"><img src="img/content/1.jpg" alt=""></div>
-            <div class="text">
-              <div class="name">Zahar Melnik</div>
-              <div class="specialty">Frontend developer</div>
-            </div>
-          </div>
-        </div>
+            <div class="dropdown-menu">
+              <ul>
+                <li>
+                  <router-link to="/projects">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/projects.svg" alt=""></div>
 
-        <!-- 3 card -->
-        <div class="sidebar__cards">
-          <div class="cards">
-            <a class="card html open-popup" href="#popup-skills"><img src="img/content/cards/html.svg" alt="">HTML5</a>
-            <a class="card css open-popup" href="#popup-skills"><img src="img/content/cards/css.svg" alt="">
-              CSS3</a>
-            <a class="card js open-popup" href="#popup-skills"><img src="img/content/cards/js.svg" alt=""> JS</a>
-          </div>
-        </div>
+                      <div class="text">
+                        <div class="title">Посмотреть работы</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </router-link>
+                </li>
+                <li>
+                  <a href="https://github.com/undefzahar" target="_blank">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/github-rep.svg" alt=""></div>
 
-        <!-- Menu -->
-        <div class="sidebar__menu">
-          <div class="title">Menu</div>
+                      <div class="text">
+                        <div class="title">Github репозитории</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
 
-          <router-link to="/" class="link">
-            <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
-            <div class="title">About me</div>
-          </router-link>
-
-          <router-link to="/projects" class="link stat">
-            <div class="left">
-              <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
-              <div class="title">Projects</div>
-            </div>
-
-            <div class="right">
-              <span>21</span>
-            </div>
-          </router-link>
-
-          <!-- <router-link to="/gadgets" class="link">
-            <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
-            <div class="title">Gadgets</div>
-          </router-link> -->
-
-          <!-- <div class="title">Resources</div> -->
-
-          <router-link to="/webpack" class="link">
-            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-            <div class="title">Webpack</div>
-          </router-link>
-
-          <!-- <router-link to="/gulp" class="link">
-            <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-            <div class="title">Gulp</div>
-          </router-link> -->
-
-          <router-link to="/useful" class="link">
-            <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
-            <div class="title">Useful</div>
-          </router-link>
-
-          <!-- <div class="title">Theme</div>
-
-          <div class="sidebar-select">
-            <div class="item light">
-              <div class="container-img">
-                <img src="img/content/icons/light.svg" alt="">
+              <div class="dropdown-menu-links">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <router-link to="/webpack">Webpack</router-link>
+                    <router-link to="/webpack">Gulp</router-link>
+                  </div>
+                  <div class="col-sm-6">
+                    <router-link to="/useful">Полезное</router-link>
+                    <router-link to="/useful">Полезное</router-link>
+                  </div>
+                </div>
               </div>
-              <div class="title">Light</div>
             </div>
-
-            <div class="item dark active">
-              <div class="container-img">
-                <img src="img/content/icons/dark.svg" alt="">
-              </div>
-              <div class="title">Dark</div>
-            </div>
-          </div> -->
-
-          <div class="title">Languages</div>
-
-          <div class="sidebar-select">
-            <div class="item light">
-              <div class="container-img">
-                <img src="img/content/icons/ru.svg" alt="">
-              </div>
-              <div class="title">Ru</div>
-            </div>
-
-            <div class="item dark active">
-              <div class="container-img">
-                <img src="img/content/icons/en.svg" alt="">
-              </div>
-              <div class="title">En</div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-        <!-- Links -->
-        <div class="sidebar__links">
-          <a href="tel:+380954850960" target="_blank" class="link">
-            <img src="img/content/links/phone.svg" alt="">
-          </a>
-          <a href="mailto:undef.zahar@gmail.com" target="_blank" class="link">
-            <img src="img/content/links/mail.svg" alt="">
-          </a>
-          <a href="https://t.me/undefZahar" target="_blank" class="link">
-            <img src="img/content/links/telegram.svg" alt="">
-          </a>
-          <a href="https://github.com/undefzahar" target="_blank" class="link">
-            <img src="img/content/links/github.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/undef.zahar" target="_blank" class="link">
-            <img src="img/content/links/instagram.svg" alt="">
-          </a>
-        </div>
-
-        <!-- Resume -->
-        <!-- <div class="sidebar__resume">
-          <div class="text">
-            <div class="title" id="pageTimer">Check out my resume</div>
-            <a href="resume.docx">Download <img src="img/content/icons/arrow-down.svg" alt=""></a>
-          </div>
-
-          <div class="doc"><img src="img/content/resume.png" alt=""></div>
-        </div> -->
-
+          </li>
+          <li class="nav-item">
+            <router-link to="/useful">Полезное </router-link>
+          </li>
+        </ul>
       </div>
+      <router-view></router-view>
+    </div>
 
-      <div class="content">
-        <router-view></router-view>
-
-        <div class="content-menu">
-          <img src="img/content/icons/menu.svg" alt="" />
-        </div>
-      </div>
+    <div class="btn-menu">
+      <img src="img/content/icons/menu.svg" alt="" />
     </div>
 
     <!-- Mobile-menu -->
     <div class="mobile-menu">
       <router-link to="/" class="link">
-        <div class="icon"><img src="img/content/icons/user.svg" alt=""></div>
-        <div class="title">About me</div>
+        <div class="icon"><img src="img/content/mobile-menu/home.svg" alt=""></div>
+        <div class="title">Главная</div>
       </router-link>
 
       <router-link to="/projects" class="link">
-        <div class="icon"><img src="img/content/icons/portfolio.svg" alt=""></div>
-        <div class="title">Projects</div>
+        <div class="icon"><img src="img/content/mobile-menu/projects.svg" alt=""></div>
+        <div class="title">Работы</div>
       </router-link>
 
-      <!-- <router-link to="/gadgets" class="link">
-        <div class="icon"><img src="img/content/icons/gadgets.svg" alt=""></div>
-        <div class="title">Gadgets</div>
-      </router-link> -->
+      <router-link to="/useful" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/useful.svg" alt=""></div>
+        <div class="title">Полезное</div>
+      </router-link>
 
       <hr>
 
       <router-link to="/webpack" class="link">
-        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
         <div class="title">Webpack</div>
       </router-link>
 
-      <!-- <router-link to="/gulp" class="link">
-        <div class="icon"><img src="img/content/icons/code.svg" alt=""></div>
-        <div class="title">Gulp</div>
-      </router-link> -->
-
-      <router-link to="/useful" class="link">
-        <div class="icon"><img src="img/content/icons/tools.svg" alt=""></div>
-        <div class="title">Useful</div>
-      </router-link>
-
+      <a href="https://github.com/undefzahar?tab=repositories" target="_blank" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
+        <div class="title">Github rep</div>
+      </a>
     </div>
     <div class="bg-menu"></div>
 
