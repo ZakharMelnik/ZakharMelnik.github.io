@@ -6914,7 +6914,7 @@ a.btn.white {
   top: 0;
   background: rgba(0, 0, 0, 0.7);
   font-family: "Nunito", sans-serif;
-  display: none;
+  -display: none;
 }
 .filter.fixed {
   position: fixed;
@@ -7236,7 +7236,6 @@ a.btn.white {
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   gap: 16px;
-  -margin-bottom: 9rem;
 }
 .content-useful .links a {
   border-radius: 8px;
@@ -7462,6 +7461,7 @@ a.btn.white {
   .container-main .page-content .page-title {
     color: #000;
   }
+
   .grade-popup {
     padding: 24px;
   }
@@ -7663,10 +7663,6 @@ a.btn.white {
     -padding: 8px 10px;
   }
 
-  .project__category {
-    display: none;
-  }
-
   .project__info .tags {
     margin-right: 0;
   }
@@ -7677,11 +7673,11 @@ a.btn.white {
   }
 
   .filter {
-    width: 100%;
     overflow-x: auto;
-    margin: 60px 0 15px;
-    left: 32px;
-    right: 32px;
+    -margin: 60px 0 15px;
+    left: 10px;
+    right: 10px;
+    top: 120px;
   }
 
   .head {
@@ -7733,5 +7729,31 @@ a.btn.white {
 
   .content-head .title {
     font-size: 18px;
+  }
+
+  .banner-cards.items-5 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .banner-cards.items-5 .item {
+    padding: 16px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner-cards.items-5 .item .title {
+    margin-bottom: 0;
+    min-height: auto;
+  }
+  .banner-cards.items-5 .item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
