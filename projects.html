@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Portfolio</title>
+  <meta name="description" content="description of the site">
+  <meta name="keywords" content="key 1, key 2, key 3…" />
+
+  <meta name="google" content="notranslate">
+
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script src="https://kit.fontawesome.com/df264bc2b2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+  <div id="app">
+
+    <div class="container-main">
+      <div class="navbar">
+        <ul class="nav-menu links">
+          <li class="nav-item">
+            <a href="index.html" class="pl-0">Главная</a>
+          </li>
+          <li class="nav-item dropdown-animate" data-toggle="hover">
+            <a href="projects.html" class="dropdown-toggle active">Работы <img src="img/content/icons/arrow-down.svg"
+                alt=""></a>
+
+            <div class="dropdown-menu">
+              <ul>
+                <li>
+                  <a href="projects.html">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/projects.svg" alt=""></div>
+
+                      <div class="text">
+                        <div class="title">Посмотреть работы</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/undefzahar" target="_blank">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/github-rep.svg" alt=""></div>
+
+                      <div class="text">
+                        <div class="title">Github репозитории</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="dropdown-menu-links">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <a href="webpack.html">Webpack</a>
+                    <a href="useful.html">Полезное</a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href="useful.html">Полезное</a>
+                    <a href="useful.html">Полезное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="useful.html">Полезное </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-content content-projects" id="page-content">
+        <div class="page-title">
+          <h2 class="title">Работы</h2>
+          <div class="subtitle">Подборка</div>
+        </div>
+        <div class="filter" id="filter">
+          <a href="#" class="active" data-filter="all">Все <span id="all">0</span></a>
+
+          <a href="#" data-filter="landing">Лендинг <span id="landing">0</span></a>
+
+          <a href="#" data-filter="multipage">Многостраничный <span id="multipage">0</span></a>
+
+          <a href="#" data-filter="e-commerce">Коммерция <span id="e-commerce">0</span></a>
+          <a href="#" data-filter="wordpress">WordPress <span id="wordpress">0</span></a>
+        </div>
+
+        <div class="projects__container">
+
+          <div class="project border" data-cat="wordpress">
+            <a href="http://www.hutor.store/" target="_blank" class="container-img">
+              <img src="img/content/proj/HutorStore.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="title">Hutor Store </a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">wordpress</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project border" data-cat="e-commerce">
+            <a href="https://socpult.com" target="_blank" class="container-img">
+              <img src="img/content/proj/project1-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="title">SocPult </a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">e-commerce</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project border" data-cat="e-commerce">
+            <a href="https://undefzahar.github.io/Delta/" target="_blank" class="container-img">
+              <img src="img/content/proj/project2-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" class="title">Delta</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">e-commerce</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="multipage">
+            <a href="https://undefzahar.github.io/FaresFund" target="_blank" class="container-img">
+              <img src="img/content/proj/FaresFund-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/FaresFund" target="_blank" class="title">FaresFund</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">multipage</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project border" data-cat="e-commerce">
+            <a href="https://undefzahar.github.io/SunWayUa/" target="_blank" class="container-img">
+              <img src="img/content/proj/SunWay-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/SunWayUa/" target="_blank" class="title">SunWay
+                </a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">e-commerce</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://socpult.com" target="_blank" class="container-img">
+              <img src="img/content/proj/SocPult-landing-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://socpult.com" target="_blank" class="title">SocPult - landing</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://undefzahar.github.io/aqua-land/" target="_blank" class="container-img">
+              <img src="img/content/proj/AquaLand-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/aqua-land/" target="_blank" class="title">AquaLand</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="e-commerce">
+            <a href="https://undefzahar.github.io/test/" target="_blank" class="container-img">
+              <img src="img/content/proj/CryptoBot-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/test/" target="_blank" class="title">CryptoBot</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">e-commerce</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://webkaw.com/" target="_blank" class="container-img">
+              <img src="img/content/proj/webkaw.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" target="_blank" class="title">Webkaw</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+              ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="multipage">
+            <a href="https://undefzahar.github.io/SquareSelection/" target="_blank" class="container-img">
+              <img src="img/content/proj/SquareSelection-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/SquareSelection/" target="_blank"
+                  class="title">SquareSelection</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">multipage</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://undefzahar.github.io/futures/" target="_blank" class="container-img">
+              <img src="img/content/proj/Futures-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/futures/" target="_blank" class="title">Futures</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+              ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="multipage">
+            <a href="https://undefzahar.github.io/BoxedTrips/" target="_blank" class="container-img">
+              <img src="img/content/proj/BoxedTrips-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/BoxedTrips/" target="_blank" class="title">BoxedTrips</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">multipage</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project border" data-cat="e-commerce">
+            <a href="https://undefzahar.github.io/100bitcoins/" target="_blank" class="container-img">
+              <img src="img/content/proj/100Bitcoins-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/100bitcoins/" target="_blank" class="title">100Bitcoins</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">e-commerce</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://undefzahar.github.io/B2B" target="_blank" class="container-img">
+              <img src="img/content/proj/B2B-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/B2B" target="_blank" class="title">B2B</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="landing">
+            <a href="https://undefzahar.github.io/Quantcloud/" target="_blank" class="container-img">
+              <img src="img/content/proj/Quantcloud-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/Quantcloud/" target="_blank" class="title">Quantcloud</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project" data-cat="landing">
+            <a href="https://undefzahar.github.io/ProjectKripto/" target="_blank" class="container-img">
+              <img src="img/content/proj/ProjectKripto-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/ProjectKripto/" target="_blank" class="title">ProjectCrypto</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project" data-cat="multipage">
+            <a href="https://undefzahar.github.io/BuyCrypt/" target="_blank" class="container-img">
+              <img src="img/content/proj/BuyCrypt-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/BuyCrypt/" target="_blank" class="title">BuyCrypt</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">multipage</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="landing">
+            <a href="https://undefzahar.github.io/Kappi/" target="_blank" class="container-img">
+              <img src="img/content/proj/Kappi-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/Kappi/" target="_blank" class="title">Kappi</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project" data-cat="multipage">
+            <a href="https://undefzahar.github.io/RealBoost/" target="_blank" class="container-img">
+              <img src="img/content/proj/RealBoost-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/RealBoost/" target="_blank" class="title">RealBoost</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">multipage</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="landing">
+            <a href="https://undefzahar.github.io/SculptorTela/" target="_blank" class="container-img">
+              <img src="img/content/proj/SculptorTela-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/SculptorTela/" target="_blank" class="title">SculptorTela</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="landing">
+            <a href="https://undefzahar.github.io/Sartorius/" target="_blank" class="container-img">
+              <img src="img/content/proj/Sartorius-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="https://undefzahar.github.io/Sartorius/" target="_blank" class="title">Sartorius</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Social media promotion Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Repudiandae, ex.
+            </div>
+          </div>
+
+          <div class="project border" data-cat="landing">
+            <a href="https://shokal.kiev.ua/" target="_blank" class="container-img">
+              <img src="img/content/proj/Atlanta-min.png" alt="" />
+            </a>
+
+            <div class="project__info">
+              <div class="left">
+                <a href="#" target="_blank" class="title">Atlanta</a>
+              </div>
+
+              <div class="right">
+                <div class="project__category">landing</div>
+              </div>
+            </div>
+
+            <div class="descr">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+              ex.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-menu">
+      <img src="img/content/icons/menu.svg" alt="" />
+    </div>
+
+    <!-- Mobile-menu -->
+    <div class="mobile-menu links">
+      <a href="index.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/home.svg" alt=""></div>
+        <div class="title">Главная</div>
+      </a>
+
+      <a href="projects.html" class="link active">
+        <div class="icon"><img src="img/content/mobile-menu/projects.svg" alt=""></div>
+        <div class="title">Работы</div>
+      </a>
+
+      <a href="useful.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/useful.svg" alt=""></div>
+        <div class="title">Полезное</div>
+      </a>
+
+      <hr>
+
+      <a href="webpack.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
+        <div class="title">Webpack</div>
+      </a>
+
+      <a href="https://github.com/undefzahar?tab=repositories" target="_blank" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
+        <div class="title">Github rep</div>
+      </a>
+    </div>
+    <div class="bg-menu"></div>
+  </div>
+
+  <!-- <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script> -->
+
+
+<script src="js/app.js"></script></body>
+
+</html>

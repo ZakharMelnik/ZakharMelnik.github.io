@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Portfolio</title>
+  <meta name="description" content="description of the site">
+  <meta name="keywords" content="key 1, key 2, key 3…" />
+
+  <meta name="google" content="notranslate">
+
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script src="https://kit.fontawesome.com/df264bc2b2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg"><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+  <div id="app">
+
+    <div class="container-main">
+      <div class="navbar">
+        <ul class="nav-menu links">
+          <li class="nav-item">
+            <a href="index.html" class="pl-0">Главная</a>
+          </li>
+          <li class="nav-item dropdown-animate" data-toggle="hover">
+            <a href="projects.html" class="dropdown-toggle">Работы <img src="img/content/icons/arrow-down.svg"
+                alt=""></a>
+
+            <div class="dropdown-menu">
+              <ul>
+                <li>
+                  <a href="projects.html">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/projects.svg" alt=""></div>
+
+                      <div class="text">
+                        <div class="title">Посмотреть работы</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/undefzahar" target="_blank">
+                    <div class="d-flex">
+                      <div class="container-img"><img src="img/content/links/github-rep.svg" alt=""></div>
+
+                      <div class="text">
+                        <div class="title">Github репозитории</div>
+                        <div class="descr">Lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="dropdown-menu-links">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <a href="webpack.html">Webpack</a>
+                    <a href="useful.html">Полезное</a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a href="useful.html">Полезное</a>
+                    <a href="useful.html">Полезное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="useful.html" class="active">Полезное </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-content content-useful" id="page-content">
+        <div class="page-title">
+          <h2 class="title">Полезное</h2>
+          <div class="subtitle">Подборка</div>
+        </div>
+
+        <div class="banner-cards items-5" id="cards">
+          <a href="#js_library" class="item">
+            <div class="title">JavaScript библиотеки</div>
+            <div class="num">19</div>
+          </a>
+          <a href="#optimization_and_validation" class="item">
+            <div class="title">Оптимизация и тестирование</div>
+            <div class="num">4</div>
+          </a>
+          <a href="#image_editing" class="item">
+            <div class="title">Работа с изображениями</div>
+            <div class="num">3</div>
+          </a>
+          <a href="#chrome_extensions" class="item">
+            <div class="title">Chrome Расширения</div>
+            <div class="num">10</div>
+          </a>
+
+          <a href="#other" class="item">
+            <div class="title">Прочее</div>
+            <div class="num">3</div>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="title" id="js_library">JS библиотеки</div>
+
+          <div class="links">
+            <a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank">
+              <div class="title">Magnific popup</div>
+              <div class="descr">
+                Magnific Popup is a responsive lightbox & dialog script with focus
+                on performance and providing best experience for user with any
+                device
+              </div>
+            </a>
+
+            <a href="https://swiperjs.com/" target="_blank">
+              <div class="title">Swiper</div>
+              <div class="descr">
+                Swiper is the most modern free mobile touch slider with hardware
+                accelerated transitions and amazing native behavior.
+              </div>
+            </a>
+
+            <a href="https://dixonandmoe.com/rellax/" target="_blank">
+              <div class="title">Rellax</div>
+              <div class="descr">
+                Rellax is a buttery smooth, super lightweight, vanilla javascript
+                parallax library
+              </div>
+            </a>
+
+            <a href="https://micku7zu.github.io/vanilla-tilt.js/" target="_blank">
+              <div class="title">Vanilla-tilt</div>
+              <div class="descr">
+                A tiny requestAnimationFrame powered 60+fps lightweight parallax
+                hover tilt effect for jQuery.
+              </div>
+            </a>
+
+            <a href="http://michalsnik.github.io/aos/" target="_blank">
+              <div class="title">AOS</div>
+              <div class="descr">Animate On Scroll Library</div>
+            </a>
+
+            <a href="http://imakewebthings.com/waypoints/" target="_blank">
+              <div class="title">Waypoints</div>
+              <div class="descr">
+                Waypoints is the easiest way to trigger a function when you scroll
+                to an element.
+              </div>
+            </a>
+
+            <a href="https://github.com/mattboldt/typed.js" target="_blank">
+              <div class="title">Typed</div>
+              <div class="descr">
+                Made with Typed, now you can animate words and phrases.
+              </div>
+            </a>
+
+            <a href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/" target="_blank">
+              <div class="title">Tags</div>
+              <div class="descr">
+                Documentation and examples of how to use Tags on form inputs for
+                managing tags, labels and more.
+              </div>
+            </a>
+
+            <a href="https://sweetalert2.github.io/" target="_blank">
+              <div class="title">Sweet Alerts</div>
+              <div class="descr">
+                A beautiful, responsive, customizable, accessible replacement for
+                Javascript’s popup boxes.
+              </div>
+            </a>
+
+            <a href="https://select2.org/" target="_blank">
+              <div class="title">Select</div>
+              <div class="descr">
+                Select is based on the Select2 plugin which gives you a customizable
+                select box with support for searching, tagging, remote data sets,
+                infinite scrolling, and many other highly used options.
+              </div>
+            </a>
+
+            <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">
+              <div class="title">Notify</div>
+              <div class="descr">
+                A beautiful, responsive, customizable, accessible replacement for
+                Javascript’s popup boxes.
+              </div>
+            </a>
+
+            <a href="https://isotope.metafizzy.co/" target="_blank">
+              <div class="title">Masonry</div>
+              <div class="descr">
+                Documentation and examples for creating, filtering and sorting
+                magical layouts with the power of Isotope.
+              </div>
+            </a>
+
+            <a href="https://listjs.com/" target="_blank">
+              <div class="title">List</div>
+              <div class="descr">
+                Tiny, invisible and simple, yet powerful and incredibly fast vanilla
+                JavaScript that adds search, sort, filters and flexibility to plain
+                HTML lists, tables, or anything.
+              </div>
+            </a>
+
+            <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank">
+              <div class="title">Input mask</div>
+              <div class="descr">
+                Inputmask is a JavaScript library which creates an input mask
+                allowing you to add certain formats and input restrictions.
+              </div>
+            </a>
+
+            <a href="http://fancyapps.com/fancybox/3/docs/" target="_blank">
+              <div class="title">Fancybox</div>
+              <div class="descr">
+                A lightbox library for presenting various types of media.
+                Responsive, touch-enabled and customizable.
+              </div>
+            </a>
+
+            <a href="https://flatpickr.js.org/" target="_blank">
+              <div class="title">Datepicker</div>
+              <div class="descr">
+                Datepicker is based on the Flatpickr plugin, a lightweight, powerful
+                javascript datetime picker.
+              </div>
+            </a>
+
+            <a href="http://www.jacklmoore.com/autosize/" target="_blank">
+              <div class="title">Autosize</div>
+              <div class="descr">
+                A small, stand-alone script to automatically adjust textarea height.
+              </div>
+            </a>
+
+            <a href="https://apexcharts.com/" target="_blank">
+              <div class="title">Apex charts</div>
+              <div class="descr">
+                Modern & interactive Javascript charts to create beautiful
+                representation of your data.
+              </div>
+            </a>
+
+            <a href="https://quilljs.com/" target="_blank">
+              <div class="title">Quill</div>
+              <div class="descr">Your powerful rich text editor.</div>
+            </a>
+          </div>
+
+          <div class="title" id="optimization_and_validation">
+            Оптимизация и тестирование
+          </div>
+
+          <div class="links">
+            <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">
+              <div class="title">PageSpeed Insights</div>
+              <div class="descr">
+                Learn how to make your site load faster on any device.
+              </div>
+            </a>
+
+            <a href="https://validator.w3.org/" target="_blank">
+              <div class="title">Markup Validation Service</div>
+              <div class="descr">
+                This validator checks the markup validity of Web documents in HTML,
+                XHTML, SMIL, MathML, etc.
+              </div>
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+              <div class="title">CSS Validation Service</div>
+              <div class="descr">
+                Checking Cascading Style Sheets (CSS) and HTML Documents with Style
+                Sheets
+              </div>
+            </a>
+
+            <a href="https://caniuse.com/" target="_blank">
+              <div class="title">Can I use</div>
+              <div class="descr">
+                Browser support tables for support of front-end web technologies on
+                desktop and mobile web browsers.
+              </div>
+            </a>
+          </div>
+
+          <div class="title" id="image_editing">Работа с изображениями</div>
+
+          <div class="links">
+            <a href="https://imagecompressor.com/" target="_blank">
+              <div class="title">Optimizilla</div>
+              <div class="descr">
+                This online image optimizer uses a smart combination of the best
+                optimization and compression algorithms.
+              </div>
+            </a>
+
+            <a href="https://www.iloveimg.com/" target="_blank">
+              <div class="title">IloveIMG</div>
+              <div class="descr">
+                Every tool you could want to edit images in bulk <br />
+                Your online photo editor is here and forever free!
+              </div>
+            </a>
+
+            <a href="https://www.vectorizer.io/" target="_blank">
+              <div class="title">Vectorizer</div>
+              <div class="descr">
+                Convert raster images like PNGs, BMPs and JPEGs to scalable vector
+                graphics (SVG, EPS, DXF)
+              </div>
+            </a>
+          </div>
+
+          <div class="title" id="chrome_extensions">Chrome Расширения</div>
+
+          <div class="links">
+            <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
+              target="_blank">
+              <div class="title">Lighthouse</div>
+              <div class="descr">
+                Lighthouse is an open-source, automated tool for improving the
+                performance, quality, and correctness of your web apps.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/seoquake/akdgnmcogleenhbclghghlkkdndkjdjc"
+              target="_blank">
+              <div class="title">SEOquake</div>
+              <div class="descr">
+                SEOquake is a free plugin that provides key SEO metrics and useful
+                tools such as SEO audits and more.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/full-page-screenshot/glgomjpomoahpeekneidkinhcfjnnhmb"
+              target="_blank">
+              <div class="title">Full Page Screenshot</div>
+              <div class="descr">
+                Take awesome screenshots of entire websites and capture page
+                elements.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd"
+              target="_blank">
+              <div class="title">Vue.js devtools</div>
+              <div class="descr">
+                Chrome and Firefox DevTools extension for debugging Vue.js
+                applications.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk"
+              target="_blank">
+              <div class="title">CSS Peeper</div>
+              <div class="descr">Extract CSS and build beautiful styleguides.</div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg"
+              target="_blank">
+              <div class="title">FireShot</div>
+              <div class="descr">Allows you to take screenshots of web pages.</div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh"
+              target="_blank">
+              <div class="title">Fonts Ninja</div>
+              <div class="descr">
+                Identify fonts from any website, bookmark, try, and buy them.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
+              target="_blank">
+              <div class="title">Web Developer</div>
+              <div class="descr">
+                Adds a toolbar button with various web developer tools.
+              </div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg"
+              target="_blank">
+              <div class="title">User-Agent Switcher</div>
+              <div class="descr">Spoofs & Mimics User-Agent strings.</div>
+            </a>
+
+            <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi"
+              target="_blank">
+              <div class="title">PerfectPixel</div>
+              <div class="descr">
+                This extension helps you design your site with pixel perfect!
+              </div>
+            </a>
+          </div>
+
+          <div class="title" id="other">Прочее</div>
+
+          <div class="links">
+            <a href="https://viewportsizes.com/mine/" target="_blank">
+              <div class="title">Viewport sizes</div>
+              <div class="descr">Find out the size of the viewport.</div>
+            </a>
+
+            <a href="https://www.aconvert.com/" target="_blank">
+              <div class="title">Aconvert</div>
+              <div class="descr">
+                Convert document, image, video and audio files online
+              </div>
+            </a>
+
+            <a href="https://typograf.ru/" target="_blank">
+              <div class="title">Typograf</div>
+              <div class="descr">
+                Universal tool for preparing texts for web-publishing.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-menu">
+      <img src="img/content/icons/menu.svg" alt="" />
+    </div>
+
+    <!-- Mobile-menu -->
+    <div class="mobile-menu links">
+      <a href="index.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/home.svg" alt=""></div>
+        <div class="title">Главная</div>
+      </a>
+
+      <a href="projects.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/projects.svg" alt=""></div>
+        <div class="title">Работы</div>
+      </a>
+
+      <a href="useful.html" class="link active">
+        <div class="icon"><img src="img/content/mobile-menu/useful.svg" alt=""></div>
+        <div class="title">Полезное</div>
+      </a>
+
+      <hr>
+
+      <a href="webpack.html" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
+        <div class="title">Webpack</div>
+      </a>
+
+      <a href="https://github.com/undefzahar?tab=repositories" target="_blank" class="link">
+        <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
+        <div class="title">Github rep</div>
+      </a>
+    </div>
+    <div class="bg-menu"></div>
+  </div>
+
+  <!-- <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script> -->
+
+
+<script src="js/app.js"></script></body>
+
+</html>

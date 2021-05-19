@@ -28,16 +28,16 @@
       <div class="navbar">
         <ul class="nav-menu links">
           <li class="nav-item">
-            <router-link to="/" class="pl-0">Главная</router-link>
+            <a href="index.html" class="pl-0 active">Главная</a>
           </li>
           <li class="nav-item dropdown-animate" data-toggle="hover">
-            <router-link to="/projects" class="dropdown-toggle">Работы <img src="img/content/icons/arrow-down.svg"
-                alt=""></router-link>
+            <a href="projects.html" class="dropdown-toggle">Работы <img src="img/content/icons/arrow-down.svg"
+                alt=""></a>
 
             <div class="dropdown-menu">
               <ul>
                 <li>
-                  <router-link to="/projects">
+                  <a href="projects.html">
                     <div class="d-flex">
                       <div class="container-img"><img src="img/content/links/projects.svg" alt=""></div>
 
@@ -46,7 +46,7 @@
                         <div class="descr">Lorem ipsum dolor sit</div>
                       </div>
                     </div>
-                  </router-link>
+                  </a>
                 </li>
                 <li>
                   <a href="https://github.com/undefzahar" target="_blank">
@@ -65,23 +65,759 @@
               <div class="dropdown-menu-links">
                 <div class="row">
                   <div class="col-sm-6">
-                    <router-link to="/webpack">Webpack</router-link>
-                    <router-link to="/webpack">Gulp</router-link>
+                    <a href="webpack.html">Webpack</a>
+                    <a href="useful.html">Полезное</a>
                   </div>
                   <div class="col-sm-6">
-                    <router-link to="/useful">Полезное</router-link>
-                    <router-link to="/useful">Полезное</router-link>
+                    <a href="useful.html">Полезное</a>
+                    <a href="useful.html">Полезное</a>
                   </div>
                 </div>
               </div>
             </div>
           </li>
           <li class="nav-item">
-            <router-link to="/useful">Полезное </router-link>
+            <a href="useful.html">Полезное </a>
           </li>
         </ul>
       </div>
-      <router-view></router-view>
+      <div class="page-content page-about" id="page-content">
+        <div class="page-title">
+          <h1 class="title">Привет, я Захар!</h1>
+          <div class="subtitle">front-end developer</div>
+        </div>
+
+        <div class="banner-cards" id="cards">
+          <div class="item">
+            <div class="title">Опыт работы</div>
+            <div class="num">3 года</div>
+          </div>
+          <div class="item">
+            <div class="title">Готовых проектов</div>
+            <div class="num">50+</div>
+          </div>
+          <a href="#price" class="item">
+            <div class="title">Сроки</div>
+            <div class="num">от 2 дней</div>
+          </a>
+          <a href="#price" class="item">
+            <div class="title">Цены</div>
+            <div class="num">от 50 $</div>
+          </a>
+        </div>
+
+        <!-- Обо мне - Контакты -->
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-header">
+                <div>Обо мне 👨‍💻</div>
+              </div>
+              <div class="card-body">
+                <div class="title">Title</div>
+
+                <p class="text">
+                  Why is it worth working with me? You can work for a long time, but
+                  you can work quickly. I am a professional and I do it quickly
+                  without losing quality. <br /><br />
+
+                  I have taken theoretical web developer courses from Glo Academy,
+                  studied documentation, followed trends. I practiced in a young and
+                  energetic team, where the main goal is to show the desired result
+                  within the specified time frame. After a long collaboration, I
+                  took up freelancing and continued to improve my skills. Behind my
+                  shoulders is a wide variety of sites of different specifics,
+                  different levels of complexity and volume.<br /><br />
+
+                  So why aren't we working together yet?
+                </p>
+
+                <div class="title">Технологии</div>
+
+                <p class="text">
+                  Why is it worth working with me? You can work for a long time, but
+                  you can work quickly. I am a professional and I do it quickly
+                  without losing quality. <br /><br />
+
+                  <a href="#">Webpack</a>
+
+                  So why aren't we working together yet?
+                </p>
+
+                <div class="title">Опыт</div>
+
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Molestias asperiores fugit, nobis hic explicabo tenetur veniam,
+                  excepturi dicta vitae illum atque perferendis quibusdam quis cum
+                  veritatis eos suscipit ipsum labore.
+                </p>
+              </div>
+            </div>
+
+            <div class="card" id="price">
+              <div class="card-header">Прайс 💰</div>
+              <div class="card-body">
+                <p class="text">
+                  Срок выполнения и цена варьируется в зависимости от объема,
+                  функционала, анимаций сайта .
+                </p>
+                <div class="table">
+                  <div class="table-col">
+                    <div class="title">Услуги</div>
+                    <div class="item">Лендинг</div>
+                    <div class="item">Многостраничный сайт</div>
+                    <div class="item">Интернет-магазин</div>
+                    <div class="item">Wordpress шаблон</div>
+                    <div class="item">Доработки</div>
+                  </div>
+                  <div class="table-col">
+                    <div class="title">≈ Сроки</div>
+                    <div class="item">2-7 дней</div>
+                    <div class="item">5-10 дней</div>
+                    <div class="item">1 - 2 недели</div>
+                    <div class="item">2-7 дней</div>
+                    <div class="item">1 час</div>
+                  </div>
+                  <div class="table-col">
+                    <div class="title">≈ Цены</div>
+                    <div class="item">50 - 150 $</div>
+                    <div class="item">150 - 400 $</div>
+                    <div class="item">200 - 500 $</div>
+                    <div class="item">100-200 $</div>
+                    <div class="item">10$</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">Скилы ⭐</div>
+              <div class="card-body">
+                <div class="grades">
+                  <a href="#popup-computer-science">Computer science (basics)</a>
+                  <a href="#popup-markdown">Markdown</a>
+                  <a href="#popup-html">HTML</a>
+                  <a href="#popup-css">CSS</a>
+                  <a href="#popup-js">JavaScript (basics)</a>
+                  <a href="#popup-json">JSON</a>
+                  <a href="#popup-npm">NPM</a>
+                  <a href="#popup-sass">SASS</a>
+                  <a href="#popup-emmet">Emmet</a>
+                  <a href="#popup-bootstrap">Bootstrap</a>
+                  <a href="#popup-gulp">Gulp</a>
+                  <a href="#popup-webpack">Webpack</a>
+                  <a href="#popup-jquery">JQuery</a>
+                  <a href="#popup-vue">Vue</a>
+                  <a href="#popup-optimization">Optimization</a>
+                  <a href="#popup-chrome-devtools">Chrome DevTools</a>
+                  <a href="#popup-seo">SEO</a>
+                  <a href="#popup-bem">BEM</a>
+                  <a href="#popup-git">Git</a>
+                  <a href="#popup-debugging">Debugging</a>
+                  <a href="#popup-eslint">ESLint</a>
+                  <a href="#popup-babel">Babel</a>
+                  <a href="#popup-code-commenting">Code commenting</a>
+                  <a href="#popup-touch-typing">Touch typing</a>
+                  <a href="#popup-semantic-html">Semantic HTML</a>
+                  <a href="#popup-refactoring">Refactoring</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Программы 💻</div>
+              <div class="card-body">
+                <div class="grades">
+                  <span>Figma</span>
+                  <span>Visual Studio Code</span>
+                  <span>Microsoft Office</span>
+                  <span>FileZilla</span>
+                  <span>GitHub Desktop</span>
+                  <span>Photoshop</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Контакты 📱</div>
+              <div class="card-body">
+                <div class="social">
+                  <div class="title">
+                    <i class="fab fa-telegram-plane"></i>Telegram
+                  </div>
+                  <div>
+                    <a href="https://t.me/undefZahar" class="link" target="_blank">@undefZahar <i
+                        class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="social">
+                  <div class="title">
+                    <i class="fas fa-envelope-square"></i>Email
+                  </div>
+                  <div>
+                    <a href="mailto:undef.zahar@gmail.com" class="link">undef.zahar@gmail.com <i
+                        class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="social">
+                  <div class="title"><i class="fab fa-github"></i>GitHub</div>
+                  <div>
+                    <a href="https://github.com/undefzahar" class="link" target="_blank">undefzahar <i
+                        class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="social">
+                  <div class="title">
+                    <i class="fab fa-instagram mr-2"></i>Instagram
+                  </div>
+                  <div>
+                    <a href="https://www.instagram.com/undef.zahar/" class="link" target="_blank">@undef.zahar <i
+                        class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="social">
+                  <div class="title"><i class="fas fa-phone-square"></i>Phone</div>
+                  <div>
+                    <a href="tel:+380954850960" class="link">+38 095 485 0960 <i class="fas fa-phone"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Попапы -->
+        <div class="popups">
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-magnific-popup">
+            <h2 class="title">Magnific popup</h2>
+            <p class="descr">
+              Magnific Popup is a responsive lightbox & dialog script with focus on
+              performance and providing best experience for user with any device
+            </p>
+            <a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank" class="link">Official Documentation
+              <i class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-swiper">
+            <!-- <button title="Close (Esc)" type="button" class="mfp-close">×</button> -->
+            <h2 class="title">Swiper</h2>
+            <p class="descr">
+              Most modern mobile touch slider with hardware accelerated transitions.
+            </p>
+            <a href="https://swiperjs.com/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-rellax">
+            <h2 class="title">Rellax</h2>
+            <p class="descr">
+              Rellax is a buttery smooth, super lightweight, vanilla javascript
+              parallax library
+            </p>
+            <a href="https://dixonandmoe.com/rellax/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-vanilla-tilt">
+            <h2 class="title">Vanilla-tilt</h2>
+            <p class="descr">
+              A tiny requestAnimationFrame powered 60+fps lightweight parallax hover
+              tilt effect for jQuery.
+            </p>
+            <a href="https://micku7zu.github.io/vanilla-tilt.js/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-aos">
+            <h2 class="title">AOS</h2>
+            <p class="descr">Animate On Scroll Library</p>
+            <a href="http://michalsnik.github.io/aos/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-waypoints">
+            <h2 class="title">Waypoints</h2>
+            <p class="descr">
+              Waypoints is the easiest way to trigger a function when you scroll to
+              an element.
+            </p>
+            <a href="http://imakewebthings.com/waypoints/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-typed">
+            <h2 class="title">Typed</h2>
+            <p class="descr">
+              Made with Typed, now you can animate words and phrases.
+            </p>
+            <a href="https://github.com/mattboldt/typed.js" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-tags">
+            <h2 class="title">Tags</h2>
+            <p class="descr">
+              Documentation and examples of how to use Tags on form inputs for
+              managing tags, labels and more.
+            </p>
+            <a href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/" class="link"
+              target="_blank">Official Documentation <i class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-sweet-alerts">
+            <h2 class="title">Sweet Alerts</h2>
+            <p class="descr">
+              A beautiful, responsive, customizable, accessible replacement for
+              Javascript’s popup boxes.
+            </p>
+            <a href="https://sweetalert2.github.io/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-select">
+            <h2 class="title">Select</h2>
+            <p class="descr">
+              Select is based on the Select2 plugin which gives you a customizable
+              select box with support for searching, tagging, remote data sets,
+              infinite scrolling, and many other highly used options.
+            </p>
+            <a href="https://select2.org/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-notify">
+            <h2 class="title">Notify</h2>
+            <p class="descr">
+              A beautiful, responsive, customizable, accessible replacement for
+              Javascript’s popup boxes.
+            </p>
+            <a href="http://bootstrap-notify.remabledesigns.com/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-masonry">
+            <h2 class="title">Masonry</h2>
+            <p class="descr">
+              Documentation and examples for creating, filtering and sorting magical
+              layouts with the power of Isotope.
+            </p>
+            <a href="https://isotope.metafizzy.co/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-list">
+            <h2 class="title">List</h2>
+            <p class="descr">
+              Tiny, invisible and simple, yet powerful and incredibly fast vanilla
+              JavaScript that adds search, sort, filters and flexibility to plain
+              HTML lists, tables, or anything.
+            </p>
+            <a href="https://listjs.com/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-input-mask">
+            <h2 class="title">Input mask</h2>
+            <p class="descr">
+              Inputmask is a JavaScript library which creates an input mask allowing
+              you to add certain formats and input restrictions.
+            </p>
+            <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" class="link" target="_blank">Official
+              Documentation <i class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-fancybox">
+            <h2 class="title">Fancybox</h2>
+            <p class="descr">
+              A lightbox library for presenting various types of media. Responsive,
+              touch-enabled and customizable.
+            </p>
+            <a href="http://fancyapps.com/fancybox/3/docs/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-datepicker">
+            <h2 class="title">Datepicker</h2>
+            <p class="descr">
+              Datepicker is based on the Flatpickr plugin, a lightweight, powerful
+              javascript datetime picker.
+            </p>
+            <a href="https://flatpickr.js.org/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-autosize">
+            <h2 class="title">Autosize</h2>
+            <p class="descr">
+              A small, stand-alone script to automatically adjust textarea height.
+            </p>
+            <a href="http://www.jacklmoore.com/autosize/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-apex-charts">
+            <h2 class="title">Apex charts</h2>
+            <p class="descr">
+              Modern & interactive Javascript charts to create beautiful
+              representation of your data.
+            </p>
+            <a href="https://apexcharts.com/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-quill">
+            <h2 class="title">Quill</h2>
+            <p class="descr">Your powerful rich text editor.</p>
+            <a href="https://quilljs.com/" class="link" target="_blank">Official Documentation <i
+                class="fas fa-external-link-alt"></i></a>
+
+            <router-link to="/useful" class="link popup-dismiss">View more <i class="fas fa-external-link-alt"></i>
+            </router-link>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-computer-science">
+            <h2 class="title">Computer science (basics)</h2>
+            <p class="descr">
+              Основы программирования и Computer Science - это те самые
+              фундаментальные знания, которые необходимы каждому, кто хочет стать
+              настоящим инженером, ведь нужно не просто знать, как писать код, но и
+              понимать, как этот код работает сейчас и будет работать при других
+              условиях.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-markdown">
+            <h2 class="title">Markdown</h2>
+            <p class="descr">
+              Markdown — облегчённый язык разметки, созданный с целью написания
+              наиболее читаемого и удобного для правки текста, но пригодного для
+              преобразования в языки для продвинутых публикаций.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-html">
+            <h2 class="title">HTML</h2>
+            <p class="descr">
+              HTML — (от англ. HyperText Markup Language — «язык гипертекстовой
+              разметки») — язык разметки, определяющий структуру веб-страниц.
+              Большинство веб-страниц в интернете содержат описание разметки на
+              языке HTML.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-css">
+            <h2 class="title">CSS</h2>
+            <p class="descr">
+              CSS — формальный язык описания внешнего вида документа, написанного с
+              использованием языка разметки. Именно CSS делает Ваш HTML "красивым".
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-js">
+            <h2 class="title">JavaScript</h2>
+            <p class="descr">
+              JavaScript — язык программирования, который изначально создавался для
+              того, чтобы сделать web-странички «живыми». Однако к 2019 году он
+              серьезно "вырос" и сейчас представляет собой язык номер 1 для создания
+              веб-приложений как на стороне клиента, так и на стороне сервера. Под
+              "базовым" JS подразумеваются понимание таких вещей, как знание основ,
+              понимание замыканий и областей видимости, умение реализовать и
+              пользоваться встроенными в язык базовыми структурами данных, понимание
+              контекста вызова и умение работать со встроенными объектами. Также
+              нужно уметь работать с DOM и событиями браузера.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-json">
+            <h2 class="title">JSON</h2>
+            <p class="descr">
+              JSON (JavaScript Object Notation) - простой формат обмена данными,
+              удобный для чтения и написания как человеком, так и компьютером. Он
+              основан на подмножестве языка программирования JavaScript,
+              определенного в стандарте ECMA-262 3rd Edition - December 1999. JSON -
+              текстовый формат, полностью независимый от языка реализации, но он
+              использует соглашения, знакомые программистам C-подобных языков, таких
+              как C, C++, C#, Java, JavaScript, Perl, Python и многих других. Эти
+              свойства делают JSON идеальным языком обмена данными.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-npm">
+            <h2 class="title">NPM</h2>
+            <p class="descr">NPM — менеджер пакетов, входящий в состав Node.js.</p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-sass">
+            <h2 class="title">SASS</h2>
+            <p class="descr">
+              SASS — это метаязык на основе CSS, предназначенный для увеличения
+              уровня абстракции CSS кода и упрощения файлов каскадных таблиц стилей.
+              Язык SASS имеет два синтаксиса: SASS — отличается отсутствием фигурных
+              скобок, в нём вложенные элементы реализованы с помощью отступов; SCSS
+              (Sassy CSS) — использует фигурные скобки, как и сам CSS. По своей сути
+              SASS и SCSS - это препроцессоры для CSS с разным синтаксисом. Они
+              позволяют быстрее и "элегантнее" писать CSS. мы предлагаем рассмотреть
+              SASS, так как он является более элегантным и популярным решением.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-emmet">
+            <h2 class="title">Emmet</h2>
+            <p class="descr">
+              Emmet - инструмент, который помогает быстрее писать html и css. В
+              большинстве редакторов есть из коробки
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-bootstrap">
+            <h2 class="title">Bootstrap</h2>
+            <p class="descr">
+              Bootstrap - это инструментарий с открытым исходным кодом для
+              разработки с помощью HTML, CSS и JS. Наверное самый популярный
+              фреймворк для создания UI.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-gulp">
+            <h2 class="title">Gulp</h2>
+            <p class="descr">
+              Gulp — это таск-менеджер для автоматического выполнения часто
+              используемых задач (например, минификации, тестирования, объединения
+              файлов), написанный на языке программирования JavaScript.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-webpack">
+            <h2 class="title">Webpack</h2>
+            <p class="descr">
+              Webpack — инструмент веб-разработчика, который соединяет JavaScript- и
+              CSS-файлы в единое целое — файл, который часто называется «bundle» (с
+              англ. «пачка»).
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-jquery">
+            <h2 class="title">JQuery</h2>
+            <p class="descr">
+              Старый добрый JQuery - фреймворк, "который мы заслужили". Основная
+              задача - взаимодействие JavaScript и HTML. Помогает легко получать
+              доступ к любому элементу DOM, обращаться к атрибутам и содержимому
+              элементов DOM, манипулировать ими и так далее.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-vue">
+            <h2 class="title">Vue</h2>
+            <p class="descr">
+              Vue - прогрессивный JavaScript-фреймворк с открытым исходным кодом для
+              создания пользовательских интерфейсов. Как React, только не так.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-optimization">
+            <h2 class="title">Optimization</h2>
+            <p class="descr">
+              Анализ и оптимизация — процессы, построенный на оценке
+              производительности, дизайна и юзабилити сайтов и приложений. По
+              результатам анализа разработчикам даются рекомендации по улучшению
+              кода за счёт использования сервисов и техник оптимизации. Скорость
+              сайта состоит из 2 частей: как быстро загружается страница и как
+              быстро работает код в ней. Многие сервисы, такие как минификаторы или
+              CDN, помогают ускорить загрузку, но скорость работы кода зависит
+              только от вас. Небольшие изменения в коде могут давать огромные
+              изменения в производительности. Всего несколько строк могут означать
+              разницу между быстрым сайтом и диалогом “Unresponsive Script”
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-chrome-devtools">
+            <h2 class="title">Chrome DevTools</h2>
+            <p class="descr">
+              Chrome DevTools - это набор инструментов веб-разработки, входящий в
+              состав веб-браузера Google Chrome. Эти инструменты помогут Вам быстро
+              редактировать веб-страницы и диагностировать проблемы Ваших приложений
+              не покидая браузер, что, безусловно, поможет Вам быстрее и
+              качественнее делать Вашу работу.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-seo">
+            <h2 class="title">SEO</h2>
+            <p class="descr">
+              SEO (Search Engine Optimization, поисковая оптимизация) – это
+              всестороннее развитие и продвижение сайта для его выхода на первые
+              позиции в результатах выдачи поисковых систем (SERPs) по выбранным
+              запросам с целью увеличения посещаемости и дальнейшего получения
+              дохода.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-bem">
+            <h2 class="title">BEM</h2>
+            <p class="descr">
+              Методология БЭМ создана в Яндексе для разработки сайтов, которые надо
+              делать быстро,а поддерживать долгие годы. Она позволяет создавать
+              расширяемые и повторно используемые компоненты интерфейса.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-git">
+            <h2 class="title">Git</h2>
+            <p class="descr">
+              Распределённая система управления версиями. Проект был создан Линусом
+              Торвальдсом для управления разработкой ядра Linux.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-debugging">
+            <h2 class="title">Debugging</h2>
+            <p class="descr">
+              Не важно какой именно дебаггер Вы используете - Google Chrome,
+              standalone решение или встренный в вашу IDE или текстовый редактор.
+              Важно, что Вы умеете это делать и понимаете зачем Вы это делаете.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-eslint">
+            <h2 class="title">ESLint</h2>
+            <p class="descr">
+              ESLint – это инструмент, который позволяет проводить анализ качества
+              вашего кода, написанного на любом выбранном стандарте JavaScript. Он
+              приводит код к более-менее единому стилю, помогает избежать глупых
+              ошибок, умеет автоматически исправлять многие из найденных проблем и
+              отлично интегрируется со многими инструментами разработки.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-babel">
+            <h2 class="title">Babel</h2>
+            <p class="descr">
+              Babel.JS – это транспайлер, переписывающий код на ES-2015 в код на
+              предыдущем стандарте ES5. Берёт код "нового образца" и полифилит его в
+              код "старого образца". Всё просто.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-code-commenting">
+            <h2 class="title">Code commenting</h2>
+            <p class="descr">
+              Комментирование кода - очень важная вещь, которой, зачастую, многие
+              принебрегают, особенно этим грешат начинающие разработчики.
+              Комментарии помогают поддерживать и развивать Ваш код как другим
+              разработчикам, так и Вам самим, спустя время. А вы комментируете свой
+              код?
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-touch-typing">
+            <h2 class="title">Touch typing</h2>
+            <p class="descr">
+              Слепой метод набора (слепая печать) — методика набора текста
+              «вслепую», то есть не глядя на клавиши печатной машинки или клавиши
+              клавиатуры, используя все (или большинство) пальцы рук.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-semantic-html">
+            <h2 class="title">Semantic HTML</h2>
+            <p class="descr">
+              Семантическая верстка - это подход, который путём правильной
+              вложенности HTML-тегов говорит браузеру не только как показывать
+              контент на странице, но и даёт ему чёткое пояснение роли того или
+              иного контента.
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-refactoring">
+            <h2 class="title">Refactoring</h2>
+            <p class="descr">
+              Рефакторинг — это контролируемый процесс улучшения кода, без написания
+              новой функциональности. Результат рефакторинга — это чистый код и
+              простой дизайн. В первую очередь рефакторинг - это превращение
+              грязного кода в чистый. Но зачем "чистить" грязный код, если можно
+              сразу писать чистый?
+            </p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-">
+            <h2 class="title"></h2>
+            <p class="descr"></p>
+          </div>
+
+          <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-">
+            <h2 class="title"></h2>
+            <p class="descr"></p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="btn-menu">
@@ -90,27 +826,27 @@
 
     <!-- Mobile-menu -->
     <div class="mobile-menu links">
-      <router-link to="/" class="link">
+      <a href="index.html" class="link active">
         <div class="icon"><img src="img/content/mobile-menu/home.svg" alt=""></div>
         <div class="title">Главная</div>
-      </router-link>
+      </a>
 
-      <router-link to="/projects" class="link">
+      <a href="projects.html" class="link">
         <div class="icon"><img src="img/content/mobile-menu/projects.svg" alt=""></div>
         <div class="title">Работы</div>
-      </router-link>
+      </a>
 
-      <router-link to="/useful" class="link">
+      <a href="useful.html" class="link">
         <div class="icon"><img src="img/content/mobile-menu/useful.svg" alt=""></div>
         <div class="title">Полезное</div>
-      </router-link>
+      </a>
 
       <hr>
 
-      <router-link to="/webpack" class="link">
+      <a href="webpack.html" class="link">
         <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>
         <div class="title">Webpack</div>
-      </router-link>
+      </a>
 
       <a href="https://github.com/undefzahar?tab=repositories" target="_blank" class="link">
         <div class="icon"><img src="img/content/mobile-menu/code.svg" alt=""></div>

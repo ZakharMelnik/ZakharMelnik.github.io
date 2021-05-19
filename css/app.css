@@ -718,6 +718,9 @@ a.link.dark:hover {
 .container-main .navbar ul li.nav-item a.router-link-exact-active {
   color: white;
 }
+.container-main .navbar ul li.nav-item a.active {
+  color: #fff;
+}
 .container-main .navbar ul li.nav-item .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -6911,7 +6914,7 @@ a.btn.white {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   position: absolute;
-  top: 0;
+  top: 70px;
   background: rgba(0, 0, 0, 0.7);
   font-family: "Nunito", sans-serif;
   -display: none;
@@ -7343,7 +7346,7 @@ a.btn.white {
   display: flex;
   margin-right: 10px;
 }
-.mobile-menu .link.router-link-exact-active {
+.mobile-menu .link.active {
   color: #273444;
   background-color: #d6ddea;
   border-color: #cdd6e6;
@@ -7431,6 +7434,14 @@ a.btn.white {
   }
   .container-main .page-content .page-title {
     text-align: center;
+  }
+  .container-main .page-content .card .card-body .table .table-col:first-child {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .container-main .page-content .card .card-body .social .title i {
+    display: none;
   }
 
   .btn-menu {
@@ -7651,14 +7662,6 @@ a.btn.white {
             box-shadow: none;
   }
 
-  .project {
-    border-radius: 12px;
-  }
-
-  .project__container-img {
-    border-radius: 5px;
-  }
-
   .project__info {
     -padding: 8px 10px;
   }
@@ -7678,37 +7681,6 @@ a.btn.white {
     left: 10px;
     right: 10px;
     top: 120px;
-  }
-
-  .head {
-    padding: 15px;
-  }
-
-  .content-head {
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background: rgba(13, 17, 23, 0.7);
-    z-index: 10;
-    padding: 15px 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-bottom: 1px solid #30363d;
-  }
-
-  .content-projects .content-head {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .content-head .back {
-    left: 15px;
   }
 
   .content-body {
