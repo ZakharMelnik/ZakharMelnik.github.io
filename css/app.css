@@ -7388,6 +7388,7 @@ a.btn.white {
   -font-weight: 600;
   background: transparent;
   border: 1px solid transparent;
+  color: #0e3890;
 }
 .mobile-menu .link:not(:last-of-type) {
   margin-bottom: 5px;
@@ -7512,12 +7513,20 @@ a.btn.white {
     display: flex;
   }
 
+  .btn-menu, .page-up {
+    width: 64px;
+    height: 64px;
+  }
+  .btn-menu img, .page-up img {
+    width: 40px;
+  }
+
   .page-up {
     bottom: 30px;
     right: 30px;
   }
   .page-up.show {
-    bottom: 90px;
+    bottom: 104px;
   }
 }
 @media (max-width: 992px) {
