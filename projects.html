@@ -42,8 +42,8 @@
                       <div class="container-img"><img src="img/content/links/projects.svg" alt=""></div>
 
                       <div class="text">
-                        <div class="title">Посмотреть работы</div>
-                        <div class="descr">Lorem ipsum dolor sit</div>
+                        <div class="title">Работы</div>
+                        <div class="descr">Подборка последних работ</div>
                       </div>
                     </div>
                   </a>
@@ -55,7 +55,7 @@
 
                       <div class="text">
                         <div class="title">Github репозитории</div>
-                        <div class="descr">Lorem ipsum dolor sit</div>
+                        <div class="descr">Контролировать процесс разработки</div>
                       </div>
                     </div>
                   </a>
@@ -65,12 +65,10 @@
               <div class="dropdown-menu-links">
                 <div class="row">
                   <div class="col-sm-6">
-                    <a href="webpack.html">Webpack</a>
-                    <a href="useful.html">Полезное</a>
+                    <a href="https://github.com/undefzahar/webpack-template#readme" target="_blank">Webpack</a>
                   </div>
                   <div class="col-sm-6">
-                    <a href="useful.html">Полезное</a>
-                    <a href="useful.html">Полезное</a>
+                    <a href="#popup-bonuses" class="bonuses">бонусы</a>
                   </div>
                 </div>
               </div>
@@ -101,6 +99,14 @@
           <project v-for="project in projects" v-bind:project="project"></project>
         </div>
       </div>
+    </div>
+
+    <div class="grade-popup zoom-anim-dialog mfp-hide" id="popup-bonuses">
+      <h2 class="title">Бонусы</h2>
+      <p class="descr">
+        За приведенного клиента плачу 10% с заказа. <br><br>
+        Для постоянных клиентов скидочки.
+      </p>
     </div>
 
     <div class="btn-menu">

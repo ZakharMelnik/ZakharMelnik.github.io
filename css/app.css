@@ -917,7 +917,7 @@ a.link.dark:hover {
 }
 .container-main .page-content .card .card-body {
   padding: 24px 24px;
-  color: #8492a6;
+  color: #6c7684;
 }
 .container-main .page-content .card .card-body > .title {
   font-size: 18px;
@@ -931,6 +931,9 @@ a.link.dark:hover {
 .container-main .page-content .card .card-body p.text a {
   color: #5869E8;
   text-decoration: underline;
+}
+.container-main .page-content .card .card-body p.text span {
+  color: #000;
 }
 .container-main .page-content .card .card-body .table {
   display: -webkit-box;
@@ -7250,21 +7253,23 @@ a.btn.white {
   display: -ms-flexbox;
   display: flex;
   z-index: -1;
-  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(18, 38, 63, 0.1);
-          box-shadow: 0 0.5rem 1.5rem rgba(18, 38, 63, 0.1);
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(18, 38, 63, 0.15);
+          box-shadow: 0 0.5rem 1.5rem rgba(18, 38, 63, 0.15);
 }
 .page-up:hover {
   background: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: 1px solid #97b9ff;
-  -webkit-box-shadow: 0 0.5rem 1.3rem rgba(18, 38, 63, 0.2);
-          box-shadow: 0 0.5rem 1.3rem rgba(18, 38, 63, 0.2);
+  -webkit-box-shadow: 0 0.5rem 1.7rem rgba(18, 38, 63, 0.15);
+          box-shadow: 0 0.5rem 1.7rem rgba(18, 38, 63, 0.15);
 }
 .page-up:active {
   background: #fff;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  -webkit-box-shadow: 0 0.3rem 0.5rem rgba(18, 38, 63, 0.1);
+          box-shadow: 0 0.3rem 0.5rem rgba(18, 38, 63, 0.1);
 }
 .page-up.show {
   opacity: 1;
