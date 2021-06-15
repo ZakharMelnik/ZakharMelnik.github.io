@@ -7277,6 +7277,9 @@ a.btn.white {
   z-index: 0;
 }
 
+.content-useful .container {
+  padding: 0;
+}
 .content-useful .container > .title {
   font-family: "Scada", sans-serif;
   font-size: 32px;
@@ -7352,7 +7355,7 @@ a.btn.white {
   display: flex;
   padding: 8px;
   border-radius: 16px;
-  background: #F8F8FB;
+  background: #F2F1F7;
   border: 1px solid #eff2f7;
   -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
           box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
@@ -7384,14 +7387,18 @@ a.btn.white {
   padding: 8px 15px;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  border-radius: 12px;
-  -font-weight: 600;
-  background: transparent;
-  border: 1px solid transparent;
-  color: #0e3890;
+  background: #fff;
+  color: #000;
+  border-radius: 0;
+}
+.mobile-menu .link:first-child {
+  border-radius: 12px 12px 0 0;
+}
+.mobile-menu .link:last-child {
+  border-radius: 0 0 12px 12px;
 }
 .mobile-menu .link:not(:last-of-type) {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   margin-right: 0;
 }
 .mobile-menu .link .icon {
@@ -7401,14 +7408,16 @@ a.btn.white {
   margin-right: 10px;
 }
 .mobile-menu .link:hover, .mobile-menu .link.active {
-  color: #273444;
-  background-color: #fff;
-  border: 1px solid #d5e5ff;
+  color: #000;
+  background: #E6E5EB;
 }
 .mobile-menu hr {
   margin: 5px 0 10px;
   border: 0;
   border-bottom: 1px solid #eff2f7;
+}
+.mobile-menu hr + .link {
+  border-radius: 12px 12px 0 0;
 }
 
 .bg-menu {
@@ -7417,7 +7426,7 @@ a.btn.white {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(206, 206, 206, 0.5);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   display: none;
@@ -7555,6 +7564,12 @@ a.btn.white {
   }
 }
 @media (max-width: 768px) {
+  .content-useful .container > .title {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+  }
+
   a.link {
     background: #fff;
     -border: 1px solid #d5e5ff;
